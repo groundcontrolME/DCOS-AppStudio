@@ -46,7 +46,7 @@ try {
         type= "boolean";
       if(types[i]=== "String")
         type= "string";
-      if(types[i]=== "Date/time")
+      if(types[i]=== "Date/time" || types[i]=== "Date/Time")
         type= "date";
       if(types[i]=== "Location")
         type= "geo_point";
