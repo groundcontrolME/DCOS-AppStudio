@@ -1,4 +1,4 @@
-export MESOS_SANDBOX=.
+export APPDIR=.
 nodemon npm start
 
 

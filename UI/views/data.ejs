@@ -95,7 +95,13 @@
 
 function doMySubmit() {
     var id= document.getElementById("id").value;
-    var l= document.getElementById("location").value;
+    var l;
+    try {
+    	l= document.getElementById("location").value;
+    }
+    catch(ex) {
+	l="0,0";
+    }
     var dt= document.getElementById("timestamp").value;
     
     if(l== undefined || l== null || l=="")

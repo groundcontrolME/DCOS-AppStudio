@@ -9,17 +9,16 @@ let listener= process.env.LISTENER;
 
 let json= new String(process.env.APPDEF);
 json= json.replace(/\'/g, '\"');
-console.log(json);
 let appdef= JSON.parse(json);
 let fields= new Array(); 
 let types= new Array();
 
 for(var i= 0; i< appdef.fields.length; i++) {
-  console.log(JSON.stringify(appdef.fields));
+ // console.log(JSON.stringify(appdef.fields));
   fields[i] = appdef.fields[i].name;
   types[i] = appdef.fields[i].type;
 }
-console.log(JSON.stringify(fields));
+//console.log(JSON.stringify(fields));
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -27,10 +26,59 @@ router.get('/', function(req, res, next) {
 });
 
 let n= 0;
-
 const fs = require('fs');
 let warandpeace;
 let length;
+let lines= new Array();
+let nl= 0;
+let sentlines= 0;
+let fisjson= false;
+
+function readDataFile() {
+  console.log("Reading file...");
+var lineReader = require('readline').createInterface({
+  input: require('fs').createReadStream(process.env.APPDIR+"/public/"+appdef.fname)
+});
+
+  lineReader.on('line', function (line) {
+  if(line.length== 0)
+    return;
+    console.log("Line: "+line);
+  if(nl== 0) {
+    try {
+      let jl= JSON.parse(line);
+      fisjson= true;
+    }
+    catch(ex) {
+      fisjson= false;
+    }
+  }
+  lines[nl++]= line;
+});
+
+lineReader.on('close', function() {
+setTimeout(loadFromFile, Math.floor(1000/appdef.frequency));  
+  console.log("Lastline read... "+Math.floor(1000/appdef.frequency));
+
+});
+
+};
+
+if(appdef.byod=== "yes") {
+  let f= process.env.DATASERVICE+"/"+appdef.fname;
+  console.log("Trying to download: "+f);
+  request.head(process.env.DATASERVICE+"/"+appdef.fname, function(err, res, body){
+    if(err) {
+      console.log("INFO: Can't download data file.");
+    }
+    else {
+       console.log('content-type:', res.headers['content-type']);
+       console.log('content-length:', res.headers['content-length']);
+       request(f).pipe(fs.createWriteStream(process.env.APPDIR+"/public/"+appdef.fname)).on('close', readDataFile);
+  }
+});
+}
+else {
 console.log("Reading: "+process.env.APPDIR+"/warandpeace.txt");
 fs.readFile(process.env.APPDIR+"/warandpeace.txt", 'utf8', function(err, data) {
   if (err) throw err;
@@ -49,6 +97,7 @@ fs.readFile(process.env.APPDIR+"/airports.txt", 'utf8', function(err, data) {
   console.log(airports[6977]);
   
 });
+}
 
 function getRandomLocation() {
   let a= airports[Math.floor(Math.random() * 6977)];
@@ -152,7 +201,42 @@ function getRandomForType(t) {
     return getRandomLocation();
 };
 
-setTimeout(load, 1000);
+ 
+
+if(!(appdef.byod=== "yes")) {
+  setTimeout(load, 1000);
+}
+
+
+function loadFromFile() {
+  let thisline;
+  if(fisjson) {
+    thisline= lines[sentlines];
+  }
+  else {
+   // console.log
+    let csv= lines[sentlines];
+    let splits= csv.split(";");
+    thisline= "{";
+    for(var i= 0; i< appdef.fields.length; i++) {
+      thisline+= '"'+fields[i]+'":"'+splits[i]+'"';
+      if(i< appdef.fields.length-1)
+        thisline+=",";
+    }
+    thisline+='}';
+  }
+  console.log("Posting: "+thisline);
+  
+  request.post(listener, {form:thisline}, function(err, response, body) {
+    if(err!=null) {
+      console.log(err);
+   }
+  });
+
+  sentlines++;
+  if(sentlines< nl) 
+    setTimeout(loadFromFile, Math.floor(1000/appdef.frequency));
+};
 
 function load() {
   let obj= new Object();

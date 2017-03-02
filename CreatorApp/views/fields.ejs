@@ -319,17 +319,6 @@
 		
 			var fields= new Array();
 			let n= 0;
-			for (var i = 1; i <= totalfields; i++) {
-				var id= document.getElementById("field"+i);
-				if(id== null)  {
-					continue;
-				}
-				fields[n]= new Object();
-				fields[n].name= document.getElementById("fn"+i).value;
-				fields[n].pivot= document.getElementById("p"+i).checked;
-				fields[n].type= document.getElementById("t"+i).value;
-				n++;
-			}
 			fields[n]= new Object();
 			fields[n].name= "id";
 			fields[n].type= "Long";
@@ -346,10 +335,24 @@
 			fields[n].name= "event_timestamp";
 			fields[n].type= "Date/time";
 			fields[n].pivot= "false";
+			n++;
+			
+			for (var i = 1; i <= totalfields; i++) {
+				var id= document.getElementById("field"+i);
+				if(id== null)  {
+					continue;
+				}
+				fields[n]= new Object();
+				fields[n].name= document.getElementById("fn"+i).value;
+				fields[n].pivot= document.getElementById("p"+i).checked;
+				fields[n].type= document.getElementById("t"+i).value;
+				n++;
+			}
+		
 
 
 			ret.fields= fields;
-			location.href='transformer.html?fields='+JSON.stringify(ret);
+			location.href='loader.html?fields='+JSON.stringify(ret);
 		}
 
 		function propsSent() {

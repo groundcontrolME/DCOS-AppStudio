@@ -7,7 +7,6 @@ var formidable = require('formidable');
 var httpProxy = require('http-proxy');
 var proxy = httpProxy.createProxyServer({});
 
-var groupconfig= require('../groupconfig.json');
 
 router.post("/bgimage.html", function (request, response) {  
   console.log("upload... "+app.get("apppath"));
@@ -41,6 +40,13 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/app.html', function(req, res, next) {
+  let groupconfig;
+  
+  if(app.get("byod")=== "yes")
+    groupconfig= require('../groupconfigwithdata.json');   
+  else
+    groupconfig= require('../groupconfig.json');
+ 
   res.setHeader('Content-disposition', 'attachment; filename=config.json');
   let config= JSON.stringify(groupconfig).replace(/REPLACEME/g, myapp);
   config= config.replace(/\$PATH/g, "-"+app.get("apppath"));
@@ -93,6 +99,12 @@ router.get('/takeoff.html', function(req, res, next) {
   appdef.keyspace= app.get("keyspace");
   appdef.path= app.get("apppath");
   appdef.creator= app.get("creator");
+  appdef.byod= app.get("byod");
+  if(appdef.byod==="yes") {
+    appdef.dockertag= app.get("dockertag");
+    appdef.fname= app.get("fname");    
+    appdef.frequency= app.get("frequency");    
+  }
  // appdef.name= fields.name;
  // delete fields.name;
   console.log("Take off: "+ JSON.stringify(appdef));
@@ -110,9 +122,18 @@ router.get('/takeoff.html', function(req, res, next) {
   res.render('takeoff', { app: myapp, apppath: appdef.path });
 });
 
-router.get('/transformer.html', function(req, res, next) {
+router.get('/loader.html', function(req, res, next) {
   app.set("fields", req.query);
-  
+  res.render('loader', {  });
+});
+
+router.get('/transformer.html', function(req, res, next) {
+  app.set("byod", req.query.byod);
+  if(req.query.byod=== "yes") {
+    app.set("dockertag", decodeURIComponent(req.query.tag));
+    app.set("fname", decodeURIComponent(req.query.fname));
+    app.set("frequency", req.query.frequency);
+  }
   res.render('transformer', {  });
 });
 
