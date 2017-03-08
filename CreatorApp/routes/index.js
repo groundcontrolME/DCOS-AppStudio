@@ -47,7 +47,7 @@ router.get('/app.html', function(req, res, next) {
   else
     groupconfig= require('../groupconfig.json');
  
-  res.setHeader('Content-disposition', 'attachment; filename=config.json');
+  res.setHeader('Content-disposition', 'attachment; filename='+app.get("apppath")+"-config.json");
   let config= JSON.stringify(groupconfig).replace(/REPLACEME/g, myapp);
   config= config.replace(/\$PATH/g, "-"+app.get("apppath"));
   res.write(config);

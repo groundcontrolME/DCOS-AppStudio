@@ -29,7 +29,7 @@
 <td style="font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><input disabled style="font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" type="text" name="fname" id="fname" value="" oninput="updateFName()" /></td>
 </tr>
 <tr>
-	<td style="font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Frequency in Hz:</td>
+	<td style="font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Message Frequency in Hz:</td>
 <td style="font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"><input style="font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif" type="text" name="frequency" id="frequency" value="1"  /></td>
 </tr>
 	</table>
@@ -39,7 +39,7 @@
 <p>
 <p>
 <center>
-	<button id="next" disabled onclick="mysubmit()" style="width: 360px; font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Continue</button>
+	<button id="next"  onclick="mysubmit()" style="width: 360px; font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Continue</button>
 </center>
 </div>
 
@@ -75,16 +75,22 @@
 											if(byod) {
 												document.getElementById("tag").disabled= false;
 												document.getElementById("fname").disabled= false;
+												if(tag!= "" && fname != "")
+													document.getElementById("next").disabled = false;
+												else
+													document.getElementById("next").disabled = true;
+
 											}
 											else {
 												document.getElementById("tag").disabled= true;
 												document.getElementById("fname").disabled= true;
 												document.getElementById("tag").value="";
 												document.getElementById("fname").value="";
+												document.getElementById("next").disabled = false;
 												tag= "";
 												fname= "";
 												
-										}
+											}
 									  };
 
 									  function updateTag() {
@@ -104,7 +110,7 @@
 											  document.getElementById("next").disabled = false;
 										  }
 										  else {
-											  document.getElementById("next").disabled = true;
+											 document.getElementById("next").disabled = true;
 										  }
 										  
 									  };
