@@ -9,6 +9,8 @@ var Fiber = require('fibers');
 var parseString = require('xml2js').parseString;
 var xmlasjson;
 
+var globals= new Object();
+
 function fiberparseXML(xml, ret) {
     var fiber = Fiber.current;
     parseString(xml, function (err, result) {

@@ -6,12 +6,14 @@ if [ "$c" = "y" ]; then
 	./setup-marathon-lb.sh
 	dcos package install --yes cassandra
 	dcos package install --yes kafka
-	dcos package install --yes elasticsearch
-	dcos package install --yes jenkins 
-	
-	read -p "Press any key when the Elastic service is started." -n1 -s
-	dcos marathon app add kibana.json
-	read -p "Press any key when the services are started." -n1 -s 
+	read -p "Install Elastic (requires DC/OS >= 1.9)? (y/n) " -n1 -s c1
+	if [ "$c1" = "y" ]; then
+		dcos package install --yes elastic
+	fi
+	read -p "Install Jenkins? (y/n) " -n1 -s c1	
+	if [ "$c2" = "y" ]; then
+		dcos package install --yes jenkins 
+	fi
 else
 	echo no
 fi
@@ -97,7 +99,6 @@ fi
 sed -ie "s@PUBLIC_SLAVE_ELB_HOSTNAME@$PUBLICELBHOST@g"  config.tmp
 dcos marathon app add config.tmp
 rm config.tmp
-echo $(curl --output /dev/null --silent --head --fail http://$PUBLICELBHOST)
 until $(curl --output /dev/null --silent --head --fail http://$PUBLICELBHOST); do
     printf '.'
     sleep 5

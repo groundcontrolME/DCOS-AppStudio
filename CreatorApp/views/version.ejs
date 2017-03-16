@@ -14,11 +14,18 @@
 		<div id="text" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
 			<h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
 				<center>
-				Have you deployed Cassandra and Kafka already?<p>Is marathon-b up and running?
+			Which version do you want?
+			<p>1.0.0 (start here for CI/CD)
+				<p>or
+					<p>2.0.0 (with Elastic, requires DC/OS >=1.9)
 						<p>
-						If not please do so now and when both services are up press the button below.
-						<p>
-					<button onclick="location.href='version.html'"" style="width: 360px; font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Cassandra and Kafka are up</button>  
+				<select  onchange="versionChanged(document.getElementById('v'))" id="v" size="1" style="font-size: 32px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+      <option >1.0.0</option>
+      <option>2.0.0</option>
+    </select>
+	<p>
+
+					<button onclick="doContinue()" style="width: 360px; font-size: 24px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Continue</button>  
 				</center>
 			</h2>
 			</br>
@@ -33,6 +40,8 @@
 		var fields = 1;
 		var totalfields= 1;
 		var todelete = 1;
+		let version= "1.0.0";
+
 
 		var bg = document.getElementById("bg");
 		bg.setAttribute("style",
@@ -42,6 +51,14 @@
 		text.setAttribute("style", "style=font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; position:absolute; top:" + (320 * sY)
 				+ "px; left:" + (((960 - 512 - 140) / 2) * sX) + "px; width: "
 				+ (512 * sX * 1.5) + "px; height: " + (256 * sY * 1.5) + "px;");
+
+	   function onchange(e) {
+		   version= e.value;
+	   };
+
+	   function doContinue() {
+		   location.href='apppath.html?version='+version;
+	   };
 
 	</script>
 

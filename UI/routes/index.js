@@ -59,7 +59,7 @@ function handleImageDownload(err) {
   router.post("/bgimage.html", function (request, response) {  
   console.log("upload... "+app.get("apppath"));
    var form = new formidable.IncomingForm();
-  form.uploadDir = process.env.APPDIR+"/public/images";
+  form.uploadDir = "/"+process.env.APPDIR+"/public/images";
   let fname= '';
 
   form.on('file', function(name, file){
@@ -83,7 +83,7 @@ router.get('/bgimage.html', function(req, res, next) {
 
 
 router.get('/zeppelin.html', function(req, res, next) {
-let obj= require(process.env.APPDIR+"/zeppelin-notebook.json");
+let obj= require("/"+process.env.APPDIR+"/zeppelin-notebook.json");
 let txt= JSON.stringify(obj).replace(/TOPIC/g, appdef.topic);
 txt= txt.replace(/TABLE/g, appdef.table);
 txt= txt.replace(/APPNAME/g, appdef.name);

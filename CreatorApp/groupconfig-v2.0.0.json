@@ -20,12 +20,7 @@
 	"gpus": 0,
 	"executor": "",
 	"constraints": [],
-	"fetch": [{
-		"uri": "http://digitalemil.de/workerkafka-v0.0.1.tgz",
-		"extract": true,
-		"executable": false,
-		"cache": false
-	}],
+	"fetch": [],
 	"storeUrls": [],
 	"backoffSeconds": 1,
 	"backoffFactor": 1.15,
@@ -34,7 +29,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:nhh-v1.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-kafkaingester-v2.0.0",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
@@ -94,12 +89,7 @@
 	"gpus": 0,
 	"executor": "",
 	"constraints": [],
-	"fetch": [{
-		"uri": "http://digitalemil.de/workercassandra-v0.0.1.tgz",
-		"extract": true,
-		"executable": false,
-		"cache": false
-	}],
+	"fetch": [],
 	"storeUrls": [],
 	"backoffSeconds": 1,
 	"backoffFactor": 1.15,
@@ -108,7 +98,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:nhh-v1.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-cassandraingester-v2.0.0",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
@@ -175,12 +165,7 @@
 	"gpus": 0,
 	"executor": "",
 	"constraints": [],
-	"fetch": [{
-		"uri": "http://digitalemil.de/workerlistener-v0.0.1.tgz",
-		"extract": true,
-		"executable": false,
-		"cache": false
-	}],
+	"fetch": [],
 	"storeUrls": [],
 	"backoffSeconds": 1,
 	"backoffFactor": 1.15,
@@ -189,7 +174,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:nhh-v1.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-messagelistener-v2.0.0",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -248,12 +233,7 @@
 	"gpus": 0,
 	"executor": "",
 	"constraints": [],
-	"fetch": [{
-		"uri": "http://digitalemil.de/workervalidator-v0.0.1.tgz",
-		"extract": true,
-		"executable": false,
-		"cache": false
-	}],
+	"fetch": [],
 	"storeUrls": [],
 	"backoffSeconds": 1,
 	"backoffFactor": 1.15,
@@ -262,7 +242,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:nhh-v1.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-messagevalidator-v2.0.0",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -321,12 +301,7 @@
 	"gpus": 0,
 	"executor": "",
 	"constraints": [],
-	"fetch": [{
-		"uri": "http://digitalemil.de/workertransformer-v0.0.1.tgz",
-		"extract": true,
-		"executable": false,
-		"cache": false
-	}],
+	"fetch": [],
 	"storeUrls": [],
 	"backoffSeconds": 1,
 	"backoffFactor": 1.15,
@@ -335,7 +310,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:nhh-v1.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-messagetransformer-v2.0.0",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -400,12 +375,7 @@
 	"gpus": 0,
 	"executor": "",
 	"constraints": [],
-	"fetch": [{
-		"uri": "http://digitalemil.de/ui-v0.0.1.tgz",
-		"extract": true,
-		"executable": false,
-		"cache": false
-	}],
+	"fetch": [],
 	"storeUrls": [],
 	"backoffSeconds": 1,
 	"backoffFactor": 1.15,
@@ -414,7 +384,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:nhh-v1.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-ui-v2.0.0",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
@@ -478,12 +448,7 @@
 	"gpus": 0,
 	"executor": "",
 	"constraints": [],
-	"fetch": [{
-		"uri": "http://digitalemil.de/loader-v0.0.1.tgz",
-		"extract": true,
-		"executable": false,
-		"cache": false
-	}],
+	"fetch": [],
 	"storeUrls": [],
 	"backoffSeconds": 1,
 	"backoffFactor": 1.15,
@@ -492,7 +457,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:nhh-v1.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-loader-v2.0.0",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,

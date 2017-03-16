@@ -36,16 +36,16 @@ router.post("/bgimage.html", function (request, response) {
 });     
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'DC/OS AppStudio' });
 });
 
 router.get('/app.html', function(req, res, next) {
   let groupconfig;
   
   if(app.get("byod")=== "yes")
-    groupconfig= require('../groupconfigwithdata.json');   
+    groupconfig= require('../groupconfigwithdata-v'+app.get("version")+'.json');   
   else
-    groupconfig= require('../groupconfig.json');
+    groupconfig= require('../groupconfig-v'+app.get("version")+'.json');
  
   res.setHeader('Content-disposition', 'attachment; filename='+app.get("apppath")+"-config.json");
   let config= JSON.stringify(groupconfig).replace(/REPLACEME/g, myapp);
@@ -54,9 +54,15 @@ router.get('/app.html', function(req, res, next) {
   res.end();
 });
 
+router.get('/version.html', function(req, res, next) {
+  res.render('version', { title: 'DC/OS AppStudio' });
+});
+
+
 router.get('/apppath.html', function(req, res, next) {
-  console.log("Apppath");
-  res.render('apppath', { title: 'Express' });
+  console.log("Version: "+req.query.version);
+  app.set("version", req.query.version);
+  res.render('apppath', { title: 'DC/OS AppStudio' });
 });
 
 router.get('/bgimage.html', function(req, res, next) {
@@ -64,11 +70,11 @@ router.get('/bgimage.html', function(req, res, next) {
   app.set("creator", req.query.creator);
   console.log("APPPATH= "+app.get("apppath"));
  currentapppath= req.query.apppath;
-  res.render('bgimage', { title: 'Express' });
+  res.render('bgimage', { title: 'DC/OS AppStudio' });
 });
 
 router.get('/cassandrakafka.html', function(req, res, next) {
-  res.render('cassandrakafka', { title: 'Express' });
+  res.render('cassandrakafka', { title: 'DC/OS AppStudio' });
 });
 
 router.get('/fields.html', function(req, res, next) {
@@ -80,7 +86,7 @@ router.get('/fields.html', function(req, res, next) {
   console.log(app.get("table"));
   console.log(app.get("keyspace"));
  
-  res.render('fields', { title: 'Express' });
+  res.render('fields', { title: 'DC/OS AppStudio' });
 });
 
 router.get('/takeoff.html', function(req, res, next) {  
@@ -94,6 +100,7 @@ router.get('/takeoff.html', function(req, res, next) {
 
   appdef.transformer= encodeURIComponent(req.query.transformer);
   console.log("transformer: "+ appdef.transformer);
+  appdef.version= app.get("version");
   appdef.topic= app.get("topic");
   appdef.table= app.get("table");
   appdef.keyspace= app.get("keyspace");
@@ -116,9 +123,20 @@ router.get('/takeoff.html', function(req, res, next) {
     console.log("get: "+request.url);
     request.url= request.url.substring(thisapppath.length+1);
     console.log("get now: "+request.url);
+    try {
     console.log("target: "+'http://dcosappstudio'+"-"+app.get("apppath")+'ui.marathon.l4lb.thisdcos.directory:0');
-    proxy.web(request, response, { target: 'http://dcosappstudio'+"-"+app.get("apppath")+'ui.marathon.l4lb.thisdcos.directory:0' });
+    proxy.web(request, response, { target: 'http://dcosappstudio'+"-"+app.get("apppath")+'ui.marathon.l4lb.thisdcos.directory:0' }, 
+      function(e) { 
+        response.writeHead(500);
+        response.end("Ooops, something went very wrong. You're sure you already deployed the app?"); 
+      }
+    );
+  }
+  catch(ex) {
+    console.log(ex);
+  }
   });
+
   res.render('takeoff', { app: myapp, apppath: appdef.path });
 });
 
@@ -138,7 +156,7 @@ router.get('/transformer.html', function(req, res, next) {
 });
 
 router.get('/cassandrakafkaup.html', function(req, res, next) {
-  res.render('cassandrakafkaup', { title: 'Express' });
+  res.render('cassandrakafkaup', { title: 'DC/OS AppStudio' });
 });
 
 module.exports = router;
