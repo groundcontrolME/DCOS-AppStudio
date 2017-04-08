@@ -137,6 +137,25 @@ router.get('/takeoff.html', function(req, res, next) {
   }
   });
 
+  router.all("/service/elastic*", function (request, response) {  
+    console.log("get: "+request.url);
+   // request.url= request.url.substring(thisapppath.length+1);
+   // console.log("get now: "+request.url);
+    try {
+    console.log("target: "+'http://dcosappstudio'+"-"+app.get("apppath")+'ui.marathon.l4lb.thisdcos.directory:0');
+    proxy.web(request, response, { target: 'http://dcosappstudio'+"-"+app.get("apppath")+'ui.marathon.l4lb.thisdcos.directory:0' }, 
+      function(e) { 
+        response.writeHead(500);
+        response.end("Ooops, something went very wrong. You're sure you already deployed the app?"); 
+      }
+    );
+  }
+  catch(ex) {
+    console.log(ex);
+  }
+  });
+
+
   res.render('takeoff', { app: myapp, apppath: appdef.path });
 });
 

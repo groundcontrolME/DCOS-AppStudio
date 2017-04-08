@@ -34,9 +34,10 @@ try {
     for(var i= 0; i< fields.length; i++) {
       if(fields[i]=== "id" || fields[i]=== "event_timestamp" || fields[i]=== "location")
         continue;
+        /*
       if(i< fields.length-1) {
         props+= ", "
-      }
+      }*/
       let type= "integer";
       if(types[i]=== "Long")
         type= "long";
@@ -51,7 +52,7 @@ try {
       if(types[i]=== "Location")
         type= "geo_point";
 
-      props+= '"'+fields[i]+'": { "properties": { "'+fields[i]+'": { "type": "'+type+'" }}}';
+      props+= ', "'+fields[i]+'": { "properties": { "'+fields[i]+'": { "type": "'+type+'" }}}';
     }
     props+="}}";
     console.log("Elastic Index: "+props);

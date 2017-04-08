@@ -14,11 +14,12 @@ if [ "$c" = "y" ]; then
 	if [ "$c2" = "y" ]; then
 		dcos package install --yes jenkins 
 	fi
+	echo
+	read -p "Press any key when the services are started." -n1 -s 
 else
 	echo no
 fi
-
-
+echo
 export CONFIGJSON='{
 	"volumes": [],
 	"id": "/dcos-appstudio-creator",

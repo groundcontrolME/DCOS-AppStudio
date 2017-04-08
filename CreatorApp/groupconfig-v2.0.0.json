@@ -3,7 +3,76 @@
   "groups": [
   
    {"id":"/dcosappstudio$PATH/message-backend",
-   "apps": [ {
+   "apps": [
+	   {"id": "elastic-ingester-backend",
+	"volumes": [],
+	"cmd": null,
+	"args": null,
+	"user": null,
+	"env": {
+"APPDEF":"REPLACEME",
+"ELASTIC_SERVICE":"http://elastic:changeme@coordinator.elastic.l4lb.thisdcos.directory:9200"
+  },
+"instances": 1,
+	"cpus": 0.1,
+	"mem": 128,
+	"disk": 0,
+	"gpus": 0,
+	"executor": "",
+	"constraints": [],
+	"fetch": [],
+	"storeUrls": [],
+	"backoffSeconds": 1,
+	"backoffFactor": 1.15,
+	"maxLaunchDelaySeconds": 3600,
+	"container": {
+		"type": "DOCKER",
+		"volumes": [],
+		"docker": {
+			"image": "digitalemil/mypublicrepo:dcosappstudio-elasticingester-v2.0.0",
+"network": "HOST",
+                        "portMappings": [],
+			"privileged": false,
+			"parameters": [],
+			"forcePullImage": false
+		}
+	},
+	"healthChecks": [
+    {
+      "protocol": "HTTP",
+      "path": "/",
+      "gracePeriodSeconds": 2,
+      "intervalSeconds": 5,
+      "timeoutSeconds": 2,
+      "maxConsecutiveFailures": 4,
+      "portIndex": 0,
+      "ignoreHttp1xx": false
+    }
+  ],
+	"readinessChecks": [],
+	"dependencies": [],
+	"upgradeStrategy": {
+		"minimumHealthCapacity": 1,
+		"maximumOverCapacity": 1
+	},
+	"labels": {
+	},
+	"acceptedResourceRoles": null,
+	"ipAddress": null,
+	"residency": null,
+	"secrets": {},
+	"taskKillGracePeriodSeconds": null,
+	"portDefinitions": [{
+		"port": 10000,
+		"protocol": "tcp",
+		"name": "myp",
+		"labels": {
+			"VIP_0": "/dcosappstudio$PATHworkerelastic:0"
+		}
+	}],
+	"requirePorts": false
+},
+	    {
   "id": "kafka-ingester-backend",
 	"volumes": [],
 	"cmd": null,
@@ -29,7 +98,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-kafkaingester-v2.0.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-kafkaingester-v1.0.0",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
@@ -98,7 +167,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-cassandraingester-v2.0.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-cassandraingester-v1.0.0",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
@@ -156,7 +225,7 @@
 "VALIDATOR":"http://dcosappstudio$PATHmessage-validator.marathon.l4lb.thisdcos.directory:0/validate",
 "KAFKA_BACKEND":"http://dcosappstudio$PATHworkerkafka.marathon.l4lb.thisdcos.directory:0/data",
 "CASSANDRA_BACKEND":"http://dcosappstudio$PATHworkercassandra.marathon.l4lb.thisdcos.directory:0/data",
-"ELASTIC_BACKEND":"http://dcosappstudio-mesonautsgymworkerelastic.marathon.l4lb.thisdcos.directory:0/data"
+"ELASTIC_BACKEND":"http://dcosappstudio$PATHworkerelastic.marathon.l4lb.thisdcos.directory:0/data"
   },
 "instances": 1,
 	"cpus": 0.1,
@@ -242,7 +311,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-messagevalidator-v2.0.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-messagevalidator-v1.0.0",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -310,7 +379,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-messagetransformer-v2.0.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-messagetransformer-v1.0.0",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -457,7 +526,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-loader-v2.0.0",
+			"image": "digitalemil/mypublicrepo:dcosappstudio-loader-v1.0.0",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
