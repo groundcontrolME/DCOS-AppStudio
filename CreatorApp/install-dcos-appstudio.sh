@@ -3,7 +3,7 @@
 read -p "Install services? (y/n) " -n1 -s c
 if [ "$c" = "y" ]; then
 	echo yes
-	./setup-marathon-lb.sh
+	dcos package install --yes marathon-lb
 	dcos package install --yes cassandra
 	dcos package install --yes kafka
 	read -p "Install Elastic (requires DC/OS >= 1.9)? (y/n) " -n1 -s c1
