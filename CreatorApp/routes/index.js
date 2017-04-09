@@ -119,10 +119,13 @@ router.get('/takeoff.html', function(req, res, next) {
   console.log("myapp: "+myapp);
   let thisapppath= appdef.path;
   console.log("Path: "+thisapppath);
-  router.get("/"+thisapppath+"*", function (request, response) {  
+  router.all("/"+thisapppath+"*", function (request, response) {  
     console.log("get: "+request.url);
     request.url= request.url.substring(thisapppath.length+1);
     console.log("get now: "+request.url);
+    if(request.url.includes("/api") || request.url.includes("/bundle") || request.url.includes("/status"))
+      request.url="/service/elastic/kibana"+request.url;
+      console.log("Final url: "+request.url);
     try {
     console.log("target: "+'http://dcosappstudio'+"-"+app.get("apppath")+'ui.marathon.l4lb.thisdcos.directory:0');
     proxy.web(request, response, { target: 'http://dcosappstudio'+"-"+app.get("apppath")+'ui.marathon.l4lb.thisdcos.directory:0' }, 
@@ -138,7 +141,7 @@ router.get('/takeoff.html', function(req, res, next) {
   });
 
   router.all("/service/elastic*", function (request, response) {  
-    console.log("get: "+request.url);
+    console.log("all: "+request.url);
    // request.url= request.url.substring(thisapppath.length+1);
    // console.log("get now: "+request.url);
     try {

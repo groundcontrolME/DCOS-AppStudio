@@ -1,0 +1,1270 @@
+{"id":"1491727442152","altitude":39.926513671875,"batterylevel":99.8099999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.152","heading":73.58219146728516,"location":"51.23345664924842,6.814330481206634","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727510221","altitude":39.97160339355469,"batterylevel":99.19999999999959,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.221","heading":267.8433837890625,"location":"51.23331151190091,6.814619137731775","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724588699","altitude":0,"batterylevel":99.78999999999989,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.699","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727607348","altitude":39.996917724609375,"batterylevel":98.32999999999915,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.348","heading":184.65481567382812,"location":"51.233253327137426,6.814702459098352","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721884361","altitude":338.12571849895755,"batterylevel":99.94999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.361","heading":2.856189110852909,"location":"46.05721528237964,-108.56524199834094","motortemp":30,"powerconsumption":0,"speed":2,"status":"ok"}
+
+{"id":"1491722219195","altitude":337.7423542561813,"batterylevel":99.75999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.195","heading":2.107767503089738,"location":"46.365314782178785,-108.54656771170865","motortemp":33.8,"powerconsumption":4.75,"speed":40,"status":"ok"}
+
+{"id":"1491725591642","altitude":41.21598815917969,"batterylevel":99.89999999999995,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.642","heading":0,"location":"51.231432187187814,6.814173997616969","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726664932","altitude":41.84683609008789,"batterylevel":99.66999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.932","heading":182.74916076660156,"location":"51.231401221744825,6.81408580800796","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724599724","altitude":0,"batterylevel":99.72999999999986,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.724","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727619381","altitude":40.0218391418457,"batterylevel":98.20999999999908,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.381","heading":176.3682403564453,"location":"51.23325523909933,6.814837015127727","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728330607","altitude":77,"batterylevel":99.52999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.607","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491728322599","altitude":77,"batterylevel":99.56999999999978,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.599","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491725604676","altitude":41.354923248291016,"batterylevel":99.76999999999988,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.676","heading":0,"location":"51.23144000955514,6.814262579672502","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726815351","altitude":40.855037689208984,"batterylevel":98.16999999999906,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.351","heading":6.04565954208374,"location":"51.23291617261732,6.81480567623882","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727491167","altitude":39.876827239990234,"batterylevel":99.38999999999969,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.167","heading":155.10302734375,"location":"51.233461179312975,6.814783862254573","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721893008","altitude":337.5413396241307,"batterylevel":99.6199999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.008","heading":3.2018364680091285,"location":"46.84969514994381,-108.5645564236455","motortemp":35.7,"powerconsumption":7.125,"speed":56,"status":"ok"}
+
+{"id":"1491727547373","altitude":39.8616828918457,"batterylevel":98.87999999999943,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.373","heading":103.39358520507812,"location":"51.23324266191483,6.814285662374403","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724569603","altitude":0,"batterylevel":99.97999999999999,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.603","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726730105","altitude":40.715110778808594,"batterylevel":99.0199999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.105","heading":13.905594825744629,"location":"51.231896218623596,6.814298828897072","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722216051","altitude":337.3034244493905,"batterylevel":99.87999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.051","heading":358.522427467605,"location":"46.10249786014043,-108.54818670437207","motortemp":31.4,"powerconsumption":1.75,"speed":16,"status":"ok"}
+
+{"id":"1491726705038","altitude":40.97526550292969,"batterylevel":99.26999999999963,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.038","heading":288.8870849609375,"location":"51.231734866004004,6.814425682099782","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726636857","altitude":42.135589599609375,"batterylevel":99.94999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.857","heading":325.6111145019531,"location":"51.231420187359156,6.814028328935533","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727568247","altitude":39.55060577392578,"batterylevel":98.71999999999935,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.247","heading":245.86277770996094,"location":"51.23346186164811,6.8150128123599165","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725584625","altitude":41.362266540527344,"batterylevel":99.96999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.625","heading":0,"location":"51.231441007028735,6.814136333999311","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727606345","altitude":39.968421936035156,"batterylevel":98.33999999999915,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.345","heading":188.2098846435547,"location":"51.23327185453973,6.814663017501328","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726699023","altitude":41.00469207763672,"batterylevel":99.32999999999966,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.023","heading":18.265058517456055,"location":"51.23171080369394,6.814460984648313","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726812343","altitude":40.83686065673828,"batterylevel":98.19999999999908,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.343","heading":15.740470886230469,"location":"51.232850832092176,6.814779250344274","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726030912","altitude":41.60136795043945,"batterylevel":99.23999999999961,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.912","heading":0,"location":"51.23136269116448,6.814149693993479","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726702031","altitude":40.97526550292969,"batterylevel":99.29999999999964,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.031","heading":358.0751953125,"location":"51.231734866004004,6.814425682099782","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728298610","altitude":80,"batterylevel":99.73999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.61","heading":94.05276752878648,"location":"51.23132186,6.81408935","motortemp":30.05199999809265,"powerconsumption":0.06499999761581421,"speed":0.38999998569488525,"status":"ok"}
+
+{"id":"1491725643530","altitude":41.2150993347168,"batterylevel":99.63999999999982,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.53","heading":0,"location":"51.231493735530755,6.814259145767842","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726809335","altitude":40.82814025878906,"batterylevel":98.2299999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.335","heading":6.481904029846191,"location":"51.23292908361365,6.8148329660226885","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721886988","altitude":332.7682362515292,"batterylevel":99.84999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.988","heading":4.208042064983613,"location":"46.309259414030095,-108.56609663495472","motortemp":32,"powerconsumption":2.5,"speed":22,"status":"ok"}
+
+{"id":"1491722214195","altitude":342.59861937100465,"batterylevel":99.94999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.195","heading":359.400610037558,"location":"45.84893326954613,-108.54975379998463","motortemp":30,"powerconsumption":0,"speed":2,"status":"ok"}
+
+{"id":"1491726653903","altitude":41.95400619506836,"batterylevel":99.77999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.903","heading":190.88333129882812,"location":"51.23141066083616,6.814065757218098","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726035925","altitude":41.660037994384766,"batterylevel":99.18999999999959,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.925","heading":0,"location":"51.2313586556617,6.814149227914362","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721886462","altitude":333.1539509576337,"batterylevel":99.86999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.462","heading":4.302756499317925,"location":"46.25887650749539,-108.56697929451438","motortemp":31.6,"powerconsumption":2,"speed":18,"status":"ok"}
+
+{"id":"1491726650896","altitude":42.1875114440918,"batterylevel":99.8099999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.896","heading":207.0946807861328,"location":"51.2314180247729,6.814041961899035","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727546370","altitude":39.82119369506836,"batterylevel":98.88999999999943,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.37","heading":121.94808959960938,"location":"51.233196331987216,6.814320910481846","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721888559","altitude":335.50749568483667,"batterylevel":99.78999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.559","heading":2.5470387153257033,"location":"46.44792733759585,-108.56608548997802","motortemp":33.2,"powerconsumption":4,"speed":34,"status":"ok"}
+
+{"id":"1491721884889","altitude":337.3512568691191,"batterylevel":99.92999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.889","heading":3.768127953591776,"location":"46.13782930753411,-108.56454579685263","motortemp":30.4,"powerconsumption":0.5,"speed":6,"status":"ok"}
+
+{"id":"1491721895828","altitude":336.214077456969,"batterylevel":99.52999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.828","heading":6.772331113326924,"location":"47.05592955380948,-108.57021468708815","motortemp":34.8,"powerconsumption":6,"speed":47,"status":"ok"}
+
+{"id":"1491728277316","altitude":87,"batterylevel":99.94999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:57:00.316","heading":91.36216373879269,"location":"51.23129374,6.81425326","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726736122","altitude":40.70022964477539,"batterylevel":98.95999999999947,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.122","heading":30.325408935546875,"location":"51.2318240063559,6.814322788819342","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726002844","altitude":41.53001403808594,"batterylevel":99.47999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.844","heading":0,"location":"51.231374593539506,6.8141523646266275","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725612698","altitude":41.28645706176758,"batterylevel":99.68999999999984,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.698","heading":0,"location":"51.23144319644109,6.814264084640328","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725992815","altitude":41.313499450683594,"batterylevel":99.57999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.815","heading":0,"location":"51.23143304474064,6.814190211965629","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725975769","altitude":41.332183837890625,"batterylevel":99.74999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.769","heading":0,"location":"51.23144445561216,6.814184887366305","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726638862","altitude":42.12810516357422,"batterylevel":99.92999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.862","heading":244.2620849609375,"location":"51.23142010732908,6.8140284363809425","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726550775","altitude":0,"batterylevel":99.97999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.775","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721888820","altitude":334.78297023803964,"batterylevel":99.77999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.82","heading":3.2405191049182718,"location":"46.48441405678162,-108.56766527865086","motortemp":33.4,"powerconsumption":4.25,"speed":36,"status":"ok"}
+
+{"id":"1491725795708","altitude":0,"batterylevel":99.96999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.708","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727603336","altitude":39.98211669921875,"batterylevel":98.36999999999917,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.336","heading":178.9087677001953,"location":"51.23326971291079,6.814703490346969","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726034922","altitude":41.648521423339844,"batterylevel":99.19999999999959,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.922","heading":0,"location":"51.231358658267936,6.814149228215373","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728326598","altitude":77,"batterylevel":99.54999999999977,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.598","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491725668239","altitude":0,"batterylevel":99.94999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.239","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725599662","altitude":41.28117752075195,"batterylevel":99.81999999999991,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.662","heading":0,"location":"51.23143859048012,6.814251894851814","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726017877","altitude":41.367401123046875,"batterylevel":99.36999999999968,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.877","heading":0,"location":"51.231467098950716,6.814179166962254","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721887510","altitude":329.7182566977224,"batterylevel":99.82999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.51","heading":4.533798377055464,"location":"46.33735172112981,-108.56608523348886","motortemp":32.4,"powerconsumption":3,"speed":26,"status":"ok"}
+
+{"id":"1491728310599","altitude":77,"batterylevel":99.62999999999981,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.599","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491725648544","altitude":41.375633239746094,"batterylevel":99.58999999999979,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.544","heading":0,"location":"51.23151796928936,6.814202063809028","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727582281","altitude":39.875972747802734,"batterylevel":98.57999999999927,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.281","heading":131.8734893798828,"location":"51.23323604901135,6.814629209983714","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728299619","altitude":82,"batterylevel":99.72999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.619","heading":65.97528041619903,"location":"51.23133625,6.81408183","motortemp":30.038999998569487,"powerconsumption":0.04874999821186066,"speed":0.46000000834465027,"status":"ok"}
+
+{"id":"1491722214461","altitude":340.9348788412738,"batterylevel":99.93999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.461","heading":358.7023214931982,"location":"45.89492127584739,-108.54955778683191","motortemp":30.2,"powerconsumption":0.25,"speed":4,"status":"ok"}
+
+{"id":"1491725597657","altitude":41.219642639160156,"batterylevel":99.83999999999992,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.657","heading":0,"location":"51.23143656738683,6.814225204918927","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726673954","altitude":41.59955596923828,"batterylevel":99.57999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.954","heading":130.53176879882812,"location":"51.23140593053872,6.8141611323097395","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726642873","altitude":42.251747131347656,"batterylevel":99.88999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.873","heading":49.087005615234375,"location":"51.23146366495713,6.813988392943615","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727586291","altitude":39.99077606201172,"batterylevel":98.53999999999925,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.291","heading":165.1785888671875,"location":"51.23327772512008,6.814793633861811","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728276296","altitude":87,"batterylevel":99.95999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:57:00.296","heading":0,"location":"51.23129306,6.81425351","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727513228","altitude":40.028995513916016,"batterylevel":99.16999999999958,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.228","heading":262.94036865234375,"location":"51.23321058874491,6.814467411391701","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722217623","altitude":336.0616977632736,"batterylevel":99.81999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.623","heading":358.67537359164936,"location":"46.23607020251586,-108.54559566565199","motortemp":32.6,"powerconsumption":3.25,"speed":28,"status":"ok"}
+
+{"id":"1491725988804","altitude":41.917972564697266,"batterylevel":99.6199999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.804","heading":0,"location":"51.23140530736032,6.814126459519946","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724678550","altitude":0,"batterylevel":99.66999999999983,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:57:00.55","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727458200","altitude":39.99609375,"batterylevel":99.64999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.2","heading":142.38722229003906,"location":"51.23410557456661,6.8143224322446745","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725601668","altitude":41.34177780151367,"batterylevel":99.7999999999999,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.668","heading":0,"location":"51.23143996386686,6.814262598725147","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724590704","altitude":0,"batterylevel":99.76999999999988,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.704","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727520248","altitude":40.012794494628906,"batterylevel":99.09999999999954,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.248","heading":232.87283325195312,"location":"51.233368150157396,6.814577157720439","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727572256","altitude":39.43813705444336,"batterylevel":98.67999999999932,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.256","heading":134.6540985107422,"location":"51.23346553302316,6.815020583663738","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721885939","altitude":334.8570898199432,"batterylevel":99.88999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.939","heading":4.600817665178315,"location":"46.238622616223665,-108.56654125188464","motortemp":31.2,"powerconsumption":1.5,"speed":14,"status":"ok"}
+
+{"id":"1491724578618","altitude":0,"batterylevel":99.88999999999994,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.618","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727566242","altitude":39.59360122680664,"batterylevel":98.73999999999936,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.242","heading":0,"location":"51.23320300298431,6.814447867385977","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726695014","altitude":41.04906463623047,"batterylevel":99.36999999999968,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.014","heading":15.066385269165039,"location":"51.23160294659109,6.814320256661545","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726738127","altitude":40.6913948059082,"batterylevel":98.93999999999946,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.127","heading":22.728191375732422,"location":"51.231776254425924,6.81427040490786","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727585289","altitude":39.95585632324219,"batterylevel":98.54999999999926,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.289","heading":131.87423706054688,"location":"51.23329926294263,6.814801760564046","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727473120","altitude":39.95439910888672,"batterylevel":99.56999999999978,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.12","heading":185.59620666503906,"location":"51.23328158366499,6.814919889147598","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725024276","altitude":0,"batterylevel":99.49999999999974,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:03:00.276","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726779237","altitude":40.74260711669922,"batterylevel":98.52999999999925,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.237","heading":31.746963500976562,"location":"51.232315045596856,6.814604136355759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725792702","altitude":0,"batterylevel":100,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.702","heading":0,"location":"0,0","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491727479134","altitude":39.68696594238281,"batterylevel":99.50999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.134","heading":174.5430450439453,"location":"51.23341000060353,6.81467970652491","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727538350","altitude":40.09056091308594,"batterylevel":98.96999999999947,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.35","heading":202.3710479736328,"location":"51.23340458785921,6.814489286796382","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721892221","altitude":334.8901326974084,"batterylevel":99.64999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.221","heading":1.9804878140718336,"location":"46.75122699939201,-108.5670816621178","motortemp":36,"powerconsumption":7.5,"speed":59,"status":"ok"}
+
+{"id":"1491725804851","altitude":0,"batterylevel":99.87999999999994,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.851","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722222081","altitude":333.661891030637,"batterylevel":99.64999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.081","heading":2.237833257471153,"location":"46.656577502073795,-108.54826394907097","motortemp":35.1,"powerconsumption":6.375,"speed":50,"status":"ok"}
+
+{"id":"1491727429115","altitude":39.571136474609375,"batterylevel":99.93999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.115","heading":33.49028778076172,"location":"51.23320035901557,6.814286420826759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721883832","altitude":336.7946997986195,"batterylevel":99.96999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.832","heading":2.0570804021804725,"location":"46.00246837986613,-108.56155871645254","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726641870","altitude":42.251747131347656,"batterylevel":99.89999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.87","heading":14.364898681640625,"location":"51.23146366495713,6.813988392943615","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726800292","altitude":40.75143051147461,"batterylevel":98.31999999999914,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.292","heading":33.09878158569336,"location":"51.23274210159736,6.814838555343731","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726577866","altitude":41.68373489379883,"batterylevel":99.10999999999954,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.866","heading":0,"location":"51.231315915940385,6.814093945548198","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725025278","altitude":0,"batterylevel":99.48999999999974,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:03:00.278","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724587696","altitude":0,"batterylevel":99.7999999999999,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.696","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725964738","altitude":41.381343841552734,"batterylevel":99.85999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.738","heading":0,"location":"51.231423625017975,6.8141528355891055","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725653017","altitude":41.362831115722656,"batterylevel":100,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.017","heading":0,"location":"51.231472754937634,6.814203003725945","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491724585693","altitude":0,"batterylevel":99.81999999999991,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.693","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721888298","altitude":333.8473715876118,"batterylevel":99.7999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.298","heading":3.459360735741459,"location":"46.442914639176664,-108.5659526917846","motortemp":33,"powerconsumption":3.75,"speed":32,"status":"ok"}
+
+{"id":"1491727557400","altitude":39.61232376098633,"batterylevel":98.77999999999938,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.4","heading":51.5755615234375,"location":"51.23320397007066,6.814446625539999","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724595720","altitude":0,"batterylevel":99.73999999999987,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.72","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727539352","altitude":39.953983306884766,"batterylevel":98.95999999999947,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.352","heading":187.7375946044922,"location":"51.23323917960643,6.814313871770045","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726731108","altitude":40.71396255493164,"batterylevel":99.0099999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.108","heading":36.42670822143555,"location":"51.23189645965011,6.814300522608754","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727432124","altitude":39.67487716674805,"batterylevel":99.90999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.124","heading":34.013671875,"location":"51.23329867539898,6.814559437140656","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725796710","altitude":0,"batterylevel":99.95999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.71","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728292518","altitude":87,"batterylevel":99.7999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.518","heading":33.311483762606734,"location":"51.23132188,6.81420754","motortemp":30,"powerconsumption":0,"speed":0.2800000011920929,"status":"ok"}
+
+{"id":"1491727474123","altitude":39.95439910888672,"batterylevel":99.55999999999977,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.123","heading":170.8772735595703,"location":"51.23328158366499,6.814919889147598","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725959725","altitude":41.142189025878906,"batterylevel":99.90999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.725","heading":0,"location":"51.231454798303815,6.814260634434195","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727543363","altitude":39.8324089050293,"batterylevel":98.91999999999945,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.363","heading":142.39154052734375,"location":"51.233154424426665,6.814231502832017","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726778234","altitude":40.74260711669922,"batterylevel":98.53999999999925,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.234","heading":34.36996078491211,"location":"51.232315045596856,6.814604136355759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728290501","altitude":86,"batterylevel":99.81999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.501","heading":314.5088857500601,"location":"51.23129543,6.81423821","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724686153","altitude":0,"batterylevel":99.6099999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:58:00.153","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725997829","altitude":41.51945495605469,"batterylevel":99.52999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.829","heading":0,"location":"51.23142751871237,6.81417386862619","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726004851","altitude":41.541160583496094,"batterylevel":99.45999999999972,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.851","heading":0,"location":"51.23137361123847,6.8141522673253965","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728316609","altitude":77,"batterylevel":99.5999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.609","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491727443155","altitude":39.926513671875,"batterylevel":99.7999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.155","heading":72.62130737304688,"location":"51.23345664924842,6.814330481206634","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727425104","altitude":39.571136474609375,"batterylevel":99.97999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.104","heading":57.9912109375,"location":"51.23320035901557,6.814286420826759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727438140","altitude":39.73427200317383,"batterylevel":99.84999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.14","heading":56.911529541015625,"location":"51.23348292033703,6.814435851564027","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721892746","altitude":336.5417519921203,"batterylevel":99.62999999999981,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.746","heading":3.7581386250231144,"location":"46.8052210403803,-108.56583713300301","motortemp":35.8,"powerconsumption":7.25,"speed":57,"status":"ok"}
+
+{"id":"1491725666237","altitude":0,"batterylevel":99.96999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.237","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724690159","altitude":0,"batterylevel":99.5999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:58:00.159","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725793704","altitude":0,"batterylevel":99.99,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.704","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726790263","altitude":40.74528121948242,"batterylevel":98.41999999999919,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.263","heading":32.403289794921875,"location":"51.23238038854528,6.8146693229128","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726039936","altitude":41.66183090209961,"batterylevel":99.14999999999957,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.936","heading":0,"location":"51.231243865081005,6.814161077814618","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727450176","altitude":39.99609375,"batterylevel":99.72999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.176","heading":86.87020874023438,"location":"51.233966965007,6.814338363562779","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725998832","altitude":41.51567077636719,"batterylevel":99.51999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.832","heading":0,"location":"51.23142768004369,6.814174049082737","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727556398","altitude":39.646121978759766,"batterylevel":98.78999999999938,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.398","heading":53.551422119140625,"location":"51.23321113273016,6.814437578739432","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728273250","altitude":0,"batterylevel":99.99,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:57:00.25","heading":91.19474416196229,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725973764","altitude":41.32961654663086,"batterylevel":99.76999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.764","heading":0,"location":"51.23144446009337,6.814184884995628","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726709049","altitude":40.92579650878906,"batterylevel":99.2299999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.049","heading":49.43896484375,"location":"51.231799425491154,6.814361722646817","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728334585","altitude":77,"batterylevel":99.50999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.585","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491727409958","altitude":40.84440231323242,"batterylevel":98.13999999999905,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:43:00.958","heading":355.5562438964844,"location":"51.23291991013981,6.8147987411836155","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726708046","altitude":40.93534469604492,"batterylevel":99.23999999999961,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.046","heading":50.82887268066406,"location":"51.231782568663846,6.814264074714768","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727431121","altitude":39.6128044128418,"batterylevel":99.91999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.121","heading":35.38031005859375,"location":"51.23320309374413,6.814472819465801","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727620383","altitude":40.0468864440918,"batterylevel":98.19999999999908,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:47:00.383","heading":172.8209991455078,"location":"51.233246257233894,6.814775118142546","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727478132","altitude":39.67034149169922,"batterylevel":99.51999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.132","heading":163.47694396972656,"location":"51.23339615109884,6.814669672247179","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725799840","altitude":0,"batterylevel":99.92999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.84","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726666938","altitude":41.81172180175781,"batterylevel":99.64999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.938","heading":127.79908752441406,"location":"51.231365555368185,6.814081398663257","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726710052","altitude":40.9164924621582,"batterylevel":99.2199999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.052","heading":41.4820556640625,"location":"51.231790936452335,6.814299143224013","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727528324","altitude":40.02766036987305,"batterylevel":99.06999999999952,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.324","heading":268.0340576171875,"location":"51.233291690991415,6.814695061077722","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728282412","altitude":87,"batterylevel":99.89999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.412","heading":116.40145826181217,"location":"51.23129599,6.81425182","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727551384","altitude":39.883121490478516,"batterylevel":98.8399999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.384","heading":73.26565551757812,"location":"51.23324849391775,6.814382835340794","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722221818","altitude":332.2354630361453,"batterylevel":99.65999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.818","heading":2.1856698817236175,"location":"46.65003035052335,-108.54983116165305","motortemp":35.2,"powerconsumption":6.5,"speed":51,"status":"ok"}
+
+{"id":"1491725602670","altitude":41.35154342651367,"batterylevel":99.78999999999989,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.67","heading":0,"location":"51.23144002229399,6.814262749914171","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728296575","altitude":82,"batterylevel":99.75999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.575","heading":133.4485613168462,"location":"51.2313176,6.81414701","motortemp":30.015000000596046,"powerconsumption":0.01875000074505806,"speed":0.20000000298023224,"status":"ok"}
+
+{"id":"1491724584690","altitude":0,"batterylevel":99.82999999999991,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.69","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724579620","altitude":0,"batterylevel":99.87999999999994,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.62","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727609354","altitude":39.96581268310547,"batterylevel":98.30999999999914,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.354","heading":190.0850067138672,"location":"51.23330650814323,6.814763108126619","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725954715","altitude":41.21756362915039,"batterylevel":99.95999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.715","heading":0,"location":"51.231450231559045,6.814179612173297","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726732111","altitude":40.71396255493164,"batterylevel":98.99999999999949,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.111","heading":24.181968688964844,"location":"51.23189645965011,6.814300522608754","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726632846","altitude":42.330543518066406,"batterylevel":99.99,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.846","heading":9.043442726135254,"location":"51.23137560437449,6.814041723350909","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728291509","altitude":87,"batterylevel":99.8099999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.509","heading":344.81035876192664,"location":"51.23129172,6.81426922","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727426107","altitude":39.571136474609375,"batterylevel":99.96999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.107","heading":43.047332763671875,"location":"51.23320035901557,6.814286420826759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727471115","altitude":39.95912170410156,"batterylevel":99.58999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.115","heading":184.8189239501953,"location":"51.233281714730936,6.814919923690937","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725983791","altitude":41.55918502807617,"batterylevel":99.66999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.791","heading":0,"location":"51.23142109714289,6.814176098498228","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726755173","altitude":40.69541549682617,"batterylevel":98.76999999999937,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.173","heading":12.335061073303223,"location":"51.2320587259299,6.8145300250807646","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725801844","altitude":0,"batterylevel":99.90999999999995,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.844","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726670947","altitude":41.80489730834961,"batterylevel":99.6099999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.947","heading":65.05328369140625,"location":"51.23136536341889,6.814081007806838","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722217100","altitude":335.1336178401473,"batterylevel":99.83999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.1","heading":358.0555307174157,"location":"46.190759937606735,-108.54587600913021","motortemp":32.2,"powerconsumption":2.75,"speed":24,"status":"ok"}
+
+{"id":"1491725800842","altitude":0,"batterylevel":99.91999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.842","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727570251","altitude":39.466060638427734,"batterylevel":98.69999999999933,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.251","heading":204.4888916015625,"location":"51.23346553532079,6.815020591565054","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725797837","altitude":0,"batterylevel":99.94999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.837","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721890129","altitude":336.4609659864198,"batterylevel":99.72999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.129","heading":1.5488610815030224,"location":"46.595122481043504,-108.56684067792237","motortemp":34.4,"powerconsumption":5.5,"speed":46,"status":"ok"}
+
+{"id":"1491726010858","altitude":41.53369140625,"batterylevel":99.43999999999971,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.858","heading":0,"location":"51.23142298753567,6.814154017136523","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725978777","altitude":41.34943389892578,"batterylevel":99.71999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.777","heading":0,"location":"51.23144343751507,6.814204353235784","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726808333","altitude":40.82814025878906,"batterylevel":98.2399999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.333","heading":16.15313720703125,"location":"51.23292908361365,6.8148329660226885","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726645882","altitude":42.251747131347656,"batterylevel":99.85999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.882","heading":5.971347332000732,"location":"51.23146366495713,6.813988392943615","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727598322","altitude":40.10140609741211,"batterylevel":98.41999999999919,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.322","heading":192.36585998535156,"location":"51.23344245015352,6.814806497587372","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727477129","altitude":39.67034149169922,"batterylevel":99.52999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.129","heading":170.67047119140625,"location":"51.23339615109884,6.814669672247179","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725940549","altitude":41.44513702392578,"batterylevel":99.94999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:19:00.549","heading":0,"location":"51.23147112200745,6.814149992117917","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725956720","altitude":41.21226501464844,"batterylevel":99.93999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.72","heading":0,"location":"51.23145117242091,6.814179284119177","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727428113","altitude":39.571136474609375,"batterylevel":99.94999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.113","heading":34.64927291870117,"location":"51.23320035901557,6.814286420826759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725673249","altitude":0,"batterylevel":99.89999999999995,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.249","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724581625","altitude":0,"batterylevel":99.85999999999993,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.625","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726656911","altitude":42.00138473510742,"batterylevel":99.74999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.911","heading":32.124847412109375,"location":"51.23141162247919,6.814058742370689","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726753167","altitude":40.692745208740234,"batterylevel":98.78999999999938,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.167","heading":4.358561992645264,"location":"51.23206214668302,6.814551904199259","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727577269","altitude":39.521141052246094,"batterylevel":98.6299999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.269","heading":134.37826538085938,"location":"51.23331595142662,6.814695711970943","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724684866","altitude":0,"batterylevel":99.6199999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:58:00.866","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726032916","altitude":41.62052536010742,"batterylevel":99.2199999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.916","heading":0,"location":"51.231359015274876,6.814149269447768","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726721081","altitude":40.772003173828125,"batterylevel":99.10999999999954,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.081","heading":50.022212982177734,"location":"51.23184667475101,6.814365368434313","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725970755","altitude":41.31064224243164,"batterylevel":99.7999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.755","heading":0,"location":"51.231450452825065,6.814181714682549","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725654021","altitude":41.43252944946289,"batterylevel":99.99,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.021","heading":0,"location":"51.23144136303931,6.814166828186562","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725592644","altitude":41.21591567993164,"batterylevel":99.88999999999994,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.644","heading":0,"location":"51.23143219209896,6.814173930739382","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726558798","altitude":0,"batterylevel":99.89999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.798","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726634851","altitude":42.4550666809082,"batterylevel":99.96999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.851","heading":32.7757682800293,"location":"51.23139612576593,6.814001342203737","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728275286","altitude":86,"batterylevel":99.96999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:57:00.286","heading":91.35904530402159,"location":"51.23129225,6.81425189","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725986799","altitude":41.61756134033203,"batterylevel":99.63999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.799","heading":0,"location":"51.23141571404452,6.8141705696350625","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726786253","altitude":40.759620666503906,"batterylevel":98.45999999999921,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.253","heading":19.025108337402344,"location":"51.23259924087822,6.814799606872124","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725664233","altitude":0,"batterylevel":99.99,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.233","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727489162","altitude":39.87455368041992,"batterylevel":99.4099999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.162","heading":157.01988220214844,"location":"51.233588699099634,6.814861079384589","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722214994","altitude":338.10594897319686,"batterylevel":99.91999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.994","heading":358.6334305200392,"location":"45.967267155596716,-108.54991743300877","motortemp":30.6,"powerconsumption":0.75,"speed":8,"status":"ok"}
+
+{"id":"1491726782244","altitude":40.74260711669922,"batterylevel":98.49999999999923,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.244","heading":18.30657958984375,"location":"51.232315045596856,6.814604136355759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726742139","altitude":40.697322845458984,"batterylevel":98.89999999999944,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.139","heading":15.605533599853516,"location":"51.23201452680981,6.814244622879302","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725929023","altitude":41.4686279296875,"batterylevel":99.93999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:18:00.023","heading":0,"location":"51.231431804246334,6.814155356658892","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727434129","altitude":39.70860290527344,"batterylevel":99.88999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.129","heading":21.765830993652344,"location":"51.233343369277655,6.814671923772992","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722218149","altitude":335.76111945421206,"batterylevel":99.7999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.149","heading":359.9857818985005,"location":"46.26595748133582,-108.54631575134826","motortemp":33,"powerconsumption":3.75,"speed":32,"status":"ok"}
+
+{"id":"1491726785251","altitude":40.74260711669922,"batterylevel":98.46999999999922,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.251","heading":17.036834716796875,"location":"51.232315045596856,6.814604136355759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721884626","altitude":339.3510358987624,"batterylevel":99.93999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.626","heading":3.421831255515099,"location":"46.102595256432124,-108.56398450133281","motortemp":30.2,"powerconsumption":0.25,"speed":4,"status":"ok"}
+
+{"id":"1491725153197","altitude":0,"batterylevel":99.99,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:05:00.197","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724573609","altitude":0,"batterylevel":99.93999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.609","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726674957","altitude":41.59955596923828,"batterylevel":99.56999999999978,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.957","heading":109.2213134765625,"location":"51.23140593053872,6.8141611323097395","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726743141","altitude":40.702430725097656,"batterylevel":98.88999999999943,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.141","heading":22.343353271484375,"location":"51.2320181765298,6.814245203075849","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726560803","altitude":0,"batterylevel":99.87999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.803","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725989807","altitude":41.40682601928711,"batterylevel":99.6099999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.807","heading":0,"location":"51.23143284204698,6.814189415698189","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727486153","altitude":39.778892517089844,"batterylevel":99.43999999999971,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.153","heading":179.208251953125,"location":"51.23363847182605,6.815070394885547","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728305860","altitude":77,"batterylevel":99.66999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.86","heading":116.52809388828364,"location":"51.23127428,6.81430666","motortemp":30.152999997138977,"powerconsumption":0.1912499964237213,"speed":1.6100000143051147,"status":"ok"}
+
+{"id":"1491725802846","altitude":0,"batterylevel":99.89999999999995,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.846","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727482143","altitude":39.702125549316406,"batterylevel":99.47999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.143","heading":181.04281616210938,"location":"51.23344397417993,6.814715443140205","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726703034","altitude":40.97526550292969,"batterylevel":99.28999999999964,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.034","heading":0.7435889840126038,"location":"51.231734866004004,6.814425682099782","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727448170","altitude":39.95124053955078,"batterylevel":99.74999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.17","heading":61.88226318359375,"location":"51.233744603095616,6.814522824275426","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726677967","altitude":41.369361877441406,"batterylevel":99.53999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.967","heading":55.080528259277344,"location":"51.23150915166494,6.814216193256873","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721891434","altitude":335.6828777034851,"batterylevel":99.67999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.434","heading":1.5276876379517377,"location":"46.671656670039354,-108.56673035860669","motortemp":35.4,"powerconsumption":6.75,"speed":56,"status":"ok"}
+
+{"id":"1491721883306","altitude":338.9224796440308,"batterylevel":99.99,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.306","heading":0.6612720138129475,"location":"45.915532077829404,-108.5608828523003","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725596654","altitude":41.220069885253906,"batterylevel":99.84999999999992,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.654","heading":0,"location":"51.231436571865096,6.814225197714937","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727470113","altitude":39.977718353271484,"batterylevel":99.5999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.113","heading":195.99920654296875,"location":"51.233301950166435,6.814921231150416","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726813345","altitude":40.83686065673828,"batterylevel":98.18999999999907,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.345","heading":13.437249183654785,"location":"51.232850832092176,6.814779250344274","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727498187","altitude":39.8222770690918,"batterylevel":99.31999999999965,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.187","heading":190.7740936279297,"location":"51.233322578424,6.81458384888309","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721885679","altitude":334.19090145448604,"batterylevel":99.89999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.679","heading":3.9090836174381343,"location":"46.1952516325442,-108.56630186067646","motortemp":31,"powerconsumption":1.25,"speed":12,"status":"ok"}
+
+{"id":"1491721889608","altitude":334.2045454127442,"batterylevel":99.74999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.608","heading":2.93890724723755,"location":"46.57237430327025,-108.56794448444562","motortemp":34,"powerconsumption":5,"speed":42,"status":"ok"}
+
+{"id":"1491722218675","altitude":338.978521248774,"batterylevel":99.77999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.675","heading":1.184870681448382,"location":"46.31992516012274,-108.54702264115546","motortemp":33.4,"powerconsumption":4.25,"speed":36,"status":"ok"}
+
+{"id":"1491724666299","altitude":0,"batterylevel":99.68999999999984,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:57:00.299","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726719075","altitude":40.78083038330078,"batterylevel":99.12999999999955,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.075","heading":53.142974853515625,"location":"51.231851344520386,6.814344962741422","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722218935","altitude":339.05882131239827,"batterylevel":99.76999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.935","heading":1.472579966791097,"location":"46.325485611692315,-108.54540474734355","motortemp":33.6,"powerconsumption":4.5,"speed":38,"status":"ok"}
+
+{"id":"1491727440147","altitude":39.822105407714844,"batterylevel":99.82999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.147","heading":88.89422607421875,"location":"51.23362983230969,6.814264741138396","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726669944","altitude":41.80630111694336,"batterylevel":99.6199999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.944","heading":35.77143478393555,"location":"51.231365346441635,6.814081047795356","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726001841","altitude":41.520015716552734,"batterylevel":99.48999999999974,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.841","heading":0,"location":"51.23138315298549,6.814153212477399","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728314600","altitude":77,"batterylevel":99.6099999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.6","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491727487156","altitude":39.84355926513672,"batterylevel":99.42999999999971,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.156","heading":168.78097534179688,"location":"51.233587183892325,6.815069440074733","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725805855","altitude":0,"batterylevel":99.86999999999993,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.855","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721893791","altitude":335.6565438543765,"batterylevel":99.58999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.791","heading":3.187251906004942,"location":"46.88737633034782,-108.56764152132027","motortemp":35.4,"powerconsumption":6.75,"speed":53,"status":"ok"}
+
+{"id":"1491725640515","altitude":41.2832145690918,"batterylevel":99.66999999999983,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.515","heading":0,"location":"51.23144217352654,6.8142616042383235","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725676255","altitude":0,"batterylevel":99.86999999999993,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.255","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726020885","altitude":41.494407653808594,"batterylevel":99.33999999999966,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.885","heading":0,"location":"51.231380808094094,6.81418902204303","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726775225","altitude":40.73197937011719,"batterylevel":98.56999999999927,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.225","heading":20.400421142578125,"location":"51.23231658144965,6.8146013114923765","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726776228","altitude":40.73197937011719,"batterylevel":98.55999999999926,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.228","heading":29.675140380859375,"location":"51.23231658144965,6.8146013114923765","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725587633","altitude":41.22593307495117,"batterylevel":99.93999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.633","heading":0,"location":"51.23144118762386,6.814196726514485","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726734117","altitude":40.71744155883789,"batterylevel":98.97999999999948,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.117","heading":24.07929801940918,"location":"51.231796623870224,6.814301268453402","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726798286","altitude":40.74528121948242,"batterylevel":98.33999999999915,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.286","heading":30.740142822265625,"location":"51.23238038854528,6.8146693229128","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728280360","altitude":87,"batterylevel":99.91999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.36","heading":91.59759017283072,"location":"51.23129506,6.81425379","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727597320","altitude":40.10140609741211,"batterylevel":98.4299999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.32","heading":191.9735107421875,"location":"51.23344245015352,6.814806497587372","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721883570","altitude":337.50657681684777,"batterylevel":99.97999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.57","heading":1.3476234170995627,"location":"45.95835741755064,-108.56126081590426","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725585628","altitude":41.362266540527344,"batterylevel":99.95999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.628","heading":0,"location":"51.231441007028735,6.814136333999311","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728279342","altitude":87,"batterylevel":99.92999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:57:00.342","heading":91.37226822811343,"location":"51.2312946,6.81425292","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727541357","altitude":39.8875617980957,"batterylevel":98.93999999999946,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.357","heading":175.93218994140625,"location":"51.233218029842405,6.814347511296088","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726013866","altitude":41.465972900390625,"batterylevel":99.4099999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.866","heading":0,"location":"51.231463957930565,6.814170564387992","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727567244","altitude":39.668304443359375,"batterylevel":98.72999999999935,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.244","heading":253.65594482421875,"location":"51.23327169017777,6.814622242292658","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726766202","altitude":40.70362854003906,"batterylevel":98.65999999999931,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.202","heading":20.32160186767578,"location":"51.23206909448608,6.814551248657871","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725650549","altitude":41.36989974975586,"batterylevel":99.56999999999978,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.549","heading":0,"location":"51.23147940235941,6.814202538893713","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726028907","altitude":41.510093688964844,"batterylevel":99.25999999999962,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.907","heading":0,"location":"51.231362189374565,6.814148406944332","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725645535","altitude":41.32528305053711,"batterylevel":99.6199999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.535","heading":0,"location":"51.23141781427886,6.814171549409946","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726027904","altitude":41.508872985839844,"batterylevel":99.26999999999963,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.904","heading":0,"location":"51.2313621838711,6.814148419211118","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726679971","altitude":41.3222541809082,"batterylevel":99.51999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.971","heading":10.668741226196289,"location":"51.231430597884554,6.814221243406194","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726781241","altitude":40.74260711669922,"batterylevel":98.50999999999924,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.241","heading":24.487648010253906,"location":"51.232315045596856,6.814604136355759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726763193","altitude":40.70479965209961,"batterylevel":98.68999999999933,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.193","heading":29.212142944335938,"location":"51.23207626736329,6.814553535143708","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722217886","altitude":336.91124424419115,"batterylevel":99.8099999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.886","heading":359.08812083179157,"location":"46.25841428146485,-108.54756987273062","motortemp":32.8,"powerconsumption":3.5,"speed":30,"status":"ok"}
+
+{"id":"1491724681691","altitude":0,"batterylevel":99.63999999999982,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:58:00.691","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727500192","altitude":39.81863784790039,"batterylevel":99.29999999999964,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.192","heading":198.82916259765625,"location":"51.23335805222414,6.814740152102328","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724680554","altitude":0,"batterylevel":99.64999999999982,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:58:00.554","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725955718","altitude":41.21372985839844,"batterylevel":99.94999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.718","heading":0,"location":"51.23145104414368,6.8141793646873365","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725657027","altitude":41.465972900390625,"batterylevel":99.95999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.027","heading":0,"location":"51.23143171540543,6.814155288155357","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721894053","altitude":336.08185198108094,"batterylevel":99.57999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.053","heading":3.799208539629486,"location":"46.92464815048808,-108.56796699694445","motortemp":35.3,"powerconsumption":6.625,"speed":52,"status":"ok"}
+
+{"id":"1491725671245","altitude":0,"batterylevel":99.91999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.245","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726770212","altitude":40.70362854003906,"batterylevel":98.6199999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.212","heading":10.82580852508545,"location":"51.23206909448608,6.814551248657871","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727505206","altitude":39.91560363769531,"batterylevel":99.24999999999962,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.206","heading":241.88693237304688,"location":"51.233348150898884,6.814762261794582","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727624394","altitude":40.03998565673828,"batterylevel":98.15999999999906,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:47:00.394","heading":242.82278442382812,"location":"51.23333806963547,6.814807960563438","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725647541","altitude":41.348670959472656,"batterylevel":99.5999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.541","heading":0,"location":"51.2314164696523,6.814170211949708","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724575612","altitude":0,"batterylevel":99.91999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.612","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727537347","altitude":40.09056091308594,"batterylevel":98.97999999999948,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.347","heading":207.7400360107422,"location":"51.23340458785921,6.814489286796382","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725967747","altitude":41.25458526611328,"batterylevel":99.82999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.747","heading":0,"location":"51.231489417980704,6.814241498990964","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727494175","altitude":39.923683166503906,"batterylevel":99.35999999999967,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.175","heading":187.80226135253906,"location":"51.233353266901524,6.8145443576877724","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727507211","altitude":39.935142517089844,"batterylevel":99.2299999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.211","heading":253.75796508789062,"location":"51.233286702135956,6.8146097292174845","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728324599","altitude":77,"batterylevel":99.55999999999977,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.599","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491725928018","altitude":41.4686279296875,"batterylevel":99.94999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:18:00.018","heading":0,"location":"51.231431804246334,6.814155356658892","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726780239","altitude":40.74260711669922,"batterylevel":98.51999999999924,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.239","heading":27.139522552490234,"location":"51.232315045596856,6.814604136355759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726783246","altitude":40.74260711669922,"batterylevel":98.48999999999923,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.246","heading":357.90850830078125,"location":"51.232315045596856,6.814604136355759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722217361","altitude":336.8212542149855,"batterylevel":99.82999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.361","heading":358.68103440517166,"location":"46.235406879960266,-108.54620876792698","motortemp":32.4,"powerconsumption":3,"speed":26,"status":"ok"}
+
+{"id":"1491727622387","altitude":40.0468864440918,"batterylevel":98.17999999999907,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:47:00.387","heading":173.95306396484375,"location":"51.233246257233894,6.814775118142546","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728281376","altitude":87,"batterylevel":99.90999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.376","heading":158.85034850498994,"location":"51.23129599,6.81425182","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726676963","altitude":41.369361877441406,"batterylevel":99.54999999999977,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.963","heading":79.6856918334961,"location":"51.23150915166494,6.814216193256873","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726716067","altitude":40.83553695678711,"batterylevel":99.15999999999957,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.067","heading":43.835296630859375,"location":"51.231864002006915,6.81441453462218","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727548376","altitude":39.8616828918457,"batterylevel":98.86999999999942,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.376","heading":110.60132598876953,"location":"51.23324266191483,6.814285662374403","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725678259","altitude":0,"batterylevel":99.84999999999992,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.259","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721887772","altitude":331.0304576473391,"batterylevel":99.81999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.772","heading":4.135366449805915,"location":"46.344778447757356,-108.56675690846956","motortemp":32.6,"powerconsumption":3.25,"speed":28,"status":"ok"}
+
+{"id":"1491727476127","altitude":39.64267349243164,"batterylevel":99.53999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.127","heading":178.08924865722656,"location":"51.23324590159322,6.814427371126471","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724572607","altitude":0,"batterylevel":99.94999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.607","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727517241","altitude":40.02591323852539,"batterylevel":99.12999999999955,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.241","heading":232.2488555908203,"location":"51.23339523220629,6.814406755023975","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727610356","altitude":40.00320053100586,"batterylevel":98.29999999999913,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.356","heading":197.76966857910156,"location":"51.23325424679376,6.814745142946613","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728283415","altitude":87,"batterylevel":99.88999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.415","heading":105.94761177652333,"location":"51.23129587,6.81424939","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725665235","altitude":0,"batterylevel":99.97999999999999,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.235","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727433127","altitude":39.70860290527344,"batterylevel":99.89999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.127","heading":29.30255126953125,"location":"51.233343369277655,6.814671923772992","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725606682","altitude":41.319522857666016,"batterylevel":99.74999999999987,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.682","heading":0,"location":"51.231446314444824,6.814231758960698","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724592689","altitude":0,"batterylevel":99.75999999999988,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.689","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727508214","altitude":39.935142517089844,"batterylevel":99.2199999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.214","heading":265.7364501953125,"location":"51.233286702135956,6.8146097292174845","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727515234","altitude":40.02712631225586,"batterylevel":99.14999999999957,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.234","heading":240.53799438476562,"location":"51.23336663169484,6.814415356029145","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726772219","altitude":40.70362854003906,"batterylevel":98.59999999999928,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.219","heading":23.068511962890625,"location":"51.23206909448608,6.814551248657871","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726700026","altitude":40.99299621582031,"batterylevel":99.31999999999965,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.026","heading":15.587501525878906,"location":"51.23171282126908,6.814484421486238","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726040938","altitude":41.66183090209961,"batterylevel":99.13999999999956,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.938","heading":0,"location":"51.231243865081005,6.814161077814618","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726549771","altitude":0,"batterylevel":99.99,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.771","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725950700","altitude":41.445194244384766,"batterylevel":100,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.7","heading":0,"location":"51.23147101613354,6.8141502984835265","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491725610693","altitude":41.28902816772461,"batterylevel":99.70999999999985,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.693","heading":0,"location":"51.23144760873988,6.814231430273304","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727587294","altitude":40.02915954589844,"batterylevel":98.52999999999925,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.294","heading":163.4967498779297,"location":"51.233267608933986,6.814780276123852","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726015872","altitude":41.373207092285156,"batterylevel":99.38999999999969,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.872","heading":0,"location":"51.231467116649746,6.814179102514547","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728293522","altitude":84,"batterylevel":99.78999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.522","heading":64.93354038603982,"location":"51.23130825,6.81422546","motortemp":30.02800000011921,"powerconsumption":0.03500000014901161,"speed":0.5600000023841858,"status":"ok"}
+
+{"id":"1491725600665","altitude":41.32161331176758,"batterylevel":99.8099999999999,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.665","heading":0,"location":"51.23143924268524,6.814260497171744","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726773221","altitude":40.70362854003906,"batterylevel":98.58999999999928,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.221","heading":24.5638427734375,"location":"51.23206909448608,6.814551248657871","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722216312","altitude":337.69974721316873,"batterylevel":99.86999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.312","heading":357.84295145018746,"location":"46.123024767410605,-108.54694750437368","motortemp":31.6,"powerconsumption":2,"speed":18,"status":"ok"}
+
+{"id":"1491721897418","altitude":336.1511750442548,"batterylevel":99.46999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.418","heading":9.472958583700303,"location":"47.1731752682631,-108.56921953395958","motortemp":34.2,"powerconsumption":5.25,"speed":41,"status":"ok"}
+
+{"id":"1491726749156","altitude":40.70804214477539,"batterylevel":98.8299999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.156","heading":30.310274124145508,"location":"51.23199234080398,6.814464158979951","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727533337","altitude":40.13945007324219,"batterylevel":99.0199999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.337","heading":238.81008911132812,"location":"51.23364663259885,6.814747890686785","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726806327","altitude":40.82814025878906,"batterylevel":98.25999999999911,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.327","heading":12.15709400177002,"location":"51.23292908361365,6.8148329660226885","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721897679","altitude":336.6438593285801,"batterylevel":99.45999999999972,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.679","heading":9.218562462149723,"location":"47.1907038539147,-108.57099896043489","motortemp":34.1,"powerconsumption":5.125,"speed":40,"status":"ok"}
+
+{"id":"1491725958724","altitude":41.257320404052734,"batterylevel":99.91999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.724","heading":0,"location":"51.23138430631644,6.814197485809957","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726810338","altitude":40.82814025878906,"batterylevel":98.21999999999909,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.338","heading":5.842188358306885,"location":"51.23292908361365,6.8148329660226885","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725960728","altitude":41.03754425048828,"batterylevel":99.89999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.728","heading":0,"location":"51.231467050259376,6.8142715594973975","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727579274","altitude":39.65256118774414,"batterylevel":98.60999999999929,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.274","heading":125.5130615234375,"location":"51.23329427763896,6.814643253695931","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727536345","altitude":40.174560546875,"batterylevel":98.98999999999948,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.345","heading":196.4869842529297,"location":"51.2336465299574,6.8147478101666845","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728274263","altitude":87,"batterylevel":99.97999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:57:00.263","heading":91.40923230034365,"location":"51.23129169,6.81425413","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725594649","altitude":41.22114181518555,"batterylevel":99.86999999999993,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.649","heading":0,"location":"51.23143662213466,6.814225116770607","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725972761","altitude":41.32121276855469,"batterylevel":99.77999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.761","heading":0,"location":"51.2314450175429,6.814184590089303","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725930026","altitude":41.40413284301758,"batterylevel":99.92999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:18:00.026","heading":0,"location":"51.231360421285935,6.81414942754881","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725937540","altitude":41.43764877319336,"batterylevel":99.97999999999999,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:18:00.54","heading":0,"location":"51.2314653426562,6.814152089037918","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725649546","altitude":41.375633239746094,"batterylevel":99.57999999999979,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.546","heading":0,"location":"51.23151796928936,6.814202063809028","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725642528","altitude":41.2150993347168,"batterylevel":99.64999999999982,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.528","heading":0,"location":"51.231493735530755,6.814259145767842","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727560408","altitude":39.59360122680664,"batterylevel":98.74999999999936,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.408","heading":205.0865020751953,"location":"51.23320300298431,6.814447867385977","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727574262","altitude":39.41611862182617,"batterylevel":98.65999999999931,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.262","heading":101.92874145507812,"location":"51.233465436941636,6.815020369556607","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727512226","altitude":40.028995513916016,"batterylevel":99.17999999999958,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.226","heading":271.7902526855469,"location":"51.23321058874491,6.814467411391701","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727495178","altitude":39.85316467285156,"batterylevel":99.34999999999967,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.178","heading":172.13406372070312,"location":"51.233327754515805,6.8145769966932574","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727493172","altitude":39.923683166503906,"batterylevel":99.36999999999968,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.172","heading":164.96917724609375,"location":"51.233353266901524,6.8145443576877724","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728297597","altitude":79,"batterylevel":99.74999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.597","heading":118.89296214139534,"location":"51.23130878,6.81410446","motortemp":30.020000000298023,"powerconsumption":0.02500000037252903,"speed":0.5199999809265137,"status":"ok"}
+
+{"id":"1491726023893","altitude":41.46195602416992,"batterylevel":99.30999999999965,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.893","heading":0,"location":"51.23138114260497,6.8141896679603","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726633848","altitude":42.4550666809082,"batterylevel":99.97999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.848","heading":29.542327880859375,"location":"51.23139612576593,6.814001342203737","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722215525","altitude":337.6440701892325,"batterylevel":99.89999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.525","heading":358.086439866527,"location":"46.04739085158605,-108.5491136070539","motortemp":31,"powerconsumption":1.25,"speed":12,"status":"ok"}
+
+{"id":"1491727488160","altitude":39.84355926513672,"batterylevel":99.4199999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.16","heading":179.3032684326172,"location":"51.233587183892325,6.815069440074733","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728285424","altitude":87,"batterylevel":99.86999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.424","heading":101.33953069430804,"location":"51.23129567,6.81424898","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721894314","altitude":335.59038851172437,"batterylevel":99.56999999999978,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.314","heading":4.606365686818165,"location":"46.962700843167866,-108.56748277886963","motortemp":35.2,"powerconsumption":6.5,"speed":51,"status":"ok"}
+
+{"id":"1491726761188","altitude":40.70757293701172,"batterylevel":98.70999999999934,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.188","heading":31.67329216003418,"location":"51.23205729333587,6.814525545140588","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726729104","altitude":40.715110778808594,"batterylevel":99.0299999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.104","heading":18.64261817932129,"location":"51.231896218623596,6.814298828897072","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726693009","altitude":41.04612731933594,"batterylevel":99.38999999999969,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.009","heading":16.305877685546875,"location":"51.23160232854843,6.814319615686201","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727466105","altitude":39.99609375,"batterylevel":99.63999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.105","heading":141.13453674316406,"location":"51.23410557456661,6.8143224322446745","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725981786","altitude":41.3463249206543,"batterylevel":99.68999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.786","heading":0,"location":"51.231443277438714,6.814204981876823","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727435132","altitude":39.70860290527344,"batterylevel":99.87999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.132","heading":10.397216796875,"location":"51.233343369277655,6.814671923772992","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722219457","altitude":337.8128704601284,"batterylevel":99.74999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.457","heading":2.4981312620303338,"location":"46.39226941058086,-108.54625837057858","motortemp":34,"powerconsumption":5,"speed":42,"status":"ok"}
+
+{"id":"1491728286453","altitude":87,"batterylevel":99.85999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.453","heading":127.8006270512695,"location":"51.23129472,6.81424931","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727439145","altitude":39.73427200317383,"batterylevel":99.83999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.145","heading":74.49674987792969,"location":"51.23348292033703,6.814435851564027","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726692006","altitude":41.043209075927734,"batterylevel":99.3999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.006","heading":24.62471580505371,"location":"51.23160224399594,6.814319320027987","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727614368","altitude":40.031307220458984,"batterylevel":98.25999999999911,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.368","heading":178.4552001953125,"location":"51.23326723036142,6.814782935266589","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727445161","altitude":39.926513671875,"batterylevel":99.77999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.161","heading":65.73779296875,"location":"51.23345664924842,6.814330481206634","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724628546","altitude":0,"batterylevel":99.69999999999985,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:57:00.546","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725957721","altitude":41.211692810058594,"batterylevel":99.92999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.721","heading":0,"location":"51.23145121990639,6.814179233445874","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728295555","altitude":83,"batterylevel":99.76999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.555","heading":110.44506192870132,"location":"51.23130568,6.81419355","motortemp":30.080000001192094,"powerconsumption":0.10000000149011612,"speed":0.15000000596046448,"status":"ok"}
+
+{"id":"1491727467107","altitude":40.02350616455078,"batterylevel":99.62999999999981,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.107","heading":165.07540893554688,"location":"51.233961073089034,6.8149466991061765","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726758181","altitude":40.70005416870117,"batterylevel":98.73999999999936,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.181","heading":24.853090286254883,"location":"51.23205792000266,6.814526813837635","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727594312","altitude":40.09527587890625,"batterylevel":98.45999999999921,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.312","heading":206.32826232910156,"location":"51.233598107282425,6.814922809666421","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724945454","altitude":0,"batterylevel":99.51999999999975,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:02:00.454","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726735120","altitude":40.71744155883789,"batterylevel":98.96999999999947,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.12","heading":66.92752075195312,"location":"51.231796623870224,6.814301268453402","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726003847","altitude":41.53655242919922,"batterylevel":99.46999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.847","heading":0,"location":"51.231373703738186,6.814152276487899","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726683983","altitude":41.12566375732422,"batterylevel":99.47999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.983","heading":12.57791519165039,"location":"51.231519570639115,6.814261058123224","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721886725","altitude":332.8242794763003,"batterylevel":99.85999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.725","heading":4.634407914255894,"location":"46.27476902056277,-108.56611798740796","motortemp":31.8,"powerconsumption":2.25,"speed":20,"status":"ok"}
+
+{"id":"1491726668942","altitude":41.808433532714844,"batterylevel":99.62999999999981,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.942","heading":25.990699768066406,"location":"51.23136534523568,6.8140811057372","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726691004","altitude":41.043209075927734,"batterylevel":99.4099999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.004","heading":22.573692321777344,"location":"51.23160224399594,6.814319320027987","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727447166","altitude":39.93507385253906,"batterylevel":99.75999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.166","heading":59.393218994140625,"location":"51.23362420143841,6.814406669904171","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722221557","altitude":331.58004515903593,"batterylevel":99.66999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.557","heading":1.4262390572181647,"location":"46.623925552727606,-108.55128268342469","motortemp":35.3,"powerconsumption":6.625,"speed":52,"status":"ok"}
+
+{"id":"1491725968750","altitude":41.246456146240234,"batterylevel":99.81999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.75","heading":0,"location":"51.23148953688958,6.814241745993088","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726762190","altitude":40.70610427856445,"batterylevel":98.69999999999933,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.19","heading":27.943435668945312,"location":"51.23211277432995,6.814565002305954","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727592306","altitude":40.103511810302734,"batterylevel":98.47999999999922,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.306","heading":62.493377685546875,"location":"51.23346457225601,6.814878810458331","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727503199","altitude":39.900726318359375,"batterylevel":99.26999999999963,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.199","heading":242.44700622558594,"location":"51.23334976234073,6.814764299701816","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726723087","altitude":40.742271423339844,"batterylevel":99.08999999999953,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.087","heading":29.6065731048584,"location":"51.23184614477188,6.814354963629688","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726658916","altitude":41.90750503540039,"batterylevel":99.72999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.916","heading":351.78436279296875,"location":"51.23140239563592,6.814085527021791","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721897939","altitude":338.4271135808193,"batterylevel":99.44999999999972,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.939","heading":9.021671074894282,"location":"47.21177475016189,-108.56975224669546","motortemp":34,"powerconsumption":5,"speed":39,"status":"ok"}
+
+{"id":"1491725936538","altitude":41.43764877319336,"batterylevel":99.99,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:18:00.538","heading":0,"location":"51.2314653426562,6.814152089037918","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728301655","altitude":80,"batterylevel":99.70999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.655","heading":139.03442386761841,"location":"51.23134071,6.81419314","motortemp":30.020999999344347,"powerconsumption":0.026249999180436134,"speed":1.9500000476837158,"status":"ok"}
+
+{"id":"1491728336592","altitude":77,"batterylevel":99.49999999999974,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.592","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491726552783","altitude":0,"batterylevel":99.95999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.783","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727532335","altitude":40.12272644042969,"batterylevel":99.0299999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.335","heading":239.0039825439453,"location":"51.23364506284934,6.814747299779265","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727484148","altitude":39.71442794799805,"batterylevel":99.45999999999972,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.148","heading":194.11532592773438,"location":"51.23353540463106,6.814887039948798","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726811340","altitude":40.82814025878906,"batterylevel":98.20999999999908,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.34","heading":17.62763786315918,"location":"51.23292908361365,6.8148329660226885","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721889082","altitude":335.74682536720985,"batterylevel":99.76999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.082","heading":3.992112683361331,"location":"46.52996157542606,-108.56766790158939","motortemp":33.6,"powerconsumption":4.5,"speed":38,"status":"ok"}
+
+{"id":"1491724716016","altitude":0,"batterylevel":99.56999999999978,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:58:00.016","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726639865","altitude":42.12810516357422,"batterylevel":99.91999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.865","heading":275.5768737792969,"location":"51.23142010732908,6.8140284363809425","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726646885","altitude":41.61234664916992,"batterylevel":99.84999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.885","heading":319.55072021484375,"location":"51.23144261178162,6.814075328763379","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725808806","altitude":0,"batterylevel":99.84999999999992,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.806","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726021888","altitude":41.47370910644531,"batterylevel":99.32999999999966,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.888","heading":0,"location":"51.23138080845655,6.814189550474873","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727576266","altitude":39.4437370300293,"batterylevel":98.6399999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.266","heading":159.48580932617188,"location":"51.23339278778116,6.81487315816651","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726644879","altitude":42.251747131347656,"batterylevel":99.86999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.879","heading":23.62769889831543,"location":"51.23146366495713,6.813988392943615","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727469111","altitude":40.00124740600586,"batterylevel":99.6099999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.111","heading":168.1388397216797,"location":"51.23341520616385,6.814927323370924","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726796280","altitude":40.74528121948242,"batterylevel":98.35999999999916,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.28","heading":349.019775390625,"location":"51.23238038854528,6.8146693229128","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724677548","altitude":0,"batterylevel":99.67999999999984,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:57:00.548","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728294539","altitude":84,"batterylevel":99.77999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.539","heading":100.22307029551034,"location":"51.23129426,6.81428584","motortemp":30.05600000023842,"powerconsumption":0.07000000029802322,"speed":0.800000011920929,"status":"ok"}
+
+{"id":"1491724586695","altitude":0,"batterylevel":99.8099999999999,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.695","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726720078","altitude":40.772003173828125,"batterylevel":99.11999999999955,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.078","heading":52.0855712890625,"location":"51.23184667475101,6.814365368434313","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725952706","altitude":41.28413391113281,"batterylevel":99.97999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.706","heading":0,"location":"51.23138230454882,6.8141920854144145","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725605679","altitude":41.319522857666016,"batterylevel":99.75999999999988,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.679","heading":0,"location":"51.231446314444824,6.814231758960698","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722213398","altitude":341.45891688215903,"batterylevel":99.97999999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.398","heading":359.9855028448125,"location":"45.7743808085592,-108.5471096068355","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726784248","altitude":40.74260711669922,"batterylevel":98.47999999999922,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.248","heading":359.46405029296875,"location":"51.232315045596856,6.814604136355759","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726675960","altitude":41.54000473022461,"batterylevel":99.55999999999977,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.96","heading":62.043060302734375,"location":"51.23140780325232,6.814161786749897","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728288476","altitude":86,"batterylevel":99.83999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.476","heading":244.41428453932429,"location":"51.23129617,6.81423534","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725941550","altitude":41.4451789855957,"batterylevel":99.93999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:19:00.55","heading":0,"location":"51.231471063569415,6.814150164360678","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727514230","altitude":40.028324127197266,"batterylevel":99.15999999999957,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.23","heading":241.96856689453125,"location":"51.233291674522036,6.8144325496949705","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726727099","altitude":40.71763229370117,"batterylevel":99.04999999999951,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.099","heading":18.46776580810547,"location":"51.231878243039006,6.814225732519455","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722213664","altitude":341.0411871992178,"batterylevel":99.96999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.664","heading":359.0326315273094,"location":"45.79652230404884,-108.54836263721253","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725984794","altitude":41.593910217285156,"batterylevel":99.65999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.794","heading":0,"location":"51.2314161557283,6.81417101645288","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726648891","altitude":42.151832580566406,"batterylevel":99.82999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.891","heading":273.70428466796875,"location":"51.23141806689794,6.814042326735521","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727497184","altitude":39.8222770690918,"batterylevel":99.32999999999966,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.184","heading":186.31771850585938,"location":"51.233322578424,6.81458384888309","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726714062","altitude":40.89063262939453,"batterylevel":99.17999999999958,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.062","heading":45.414031982421875,"location":"51.23180955223138,6.814336379486205","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724570604","altitude":0,"batterylevel":99.96999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.604","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727483145","altitude":39.71442794799805,"batterylevel":99.46999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.145","heading":202.25741577148438,"location":"51.23353540463106,6.814887039948798","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727485151","altitude":39.74692153930664,"batterylevel":99.44999999999972,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.151","heading":178.87974548339844,"location":"51.233622361022384,6.815048232263118","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724582627","altitude":0,"batterylevel":99.84999999999992,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.627","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726688996","altitude":41.03240966796875,"batterylevel":99.42999999999971,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.996","heading":8.798868179321289,"location":"51.23157234144505,6.814269338153137","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721893530","altitude":336.9817882354822,"batterylevel":99.5999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.53","heading":3.368949718991111,"location":"46.88135518408156,-108.56621122868171","motortemp":35.5,"powerconsumption":6.875,"speed":54,"status":"ok"}
+
+{"id":"1491726626708","altitude":42.39240264892578,"batterylevel":99.07999999999953,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.708","heading":0,"location":"51.23142600675434,6.8138810600947854","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727446163","altitude":39.926513671875,"batterylevel":99.76999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.163","heading":62.51628112792969,"location":"51.23345664924842,6.814330481206634","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725595652","altitude":41.22114181518555,"batterylevel":99.85999999999993,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.652","heading":0,"location":"51.23143662213466,6.814225116770607","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721891699","altitude":335.4916156582438,"batterylevel":99.66999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.699","heading":2.4989059378044263,"location":"46.70069293689911,-108.56594161606066","motortemp":35.6,"powerconsumption":7,"speed":58,"status":"ok"}
+
+{"id":"1491726752164","altitude":40.68844985961914,"batterylevel":98.79999999999939,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.164","heading":25.519237518310547,"location":"51.2319713244177,6.814541439391769","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726747151","altitude":40.706764221191406,"batterylevel":98.84999999999941,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.151","heading":32.07611083984375,"location":"51.23191193233234,6.814415047839119","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726706040","altitude":40.9586296081543,"batterylevel":99.25999999999962,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.04","heading":299.4262390136719,"location":"51.231754019962125,6.814341554667855","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725999835","altitude":41.49713134765625,"batterylevel":99.50999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.835","heading":0,"location":"51.231454666307364,6.814166559924574","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727613365","altitude":40.031307220458984,"batterylevel":98.26999999999911,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.365","heading":160.92550659179688,"location":"51.23326723036142,6.814782935266589","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727553390","altitude":39.883121490478516,"batterylevel":98.8199999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.39","heading":88.46528625488281,"location":"51.23324849391775,6.814382835340794","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726036927","altitude":41.66183090209961,"batterylevel":99.17999999999958,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.927","heading":0,"location":"51.231243865081005,6.814161077814618","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725675252","altitude":0,"batterylevel":99.87999999999994,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.252","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722214728","altitude":339.0352414570399,"batterylevel":99.92999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.728","heading":358.75504233536196,"location":"45.92618953354425,-108.54883155451108","motortemp":30.4,"powerconsumption":0.5,"speed":6,"status":"ok"}
+
+{"id":"1491726659919","altitude":41.90750503540039,"batterylevel":99.71999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.919","heading":332.40606689453125,"location":"51.23140239563592,6.814085527021791","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726663929","altitude":41.84683609008789,"batterylevel":99.67999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.929","heading":185.30126953125,"location":"51.231401221744825,6.81408580800796","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725991812","altitude":41.339691162109375,"batterylevel":99.58999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.812","heading":0,"location":"51.23143302048226,6.814190095317262","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725641525","altitude":41.28178787231445,"batterylevel":99.65999999999983,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.525","heading":0,"location":"51.23144216604165,6.814261586088712","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721896361","altitude":339.7739729072694,"batterylevel":99.50999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.361","heading":6.8885470962067545,"location":"47.1023416593968,-108.57064082955124","motortemp":34.6,"powerconsumption":5.75,"speed":45,"status":"ok"}
+
+{"id":"1491726559801","altitude":0,"batterylevel":99.88999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.801","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726640868","altitude":42.251747131347656,"batterylevel":99.90999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.868","heading":309.99755859375,"location":"51.23146366495713,6.813988392943615","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726704037","altitude":40.97526550292969,"batterylevel":99.27999999999963,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.037","heading":3.2480006217956543,"location":"51.231734866004004,6.814425682099782","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727589299","altitude":40.06562042236328,"batterylevel":98.50999999999924,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.299","heading":141.52455139160156,"location":"51.233265832927,6.814777891381969","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727441149","altitude":39.822105407714844,"batterylevel":99.81999999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.149","heading":83.45684814453125,"location":"51.23362983230969,6.814264741138396","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727423098","altitude":39.58220291137695,"batterylevel":100,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.098","heading":71.912841796875,"location":"51.23322808978497,6.814131161241405","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491728307878","altitude":78,"batterylevel":99.64999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.878","heading":110.4151060211337,"location":"51.23129072,6.81429859","motortemp":30.1039999961853,"powerconsumption":0.12999999523162842,"speed":0.949999988079071,"status":"ok"}
+
+{"id":"1491725994820","altitude":41.5970344543457,"batterylevel":99.55999999999977,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.82","heading":0,"location":"51.23135805064513,6.814115248623762","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722220506","altitude":336.53951615353793,"batterylevel":99.70999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.506","heading":1.2725957747078094,"location":"46.468220119189,-108.54721248837262","motortemp":34.8,"powerconsumption":6,"speed":50,"status":"ok"}
+
+{"id":"1491728312581","altitude":77,"batterylevel":99.6199999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.581","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491722221294","altitude":333.12863208129016,"batterylevel":99.67999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.294","heading":1.4850333929255417,"location":"46.57640706626603,-108.54955145517972","motortemp":35.4,"powerconsumption":6.75,"speed":53,"status":"ok"}
+
+{"id":"1491726578867","altitude":41.71784973144531,"batterylevel":99.09999999999954,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.867","heading":0,"location":"51.231317065296835,6.814089030991125","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726014871","altitude":41.39358139038086,"batterylevel":99.3999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.871","heading":0,"location":"51.23146690509953,6.814178428571906","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727504202","altitude":39.900726318359375,"batterylevel":99.25999999999962,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.202","heading":241.7500762939453,"location":"51.23334976234073,6.814764299701816","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721891960","altitude":336.4812271401704,"batterylevel":99.65999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.96","heading":2.373252720280786,"location":"46.726286430124375,-108.56623637004377","motortemp":35.8,"powerconsumption":7.25,"speed":60,"status":"ok"}
+
+{"id":"1491721886201","altitude":334.8647120569634,"batterylevel":99.87999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.201","heading":3.6688222298264446,"location":"46.238641786813204,-108.56657978211956","motortemp":31.4,"powerconsumption":1.75,"speed":16,"status":"ok"}
+
+{"id":"1491727456192","altitude":39.99609375,"batterylevel":99.66999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.192","heading":115.03404235839844,"location":"51.233966965007,6.814338363562779","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728284422","altitude":87,"batterylevel":99.87999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.422","heading":98.82541459350298,"location":"51.23129587,6.81424939","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726016874","altitude":41.367401123046875,"batterylevel":99.37999999999968,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.874","heading":0,"location":"51.231467098950716,6.814179166962254","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728287459","altitude":86,"batterylevel":99.84999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.459","heading":192.40260779475724,"location":"51.23129567,6.81424073","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725938543","altitude":41.44502639770508,"batterylevel":99.96999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:18:00.543","heading":0,"location":"51.231471145789634,6.814149841729568","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725963735","altitude":41.01013946533203,"batterylevel":99.86999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.735","heading":0,"location":"51.231467366070085,6.814271332347592","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726553785","altitude":0,"batterylevel":99.94999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.785","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727452181","altitude":39.99609375,"batterylevel":99.70999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.181","heading":92.79693603515625,"location":"51.233966965007,6.814338363562779","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721889344","altitude":335.2419575886503,"batterylevel":99.75999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.344","heading":3.761748456196479,"location":"46.54987004666038,-108.5668424676099","motortemp":33.8,"powerconsumption":4.75,"speed":40,"status":"ok"}
+
+{"id":"1491722213929","altitude":341.3604526337039,"batterylevel":99.95999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.929","heading":358.8666650505122,"location":"45.84527634022849,-108.54943707111606","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725993817","altitude":41.5970344543457,"batterylevel":99.56999999999978,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.817","heading":0,"location":"51.23135805064513,6.814115248623762","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725935534","altitude":41.381717681884766,"batterylevel":100,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:18:00.534","heading":0,"location":"51.23144868772757,6.814234131459078","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491726741137","altitude":40.697322845458984,"batterylevel":98.90999999999944,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.137","heading":14.205276489257812,"location":"51.23201452680981,6.814244622879302","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726795278","altitude":40.74528121948242,"batterylevel":98.36999999999917,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.278","heading":329.1451110839844,"location":"51.23238038854528,6.8146693229128","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725677257","altitude":0,"batterylevel":99.85999999999993,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.257","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726038933","altitude":41.66183090209961,"batterylevel":99.15999999999957,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.933","heading":0,"location":"51.231243865081005,6.814161077814618","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726797283","altitude":40.74528121948242,"batterylevel":98.34999999999916,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.283","heading":29.90521240234375,"location":"51.23238038854528,6.8146693229128","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726711054","altitude":40.9164924621582,"batterylevel":99.2099999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.054","heading":50.868560791015625,"location":"51.231790936452335,6.814299143224013","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726816354","altitude":40.86177444458008,"batterylevel":98.15999999999906,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.354","heading":16.969898223876953,"location":"51.232917084049134,6.814806073359541","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725646538","altitude":41.348670959472656,"batterylevel":99.6099999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.538","heading":0,"location":"51.2314164696523,6.814170211949708","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726661924","altitude":41.85272216796875,"batterylevel":99.69999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.924","heading":275.5114440917969,"location":"51.231401219181905,6.814085826880227","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726655909","altitude":41.9896240234375,"batterylevel":99.75999999999988,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.909","heading":72.46488952636719,"location":"51.23141158344387,6.814059111210076","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725611696","altitude":41.28645706176758,"batterylevel":99.69999999999985,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.696","heading":0,"location":"51.23144319644109,6.814264084640328","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726764195","altitude":40.70479965209961,"batterylevel":98.67999999999932,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.195","heading":26.839773178100586,"location":"51.23207626736329,6.814553535143708","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725996826","altitude":41.52920913696289,"batterylevel":99.53999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.826","heading":0,"location":"51.23142663117777,6.814173098150348","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728318600","altitude":77,"batterylevel":99.58999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.6","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491727611360","altitude":40.03168869018555,"batterylevel":98.28999999999913,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.36","heading":174.51400756835938,"location":"51.233245769061625,6.814742180321744","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726667940","altitude":41.808433532714844,"batterylevel":99.63999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.94","heading":64.98612213134766,"location":"51.23136534523568,6.8140811057372","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727519246","altitude":40.02487564086914,"batterylevel":99.10999999999954,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.246","heading":225.7423858642578,"location":"51.233397397523355,6.814406486229622","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722215788","altitude":338.32150454841394,"batterylevel":99.88999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.788","heading":359.0489689279055,"location":"46.054609786685695,-108.54817066741336","motortemp":31.2,"powerconsumption":1.5,"speed":14,"status":"ok"}
+
+{"id":"1491725590641","altitude":41.21598815917969,"batterylevel":99.90999999999995,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.641","heading":0,"location":"51.231432187187814,6.814173997616969","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725589639","altitude":41.217140197753906,"batterylevel":99.91999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.639","heading":0,"location":"51.23143224442434,6.814174295371611","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727529326","altitude":40.083744049072266,"batterylevel":99.05999999999952,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.326","heading":247.37025451660156,"location":"51.233244859017624,6.8145840730185245","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726698021","altitude":41.04410934448242,"batterylevel":99.33999999999966,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.021","heading":9.5700101852417,"location":"51.23169814489387,6.814409787133549","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727544365","altitude":39.8324089050293,"batterylevel":98.90999999999944,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.365","heading":151.8448944091797,"location":"51.233154424426665,6.814231502832017","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726792270","altitude":40.74528121948242,"batterylevel":98.39999999999918,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.27","heading":3.7438995838165283,"location":"51.23238038854528,6.8146693229128","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725152190","altitude":0,"batterylevel":100,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:05:00.19","heading":0,"location":"0,0","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491725581616","altitude":0,"batterylevel":100,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.616","heading":0,"location":"0,0","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491726754170","altitude":40.69541549682617,"batterylevel":98.77999999999938,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.17","heading":13.043147087097168,"location":"51.2320587259299,6.8145300250807646","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726681977","altitude":41.2865104675293,"batterylevel":99.49999999999974,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.977","heading":8.837362289428711,"location":"51.23142908236416,6.814221437686022","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721894577","altitude":334.9849688666731,"batterylevel":99.55999999999977,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.577","heading":4.302916308152007,"location":"46.995010318871074,-108.56798716129526","motortemp":35.1,"powerconsumption":6.375,"speed":50,"status":"ok"}
+
+{"id":"1491726756175","altitude":40.697784423828125,"batterylevel":98.75999999999937,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.175","heading":19.43520736694336,"location":"51.232058021210946,6.814527176342649","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726551781","altitude":0,"batterylevel":99.96999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.781","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727583284","altitude":39.89453887939453,"batterylevel":98.56999999999927,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.284","heading":129.6819305419922,"location":"51.233277342099086,6.814743750337408","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728272233","altitude":0,"batterylevel":100,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:57:00.233","heading":91.75486445816499,"location":"0,0","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491721894836","altitude":336.4381302640571,"batterylevel":99.54999999999977,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.836","heading":5.015938041311198,"location":"47.00514166209722,-108.5691545072587","motortemp":35,"powerconsumption":6.25,"speed":49,"status":"ok"}
+
+{"id":"1491728340599","altitude":77,"batterylevel":99.47999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:59:00.599","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491724611494","altitude":0,"batterylevel":99.70999999999985,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.494","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727511223","altitude":39.97160339355469,"batterylevel":99.18999999999959,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.223","heading":279.0106201171875,"location":"51.23331151190091,6.814619137731775","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726739130","altitude":40.6838493347168,"batterylevel":98.92999999999945,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.13","heading":22.7440185546875,"location":"51.23176703343306,6.814261036708402","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726722084","altitude":40.742271423339844,"batterylevel":99.09999999999954,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.084","heading":50.022212982177734,"location":"51.23184614477188,6.814354963629688","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726554788","altitude":0,"batterylevel":99.93999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.788","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726726095","altitude":40.71754837036133,"batterylevel":99.05999999999952,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.095","heading":27.79987907409668,"location":"51.231870693416944,6.8142665872730825","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724701909","altitude":0,"batterylevel":99.57999999999979,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:58:00.909","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726678970","altitude":41.34335708618164,"batterylevel":99.52999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.97","heading":14.460479736328125,"location":"51.23144112531912,6.814219566503948","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726637859","altitude":42.135589599609375,"batterylevel":99.93999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.859","heading":298.55712890625,"location":"51.231420187359156,6.814028328935533","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724574610","altitude":0,"batterylevel":99.92999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.61","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722212865","altitude":339,"batterylevel":100,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.865","heading":360,"location":"45.697490631891334,-108.54478270449873","motortemp":30,"powerconsumption":12,"speed":0,"status":"ok"}
+
+{"id":"1491724748554","altitude":0,"batterylevel":99.55999999999977,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:59:00.554","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726799289","altitude":40.74528121948242,"batterylevel":98.32999999999915,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.289","heading":36.11553955078125,"location":"51.23238038854528,6.8146693229128","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728278337","altitude":87,"batterylevel":99.93999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:57:00.337","heading":91.35851622894087,"location":"51.23129415,6.81425414","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725608687","altitude":41.298439025878906,"batterylevel":99.72999999999986,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.687","heading":0,"location":"51.231447599975304,6.814231432499073","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726725092","altitude":40.717445373535156,"batterylevel":99.06999999999952,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.092","heading":27.31195068359375,"location":"51.23184606361655,6.814354786022016","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726672953","altitude":41.73225402832031,"batterylevel":99.58999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.953","heading":100.13748168945312,"location":"51.23137819195662,6.814137733365654","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724576614","altitude":0,"batterylevel":99.90999999999995,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.614","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727453183","altitude":39.99609375,"batterylevel":99.69999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.183","heading":87.30349731445312,"location":"51.233966965007,6.814338363562779","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725965741","altitude":41.31656265258789,"batterylevel":99.84999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.741","heading":0,"location":"51.231480836179465,6.814229013133122","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721897155","altitude":336.4760164144387,"batterylevel":99.47999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.155","heading":8.513594091028342,"location":"47.15958026973546,-108.57076729461646","motortemp":34.3,"powerconsumption":5.375,"speed":42,"status":"ok"}
+
+{"id":"1491726686991","altitude":41.05650329589844,"batterylevel":99.44999999999972,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.991","heading":358.1288146972656,"location":"51.23157234932721,6.814269436589281","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724788443","altitude":0,"batterylevel":99.53999999999976,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:59:00.443","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722218412","altitude":337.28359029802294,"batterylevel":99.78999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.412","heading":0.6926571623591258,"location":"46.27140472090395,-108.54683309762655","motortemp":33.2,"powerconsumption":4,"speed":34,"status":"ok"}
+
+{"id":"1491721890912","altitude":337.3139926997425,"batterylevel":99.69999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.912","heading":1.6008290407913779,"location":"46.645161445785256,-108.5685781232308","motortemp":35,"powerconsumption":6.25,"speed":52,"status":"ok"}
+
+{"id":"1491726682980","altitude":41.2865104675293,"batterylevel":99.48999999999974,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.98","heading":11.205853462219238,"location":"51.23142908236416,6.814221437686022","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727457197","altitude":39.99609375,"batterylevel":99.65999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.197","heading":135.02658081054688,"location":"51.233966965007,6.814338363562779","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721890389","altitude":336.55627542863925,"batterylevel":99.71999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.389","heading":0.9697912180831356,"location":"46.6151603303833,-108.56671059401133","motortemp":34.6,"powerconsumption":5.75,"speed":48,"status":"ok"}
+
+{"id":"1491726694012","altitude":41.04906463623047,"batterylevel":99.37999999999968,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.012","heading":16.259851455688477,"location":"51.23160294659109,6.814320256661545","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725607685","altitude":41.298439025878906,"batterylevel":99.73999999999987,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.685","heading":0,"location":"51.231447599975304,6.814231432499073","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727516238","altitude":40.02591323852539,"batterylevel":99.13999999999956,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.238","heading":236.23153686523438,"location":"51.23339523220629,6.814406755023975","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726684987","altitude":41.0960807800293,"batterylevel":99.46999999999973,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.987","heading":12.837613105773926,"location":"51.23156544151146,6.814268125472644","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726793272","altitude":40.74528121948242,"batterylevel":98.38999999999918,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.272","heading":300.8447265625,"location":"51.23238038854528,6.8146693229128","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725586631","altitude":41.362266540527344,"batterylevel":99.94999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.631","heading":0,"location":"51.231441007028735,6.814136333999311","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727616372","altitude":39.96719741821289,"batterylevel":98.2399999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.372","heading":180.01327514648438,"location":"51.233235541274716,6.814860724256273","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726687994","altitude":41.04291915893555,"batterylevel":99.43999999999971,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.994","heading":2.9203429222106934,"location":"51.23157240915912,6.814269410432071","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727490164","altitude":39.87455368041992,"batterylevel":99.3999999999997,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.164","heading":162.9468231201172,"location":"51.233588699099634,6.814861079384589","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727540354","altitude":39.8875617980957,"batterylevel":98.94999999999946,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.354","heading":186.7257080078125,"location":"51.233218029842405,6.814347511296088","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721895096","altitude":336.8063565333052,"batterylevel":99.53999999999976,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.096","heading":5.777390313624574,"location":"47.0314099438745,-108.5697817449099","motortemp":34.9,"powerconsumption":6.125,"speed":48,"status":"ok"}
+
+{"id":"1491728320599","altitude":77,"batterylevel":99.57999999999979,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.599","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491725582620","altitude":41.362266540527344,"batterylevel":99.99,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.62","heading":0,"location":"51.231441007028735,6.814136333999311","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726801295","altitude":40.76319122314453,"batterylevel":98.30999999999914,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.295","heading":31.580730438232422,"location":"51.23278228113816,6.814856297533341","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726555790","altitude":0,"batterylevel":99.92999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.79","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725961730","altitude":41.03754425048828,"batterylevel":99.88999999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.73","heading":0,"location":"51.231467050259376,6.8142715594973975","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722220768","altitude":336.68559269635233,"batterylevel":99.69999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.768","heading":2.0954103744180843,"location":"46.51009104382885,-108.54668469709168","motortemp":35,"powerconsumption":6.25,"speed":52,"status":"ok"}
+
+{"id":"1491726713059","altitude":40.9164924621582,"batterylevel":99.18999999999959,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.059","heading":51.12799072265625,"location":"51.231790936452335,6.814299143224013","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726697019","altitude":41.04410934448242,"batterylevel":99.34999999999967,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:31:00.019","heading":13.167333602905273,"location":"51.23169814489387,6.814409787133549","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727436135","altitude":39.70860290527344,"batterylevel":99.86999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.135","heading":23.535259246826172,"location":"51.233343369277655,6.814671923772992","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725651553","altitude":41.36693572998047,"batterylevel":99.55999999999977,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.553","heading":0,"location":"51.23147343327916,6.814202956292001","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726033919","altitude":41.648521423339844,"batterylevel":99.2099999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.919","heading":0,"location":"51.231358658267936,6.814149228215373","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721892482","altitude":335.82911566978515,"batterylevel":99.63999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.482","heading":2.962461427038754,"location":"46.77522327898282,-108.56627324845105","motortemp":35.9,"powerconsumption":7.375,"speed":58,"status":"ok"}
+
+{"id":"1491725951703","altitude":41.445194244384766,"batterylevel":99.99,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.703","heading":0,"location":"51.23147101613354,6.8141502984835265","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726760186","altitude":40.70757293701172,"batterylevel":98.71999999999935,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.186","heading":29.917083740234375,"location":"51.23205729333587,6.814525545140588","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726767204","altitude":40.70362854003906,"batterylevel":98.64999999999931,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.204","heading":18.45185089111328,"location":"51.23206909448608,6.814551248657871","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722216838","altitude":336.3057607909488,"batterylevel":99.84999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.838","heading":358.6953423768631,"location":"46.171877736239125,-108.54728050189556","motortemp":32,"powerconsumption":2.5,"speed":22,"status":"ok"}
+
+{"id":"1491724865453","altitude":0,"batterylevel":99.52999999999976,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:01:00.453","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727554393","altitude":39.75954055786133,"batterylevel":98.80999999999939,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.393","heading":75.72628784179688,"location":"51.23322216794143,6.814393880497935","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721891173","altitude":337.3457612967663,"batterylevel":99.68999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.173","heading":2.325137405692857,"location":"46.65098991118989,-108.56668672024065","motortemp":35.2,"powerconsumption":6.5,"speed":54,"status":"ok"}
+
+{"id":"1491727621385","altitude":40.0468864440918,"batterylevel":98.18999999999907,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:47:00.385","heading":174.9602508544922,"location":"51.233246257233894,6.814775118142546","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727588297","altitude":40.06562042236328,"batterylevel":98.51999999999924,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.297","heading":113.36473083496094,"location":"51.233265832927,6.814777891381969","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727575265","altitude":39.41611862182617,"batterylevel":98.64999999999931,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.265","heading":144.32711791992188,"location":"51.233465436941636,6.815020369556607","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727599325","altitude":40.03987503051758,"batterylevel":98.40999999999919,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.325","heading":187.8031768798828,"location":"51.233290642049134,6.814905638258219","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728332599","altitude":77,"batterylevel":99.51999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.599","heading":109.32694428623861,"location":"51.23128242,6.81431254","motortemp":30.091000002622604,"powerconsumption":0.11375000327825546,"speed":0.9100000262260437,"status":"ok"}
+
+{"id":"1491725990809","altitude":41.339691162109375,"batterylevel":99.5999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.809","heading":0,"location":"51.23143302048226,6.814190095317262","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725977776","altitude":41.35387420654297,"batterylevel":99.72999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.776","heading":0,"location":"51.23144497624774,6.814198367864634","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726789261","altitude":40.758880615234375,"batterylevel":98.4299999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.261","heading":21.467987060546875,"location":"51.23245578766096,6.814718492311872","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721885419","altitude":336.10776148081345,"batterylevel":99.90999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.419","heading":3.286647570408767,"location":"46.18476215648692,-108.56430517708128","motortemp":30.8,"powerconsumption":1,"speed":10,"status":"ok"}
+
+{"id":"1491724568602","altitude":0,"batterylevel":99.99,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.602","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726556793","altitude":0,"batterylevel":99.91999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.793","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727571253","altitude":39.466060638427734,"batterylevel":98.68999999999933,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.253","heading":203.31417846679688,"location":"51.23346553532079,6.815020591565054","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727455189","altitude":39.99609375,"batterylevel":99.67999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.189","heading":129.69778442382812,"location":"51.233966965007,6.814338363562779","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726042944","altitude":41.66355514526367,"batterylevel":99.11999999999955,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.944","heading":0,"location":"51.23128768586278,6.814134547423671","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721896095","altitude":338.2048573427787,"batterylevel":99.51999999999975,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.095","heading":7.662290792312083,"location":"47.08623142965164,-108.56974780103589","motortemp":34.7,"powerconsumption":5.875,"speed":46,"status":"ok"}
+
+{"id":"1491726728102","altitude":40.71763229370117,"batterylevel":99.03999999999951,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.102","heading":13.80196762084961,"location":"51.231878243039006,6.814225732519455","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722220245","altitude":338.45908527394425,"batterylevel":99.71999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.245","heading":1.8035971882529525,"location":"46.46125521461436,-108.54655797111221","motortemp":34.6,"powerconsumption":5.75,"speed":48,"status":"ok"}
+
+{"id":"1491722219720","altitude":338.41673572290466,"batterylevel":99.73999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.72","heading":2.5356095346154808,"location":"46.40378631667358,-108.54610443912239","motortemp":34.2,"powerconsumption":5.25,"speed":44,"status":"ok"}
+
+{"id":"1491725593646","altitude":41.22308349609375,"batterylevel":99.87999999999994,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.646","heading":0,"location":"51.23143725950059,6.814224085945183","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727618378","altitude":39.997127532958984,"batterylevel":98.21999999999909,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.378","heading":151.05581665039062,"location":"51.23326195837354,6.814834877775798","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727601332","altitude":40.00303268432617,"batterylevel":98.38999999999918,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.332","heading":186.30923461914062,"location":"51.23326496953731,6.814920450003932","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726768206","altitude":40.70362854003906,"batterylevel":98.6399999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.206","heading":16.16544532775879,"location":"51.23206909448608,6.814551248657871","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726774223","altitude":40.72011947631836,"batterylevel":98.57999999999927,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.223","heading":23.80853271484375,"location":"51.23232983325397,6.814611312030901","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727615370","altitude":39.96719741821289,"batterylevel":98.2499999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.37","heading":183.83065795898438,"location":"51.233235541274716,6.814860724256273","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721896625","altitude":338.3686326266833,"batterylevel":99.49999999999974,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.625","heading":7.814269271604646,"location":"47.11348885242054,-108.57085942077055","motortemp":34.5,"powerconsumption":5.625,"speed":44,"status":"ok"}
+
+{"id":"1491725980783","altitude":41.34664535522461,"batterylevel":99.69999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.783","heading":0,"location":"51.23144327759895,6.814204979461576","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725598659","altitude":41.219261169433594,"batterylevel":99.82999999999991,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.659","heading":0,"location":"51.231436566974615,6.814225205582017","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727542361","altitude":39.8875617980957,"batterylevel":98.92999999999945,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.361","heading":155.4280548095703,"location":"51.233218029842405,6.814347511296088","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724594367","altitude":0,"batterylevel":99.74999999999987,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.367","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726652901","altitude":41.8723258972168,"batterylevel":99.78999999999989,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.901","heading":206.21507263183594,"location":"51.23140967977812,6.814104323697527","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728304847","altitude":77,"batterylevel":99.67999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.847","heading":102.9212537482117,"location":"51.23126856,6.81428568","motortemp":30.142999994754792,"powerconsumption":0.17874999344348907,"speed":1.5299999713897705,"status":"ok"}
+
+{"id":"1491726788258","altitude":40.758880615234375,"batterylevel":98.4399999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.258","heading":14.23222827911377,"location":"51.23245578766096,6.814718492311872","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725985796","altitude":41.609989166259766,"batterylevel":99.64999999999982,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.796","heading":0,"location":"51.23141572776622,6.814170580260888","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725966744","altitude":41.27372360229492,"batterylevel":99.83999999999992,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.744","heading":0,"location":"51.23148860582404,6.814240260352628","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725672247","altitude":0,"batterylevel":99.90999999999995,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.247","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721890652","altitude":337.2309345029948,"batterylevel":99.70999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.652","heading":1.7674317641697175,"location":"46.64486902965933,-108.56853786138743","motortemp":34.8,"powerconsumption":6,"speed":50,"status":"ok"}
+
+{"id":"1491726625697","altitude":40.89396667480469,"batterylevel":99.08999999999953,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:30:00.697","heading":0,"location":"51.231567700177855,6.814316956064927","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728302670","altitude":79,"batterylevel":99.69999999999985,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.67","heading":229.47389599872895,"location":"51.23130217,6.81421943","motortemp":30.19500000476837,"powerconsumption":0.24375000596046448,"speed":1.4299999475479126,"status":"ok"}
+
+{"id":"1491725670243","altitude":0,"batterylevel":99.92999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.243","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725944085","altitude":41.445194244384766,"batterylevel":99.91999999999996,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:19:00.085","heading":0,"location":"51.23147101613354,6.8141502984835265","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724693893","altitude":0,"batterylevel":99.58999999999979,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:58:00.893","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724603487","altitude":0,"batterylevel":99.71999999999986,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.487","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725667238","altitude":0,"batterylevel":99.95999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.238","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721889868","altitude":334.6469032762317,"batterylevel":99.73999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.868","heading":1.992488794017599,"location":"46.58670837334173,-108.56732962242754","motortemp":34.2,"powerconsumption":5.25,"speed":44,"status":"ok"}
+
+{"id":"1491725982788","altitude":41.47598648071289,"batterylevel":99.67999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.788","heading":0,"location":"51.2314479003359,6.814209290807328","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727449172","altitude":39.973411560058594,"batterylevel":99.73999999999987,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:44:00.172","heading":67.14016723632812,"location":"51.23384390402278,6.814263729460275","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726557795","altitude":0,"batterylevel":99.90999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:29:00.795","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725656025","altitude":41.45675277709961,"batterylevel":99.96999999999998,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:14:00.025","heading":0,"location":"51.2314309273888,6.814154802249316","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728300636","altitude":82,"batterylevel":99.71999999999986,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.636","heading":77.56289736780317,"location":"51.2313317,6.81410197","motortemp":30.046000000834464,"powerconsumption":0.057500001043081284,"speed":0.20999999344348907,"status":"ok"}
+
+{"id":"1491725953709","altitude":41.228370666503906,"batterylevel":99.96999999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:19:00.709","heading":0,"location":"51.23144285587079,6.814181383356367","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727600329","altitude":40.00303268432617,"batterylevel":98.39999999999918,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.329","heading":197.22862243652344,"location":"51.23326496953731,6.814920450003932","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727550382","altitude":39.874393463134766,"batterylevel":98.84999999999941,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.382","heading":61.586822509765625,"location":"51.23325655181143,6.81437656232387","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727501194","altitude":39.86547088623047,"batterylevel":99.28999999999964,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.194","heading":204.02088928222656,"location":"51.233395691596606,6.814816463281844","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726771215","altitude":40.70362854003906,"batterylevel":98.60999999999929,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.215","heading":22.206405639648438,"location":"51.23206909448608,6.814551248657871","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491728306871","altitude":78,"batterylevel":99.65999999999983,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:58:00.871","heading":118.56815917730755,"location":"51.23129089,6.81426329","motortemp":30.161000001430512,"powerconsumption":0.20125000178813934,"speed":1.0399999618530273,"status":"ok"}
+
+{"id":"1491727573259","altitude":39.41611862182617,"batterylevel":98.66999999999932,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.259","heading":72.84124755859375,"location":"51.233465436941636,6.815020369556607","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727625423","altitude":40.02973175048828,"batterylevel":98.14999999999905,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:47:00.423","heading":182.98577880859375,"location":"51.233352061781844,6.814724578806348","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722216575","altitude":337.0850768713092,"batterylevel":99.85999999999993,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.575","heading":358.74182149183963,"location":"46.14714386408576,-108.54789145745802","motortemp":31.8,"powerconsumption":2.25,"speed":20,"status":"ok"}
+
+{"id":"1491724589701","altitude":0,"batterylevel":99.77999999999989,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.701","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726807330","altitude":40.82814025878906,"batterylevel":98.2499999999991,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.33","heading":9.834720611572266,"location":"51.23292908361365,6.8148329660226885","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724679553","altitude":0,"batterylevel":99.65999999999983,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:57:00.553","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491724577617","altitude":0,"batterylevel":99.89999999999995,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 07:56:00.617","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721885155","altitude":335.66539060780116,"batterylevel":99.91999999999996,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.155","heading":3.790312069202252,"location":"46.16632670490555,-108.56492384308022","motortemp":30.6,"powerconsumption":0.75,"speed":8,"status":"ok"}
+
+{"id":"1491725798838","altitude":0,"batterylevel":99.93999999999997,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.838","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727424102","altitude":39.58220291137695,"batterylevel":99.99,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:43:00.102","heading":69.58184814453125,"location":"51.23322808978497,6.814131161241405","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722221031","altitude":334.99542789445,"batterylevel":99.68999999999984,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.031","heading":1.9164947030988766,"location":"46.5440754476902,-108.54823765722206","motortemp":35.2,"powerconsumption":6.5,"speed":54,"status":"ok"}
+
+{"id":"1491726029909","altitude":41.51081848144531,"batterylevel":99.24999999999962,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:20:00.909","heading":0,"location":"51.23136218982073,6.814148405949843","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491721888034","altitude":332.6089599610103,"batterylevel":99.8099999999999,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.034","heading":3.3128528831535684,"location":"46.39441098293694,-108.56719441308316","motortemp":32.8,"powerconsumption":3.5,"speed":30,"status":"ok"}
+
+{"id":"1491722222629","altitude":333.19168644551024,"batterylevel":99.62999999999981,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:17:00.629","heading":1.2947871896163865,"location":"46.675549849826176,-108.54913792690763","motortemp":34.9,"powerconsumption":6.125,"speed":48,"status":"ok"}
+
+{"id":"1491721893269","altitude":337.6842061271326,"batterylevel":99.6099999999998,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:11:00.269","heading":3.272762084742195,"location":"46.87071452433113,-108.56434451792255","motortemp":35.6,"powerconsumption":7,"speed":55,"status":"ok"}
+
+{"id":"1491727604339","altitude":39.968421936035156,"batterylevel":98.35999999999916,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.339","heading":187.4197235107422,"location":"51.23327185453973,6.814663017501328","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727555396","altitude":39.646121978759766,"batterylevel":98.79999999999939,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.396","heading":63.61395263671875,"location":"51.23321113273016,6.814437578739432","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726744144","altitude":40.70743179321289,"batterylevel":98.87999999999943,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.144","heading":32.39431381225586,"location":"51.23201889733866,6.814245332372453","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725603673","altitude":41.354923248291016,"batterylevel":99.77999999999989,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:13:00.673","heading":0,"location":"51.23144000955514,6.814262579672502","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727522255","altitude":40.02766036987305,"batterylevel":99.07999999999953,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.255","heading":259.4599609375,"location":"51.233291690991415,6.814695061077722","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727502197","altitude":39.884056091308594,"batterylevel":99.27999999999963,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:45:00.197","heading":232.49386596679688,"location":"51.23335771067282,6.814773247442954","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491722215258","altitude":338.9951054273191,"batterylevel":99.90999999999995,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 07:16:00.258","heading":358.10432990550555,"location":"46.00205562408094,-108.5490913564877","motortemp":30.8,"powerconsumption":1,"speed":10,"status":"ok"}
+
+{"id":"1491726803300","altitude":40.78453826904297,"batterylevel":98.28999999999913,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:33:00.3","heading":34.026123046875,"location":"51.23281187885597,6.814885449720985","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491725803848","altitude":0,"batterylevel":99.88999999999994,"carid":"","color":"0x80FFFFFF","driver":"","event_timestamp":"2017-04-09 08:16:00.848","heading":0,"location":"0,0","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491726750158","altitude":40.6967887878418,"batterylevel":98.8199999999994,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Me","event_timestamp":"2017-04-09 08:32:00.158","heading":22.339111328125,"location":"51.23197818227502,6.814529321151555","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+
+{"id":"1491727581279","altitude":39.875972747802734,"batterylevel":98.58999999999928,"carid":"47110339","color":"0x80FFFFFF","driver":"Mr. Foo","event_timestamp":"2017-04-09 08:46:00.279","heading":126.01811218261719,"location":"51.23323604901135,6.814629209983714","motortemp":30,"powerconsumption":0,"speed":0,"status":"ok"}
+

@@ -29,13 +29,13 @@ app.use(logger('dev'));
 let inkibana= false;
   
 app.use(function(req, res, next) {
- 
-  console.log("In Kibana: "+inkibana);
-  
   let uri= req.url;
+  console.log("In Kibana: "+inkibana+" "+uri);
+  
   if(inkibana || uri.includes("elastic") || uri.includes("login") || uri.includes("kibana") || uri.includes("bundle") || uri.includes("api") || uri.includes("status")) {
    
-   if(uri.includes("logout")) {
+   if(uri.includes("logout") && !uri.includes("images/logout")) {
+     console.log("Kibana logout");
      inkibana= false;
      res.writeHead(301,
       {Location: '/'}
@@ -47,7 +47,7 @@ app.use(function(req, res, next) {
      inkibana= true;
    }
   
-  console.log("Proxy Kibana: "+req.url);
+  console.log("Proxy Kibana: "+req.url+ " "+inkibana);
   //1.8.8  proxy.web(req, res, { target: 'http://kibana.marathon.l4lb.thisdcos.directory:5601' });
   if(uri.includes("/service/elastic/kibana/")) {
     req.url= uri.substring("/service/elastic/kibana/".length);
