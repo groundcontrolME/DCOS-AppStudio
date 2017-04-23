@@ -29,7 +29,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-kafkaingester-v1.0.0",
+			"image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-kafkaingester-v__VERSION__",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
@@ -98,7 +98,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-cassandraingester-v1.0.0",
+                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-cassandraingester-v__VERSION__",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
@@ -174,7 +174,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-messagelistener-v1.0.0",
+                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagelistener-v__VERSION__",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -242,7 +242,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-messagevalidator-v1.0.0",
+                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagevalidator-v__VERSION__",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -310,7 +310,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-messagetransformer-v1.0.0",
+                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagetransformer-v__VERSION__",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -384,7 +384,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-ui-v1.0.0",
+                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-ui-v__VERSION__",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
@@ -457,7 +457,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-loader-v1.0.0",
+                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-loader-v__VERSION__",
 "network": "HOST",
                         "portMappings": [],
 			"privileged": false,
