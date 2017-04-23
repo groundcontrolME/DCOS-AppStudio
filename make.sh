@@ -2,13 +2,24 @@
 
 export DOCKERHUB_USER=fernandosanchez
 export DOCKERHUB_REPO=appstudio
-export DOCKERHUB_PASSWD=6128frodo
+export DOCKERHUB_PASSWD="6128frodo"
 export VERSION=1.0.0
+export BASEIMAGE=node694
 
 cp -r versions/$VERSION/* .
 echo copy done
 docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWD
 echo login done
+
+#Generate dockerfile with docker hub info 
+sudo cat > Dockerfile  << EOF
+FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
+
+COPY . /opt/app
+ENV APPDIR=opt/app
+ENTRYPOINT /opt/node/bin/node /opt/app/bin/www
+EOF
+
 if [[ $VERSION == 1.0.0 ]] 
 then
 	cp Dockerfile CreatorApp
