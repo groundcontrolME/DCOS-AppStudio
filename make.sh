@@ -2,9 +2,18 @@
 
 export DOCKERHUB_USER=fernandosanchez
 export DOCKERHUB_REPO=appstudio
-export DOCKERHUB_PASSWD="6128frodo"
+export DOCKERHUB_PASSWD=$1
 export VERSION=1.0.0
 export BASEIMAGE=node694
+export APP_DIR=opt/app
+
+#check command-line arguments
+echo "**DEBUG: number of args is "$#
+echo "**DEBUG: first arg is "$1
+if [[ $# < 1 ]]; then
+	echo "Usage: make.sh [Docker Hub password]"
+	exit 1
+fi
 
 cp -r versions/$VERSION/* .
 echo copy done
@@ -15,9 +24,10 @@ echo login done
 sudo cat > Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
 
-COPY . /opt/app
-ENV APPDIR=opt/app
-ENTRYPOINT /opt/node/bin/node /opt/app/bin/www
+COPY . /"$APP_DIR"
+ENV APPDIR="$APP_DIR"
+ENV MESOS_SANDBOX=/"$APP_DIR"
+ENTRYPOINT /opt/node/bin/node /"$APP_DIR"/bin/www
 EOF
 
 if [[ $VERSION == 1.0.0 ]] 
