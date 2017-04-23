@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#export DOCKERHUB_USER=digitalemil
-#export DOCKERHUB_REPO=mypublicrepo
-#export DOCKERHUB_PASSWD=
+export DOCKERHUB_USER=fernandosanchez
+export DOCKERHUB_REPO=appstudio
+export DOCKERHUB_PASSWD=6128frodo
 export VERSION=1.0.0
 
 cp -r versions/$VERSION/* .
