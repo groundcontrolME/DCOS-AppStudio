@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#these variables are updated by the main make.sh
+export DOCKERHUB_USER=__DOCKERHUB_USER__
+export DOCKERHUB_REPO=__DOCKERHUB_REPO__
+export VERSION=__VERSION__
+
 read -p "Install services? (y/n) " -n1 -s c
 if [ "$c" = "y" ]; then
 	echo yes
@@ -43,7 +48,7 @@ export CONFIGJSON='{
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-creator-v1.0.0",
+			"image": "$DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,

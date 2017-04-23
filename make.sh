@@ -9,6 +9,8 @@ export APP_DIR=opt/app
 
 export CREATOR_APP_DIR="./CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
+export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
+
 
 #check command-line arguments
 echo "**DEBUG: number of args is "$#
@@ -33,10 +35,16 @@ ENV MESOS_SANDBOX=/"$APP_DIR"
 ENTRYPOINT /opt/node/bin/node /"$APP_DIR"/bin/www
 EOF
 
-#generate group JSON
-sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
-sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
-sed -i -- "s,__VERSION__,$VERSION,g" $GROUP_JSON
+#configure group JSON for CreatorApp
+sed -i -- 's,__DOCKERHUB_USER__,$DOCKERHUB_USER,g' $GROUP_JSON
+sed -i -- 's,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g' $GROUP_JSON
+sed -i -- 's,__VERSION__,$VERSION,g' $GROUP_JSON
+
+#configure appstudio installer
+sed -i -- 's,__DOCKERHUB_USER__,$DOCKERHUB_USER,g' $INSTALLER
+sed -i -- 's,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g' $INSTALLER
+sed -i -- 's,__VERSION__,$VERSION,g' $INSTALLER
+
 
 if [[ $VERSION == 1.0.0 ]] 
 then
