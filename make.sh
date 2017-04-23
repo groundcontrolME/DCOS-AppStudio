@@ -7,6 +7,9 @@ export VERSION=1.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
 
+export CREATOR_APP_DIR="./CreatorApp"
+export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
+
 #check command-line arguments
 echo "**DEBUG: number of args is "$#
 echo "**DEBUG: first arg is "$1
@@ -29,6 +32,11 @@ ENV APPDIR="$APP_DIR"
 ENV MESOS_SANDBOX=/"$APP_DIR"
 ENTRYPOINT /opt/node/bin/node /"$APP_DIR"/bin/www
 EOF
+
+#generate group JSON
+sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
+sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
+sed -i -- "s,__VERSION__,$VERSION,g" $GROUP_JSON
 
 if [[ $VERSION == 1.0.0 ]] 
 then
