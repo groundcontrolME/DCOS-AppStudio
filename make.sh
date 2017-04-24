@@ -29,21 +29,25 @@ echo login done
 sudo cat > Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
 
-COPY . /"$APP_DIR"
-ENV APPDIR="$APP_DIR"
-ENV MESOS_SANDBOX=/"$APP_DIR"
-ENTRYPOINT /opt/node/bin/node /"$APP_DIR"/bin/www
+COPY . /$APP_DIR
+ENV APPDIR=$APP_DIR
+ENV MESOS_SANDBOX=/$APP_DIR
+ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
 EOF
 
 #configure group JSON for CreatorApp
-sed -i -- 's,__DOCKERHUB_USER__,$DOCKERHUB_USER,g' $GROUP_JSON
-sed -i -- 's,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g' $GROUP_JSON
-sed -i -- 's,__VERSION__,$VERSION,g' $GROUP_JSON
+echo "**DEBUG: GROUP_JSON IS "$GROUP_JSON
+cp $GROUP_JSON.TEMPLATE $GROUP_JSON
+sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
+sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
+sed -i -- "s,__VERSION__,$VERSION,g" $GROUP_JSON
 
 #configure appstudio installer
-sed -i -- 's,__DOCKERHUB_USER__,$DOCKERHUB_USER,g' $INSTALLER
-sed -i -- 's,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g' $INSTALLER
-sed -i -- 's,__VERSION__,$VERSION,g' $INSTALLER
+echo "**DEBUG: INSTALLER IS :"$INSTALLER
+cp $INSTALLER.TEMPLATE $INSTALLER
+sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $INSTALLER
+sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $INSTALLER
+sed -i -- "s,__VERSION__,$VERSION,g" $INSTALLER
 
 
 if [[ $VERSION == 1.0.0 ]] 
