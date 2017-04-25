@@ -3,7 +3,7 @@ var router = express.Router();
 var app = express();
 var url= require('url');
 var request = require('request');
-var location = process.env.LOCATION;
+var location = JSON.parse( process.env.LOCATION );
 // { "latitude": 41.41187, "longitude": -2.22589 }
 var radius_meters = 1000
 
