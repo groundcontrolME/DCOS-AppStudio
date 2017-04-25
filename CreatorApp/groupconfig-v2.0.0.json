@@ -29,9 +29,9 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-elasticingester-v2.0.0",
-"network": "HOST",
-                        "portMappings": [],
+            "image": "fernandosanchez/appstudio:dcosappstudio-elasticingester-v2.0.0",
+			"network": "HOST",
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false
@@ -98,9 +98,9 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-kafkaingester-v1.0.0",
-"network": "HOST",
-                        "portMappings": [],
+            "image": "fernandosanchez/appstudio:dcosappstudio-kafkaingester-v2.0.0",
+			"network": "HOST",
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false
@@ -167,9 +167,9 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-cassandraingester-v1.0.0",
-"network": "HOST",
-                        "portMappings": [],
+            "image": "fernandosanchez/appstudio:dcosappstudio-cassandraingester-v2.0.0",
+			"network": "HOST",
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false
@@ -243,7 +243,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-messagelistener-v2.0.0",
+            "image": "fernandosanchez/appstudio:dcosappstudio-messagelistener-v2.0.0",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -311,7 +311,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-messagevalidator-v1.0.0",
+            "image": "fernandosanchez/appstudio:dcosappstudio-messagevalidator-v2.0.0",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -379,7 +379,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-messagetransformer-v1.0.0",
+            "image": "fernandosanchez/appstudio:dcosappstudio-messagetransformer-v2.0.0",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -453,9 +453,9 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-ui-v2.0.0",
-"network": "HOST",
-                        "portMappings": [],
+            "image": "fernandosanchez/appstudio:dcosappstudio-ui-v2.0.0",
+			"network": "HOST",
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false
@@ -480,9 +480,9 @@
 		"maximumOverCapacity": 1
 	},
 	"labels": {
-                "DCOS_SERVICE_SCHEME":"http",
-                "DCOS_SERVICE_NAME":"appstudio-ui$PATH",
-                "DCOS_SERVICE_PORT_INDEX":"0"
+    	"DCOS_SERVICE_SCHEME":"http",
+    	"DCOS_SERVICE_NAME":"appstudio-ui$PATH",
+    	"DCOS_SERVICE_PORT_INDEX":"0"
 	},
 	"acceptedResourceRoles": null,
 	"ipAddress": null,
@@ -508,7 +508,10 @@
 	"user": null,
 	"env": {
 "APPDEF":"REPLACEME",
-"LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:0/data"
+"LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:0/data",
+		"LATITUDE": "41.41187" , 
+		"LONGITUDE": "-2.22589" ,
+		"RADIUS": "1000"
   },
 "instances": 0,
 	"cpus": 0.1,
@@ -526,9 +529,9 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "digitalemil/mypublicrepo:dcosappstudio-loader-v1.0.0",
-"network": "HOST",
-                        "portMappings": [],
+            "image": "fernandosanchez/appstudio:dcosappstudio-loader-v2.0.0",
+			"network": "HOST",
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false

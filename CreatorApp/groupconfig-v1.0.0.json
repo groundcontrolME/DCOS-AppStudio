@@ -30,7 +30,7 @@
 		"volumes": [],
 		"docker": {
 			"image": "fernandosanchez/appstudio:dcosappstudio-kafkaingester-v1.0.0",
-"network": "HOST",
+			"network": "HOST",
                         "portMappings": [],
 			"privileged": false,
 			"parameters": [],
@@ -99,7 +99,7 @@
 		"volumes": [],
 		"docker": {
                         "image": "fernandosanchez/appstudio:dcosappstudio-cassandraingester-v1.0.0",
-"network": "HOST",
+			"network": "HOST",
                         "portMappings": [],
 			"privileged": false,
 			"parameters": [],
@@ -385,7 +385,7 @@
 		"volumes": [],
 		"docker": {
                         "image": "fernandosanchez/appstudio:dcosappstudio-ui-v1.0.0",
-"network": "HOST",
+			"network": "HOST",
                         "portMappings": [],
 			"privileged": false,
 			"parameters": [],
@@ -458,7 +458,7 @@
 		"volumes": [],
 		"docker": {
                         "image": "fernandosanchez/appstudio:dcosappstudio-loader-v1.0.0",
-"network": "HOST",
+			"network": "HOST",
                         "portMappings": [],
 			"privileged": false,
 			"parameters": [],
