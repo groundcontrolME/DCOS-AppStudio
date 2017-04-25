@@ -523,7 +523,9 @@
 	"backoffFactor": 1.15,
 	"maxLaunchDelaySeconds": 3600,
 	"env" : {
-		'LOCATION;: '{"latitude": __LATITUDE__ , "longitude": __LONGITUDE__ }'
+		"LATITUDE": __LATITUDE__ , 
+		"LONGITUDE": __LONGITUDE__ ,
+		"RADIUS": __RADIUS__
 	},
 	"container": {
 		"type": "DOCKER",

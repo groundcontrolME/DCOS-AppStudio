@@ -6,8 +6,9 @@ export DOCKERHUB_PASSWD=$1
 export VERSION=2.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
-export LATITUDE=41.41187 
-export LONGITUDE=-2.22589		
+export LATITUDE=41.41187	#coords for event generation
+export LONGITUDE=-2.22589	#
+export RADIUS=1000			#radius of events in meters		
 
 export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
@@ -41,7 +42,8 @@ sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
 sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
 sed -i -- "s,__VERSION__,$VERSION,g" $GROUP_JSON
 sed -i -- "s,__LATITUDE__,$LATITUDE,g" $GROUP_JSON
-sed -i -- "s,__LONGITUDE__,$LONGITUDE,g" $GROUP_JSON		
+sed -i -- "s,__LONGITUDE__,$LONGITUDE,g" $GROUP_JSON
+sed -i -- "s,__RADIUS__,$RADIUS,g" $GROUP_JSON		
 
 #configure appstudio installer
 cp $INSTALLER.TEMPLATE $INSTALLER
