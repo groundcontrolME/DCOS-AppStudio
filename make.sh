@@ -3,7 +3,7 @@
 export DOCKERHUB_USER=fernandosanchez
 export DOCKERHUB_REPO=appstudio
 export DOCKERHUB_PASSWD=$1
-export VERSION=1.0.0
+export VERSION=2.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
 export LOCATION="'"'{ "latitude":41.41187, "longitude":-2.22589 }'"'"
