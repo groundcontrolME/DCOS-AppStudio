@@ -50,14 +50,11 @@ sed -i '' "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $INSTALLER
 sed -i '' "s,__VERSION__,$VERSION,g" $INSTALLER
 
 
-##if [[ $VERSION == 1.0.0 ]] 
-##then
 cp Dockerfile CreatorApp
 cd CreatorApp
 docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION .
 docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION 
 	cd ..
-##fi
 
 if [[ $VERSION == 2.0.0 ]] 
 then
