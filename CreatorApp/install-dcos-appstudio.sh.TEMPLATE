@@ -43,7 +43,7 @@ export CONFIGJSON='{
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-			"image": "fernandosanchez/appstudio:dcosappstudio-creator-v2.0.0",
+			"image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-creator-v__VERSION__",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -104,4 +104,4 @@ until $(curl --output /dev/null --silent --head --fail http://$PUBLICELBHOST); d
     printf '.'
     sleep 5
 done
-open http://$PUBLICELBHOST
+#open http://$PUBLICELBHOST

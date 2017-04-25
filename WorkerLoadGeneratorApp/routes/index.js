@@ -3,9 +3,14 @@ var router = express.Router();
 var app = express();
 var url= require('url');
 var request = require('request');
-var http = require("http");
 
-let listener= process.env.LISTENER;
+var location = {
+  "latitude": Number(process.env.LATITUDE),
+  "longitude": Number(process.env.LONGITUDE)
+};
+var radius_meters = Number(process.env.RADIUS);
+
+let listener = process.env.LISTENER;
 
 let json= new String(process.env.APPDEF);
 json= json.replace(/\'/g, '\"');
@@ -86,7 +91,7 @@ fs.readFile(process.env.APPDIR+"/warandpeace.txt", 'utf8', function(err, data) {
   length= warandpeace.length;
 });
 
-console.log(process.env.APPDIR+"/airports.txt");
+console.log("Reading: "+process.env.APPDIR+"/airports.txt");
 fs.readFile(process.env.APPDIR+"/airports.txt", 'utf8', function(err, data) {
   if (err) throw err;
   airports= new String(data).split("\n");
@@ -99,10 +104,42 @@ fs.readFile(process.env.APPDIR+"/airports.txt", 'utf8', function(err, data) {
 });
 }
 
+function getPseudoRandomGeo(center, radius) {
+    var y0 = center.latitude;
+    var x0 = center.longitude;
+    var rd = radius / 111300;
+
+    var u = Math.random();
+    var v = Math.random();
+
+    var w = rd * Math.sqrt(u);
+    var t = 2 * Math.PI * v;
+    var x = w * Math.cos(t);
+    var y = w * Math.sin(t);
+
+    // var xp = x / Math.cos(y0);
+    result = {
+        'latitude': y + y0,
+        'longitude': x + x0
+    };
+
+    return result
+};
+
 function getRandomLocation() {
-  let a= airports[Math.floor(Math.random() * 6977)];
-  let splits= a.split(",");
-  return splits[6].trim()+","+splits[7].trim();
+  console.log("**DEBUG: Location is: "+JSON.stringify(location))
+  if ( isNaN(location.latitude) ){
+    //Location has not been passed as parameter, use airport coordinates
+    let a= airports[Math.floor(Math.random() * 6977)];
+    let splits= a.split(",");
+    return splits[6].trim()+","+splits[7].trim();
+  }  
+  else {
+    //Location and radius should be parameters, use them
+    geo = getPseudoRandomGeo(location, radius_meters);
+    formattedGeo = geo['latitude']+","+geo['longitude'];
+    return formattedGeo;
+  }
 };
 
 function getRandomInt() {

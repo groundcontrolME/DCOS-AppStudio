@@ -1,22 +1,60 @@
 #!/bin/bash
 
-#export DOCKERHUB_USER=digitalemil
-#export DOCKERHUB_REPO=mypublicrepo
-#export DOCKERHUB_PASSWD=
-export VERSION=1.0.0
+export DOCKERHUB_USER=fernandosanchez
+export DOCKERHUB_REPO=appstudio
+export VERSION=2.0.0
+export BASEIMAGE=node694
+export APP_DIR=opt/app
+export LATITUDE="41.411338"	#coords for event generation 
+export LONGITUDE="2.226438"	#
+export RADIUS="1000"		#radius of events in meters		
+
+export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
+export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
+export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
+
+#check command-line arguments
+if [[ $# < 1 ]]; then
+	echo "Enter your dockerhub password for the account $DOCKERHUB_USER: "
+	read -s DOCKERHUB_PASSWD
+fi
 
 cp -r versions/$VERSION/* .
 echo copy done
 docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWD
 echo login done
-if [[ $VERSION == 1.0.0 ]] 
-then
-	cp Dockerfile CreatorApp
-	cd CreatorApp
-	docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION .
-	docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION 
+
+#Generate dockerfile with docker hub info 
+cat > Dockerfile  << EOF
+FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
+
+COPY . /$APP_DIR
+ENV APPDIR=$APP_DIR
+ENV MESOS_SANDBOX=/$APP_DIR
+ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
+EOF
+
+#configure group JSON for CreatorApp
+cp $GROUP_JSON.TEMPLATE $GROUP_JSON
+sed -i '' "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
+sed -i '' "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
+sed -i '' "s,__VERSION__,$VERSION,g" $GROUP_JSON
+sed -i '' "s,__LATITUDE__,$LATITUDE,g" $GROUP_JSON
+sed -i '' "s,__LONGITUDE__,$LONGITUDE,g" $GROUP_JSON
+sed -i '' "s,__RADIUS__,$RADIUS,g" $GROUP_JSON		
+
+#configure appstudio installer
+cp $INSTALLER.TEMPLATE $INSTALLER
+sed -i '' "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $INSTALLER
+sed -i '' "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $INSTALLER
+sed -i '' "s,__VERSION__,$VERSION,g" $INSTALLER
+
+
+cp Dockerfile CreatorApp
+cd CreatorApp
+docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION .
+docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION 
 	cd ..
-fi
 
 if [[ $VERSION == 2.0.0 ]] 
 then
