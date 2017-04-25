@@ -8,7 +8,7 @@ export BASEIMAGE=node694
 export APP_DIR=opt/app
 export LOCATION='{ "latitude": 41.41187, "longitude": -2.22589 }'
 
-export CREATOR_APP_DIR="./CreatorApp"
+export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
 export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
 
