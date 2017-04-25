@@ -6,7 +6,8 @@ export DOCKERHUB_PASSWD=$1
 export VERSION=2.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
-export LOCATION="'"'{ "latitude":41.41187, "longitude":-2.22589 }'"'"
+export LATITUDE=41.41187 
+export LONGITUDE=-2.22589		
 
 export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
@@ -39,7 +40,8 @@ cp $GROUP_JSON.TEMPLATE $GROUP_JSON
 sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
 sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
 sed -i -- "s,__VERSION__,$VERSION,g" $GROUP_JSON
-sed -i -- "s,__LOCATION__,$LOCATION,g" $GROUP_JSON  #Pass #LOCATION as an environment variable to Creator only if defined
+sed -i -- "s,__LATITUDE__,$LATITUDE,g" $GROUP_JSON
+sed -i -- "s,__LONGITUDE__,$LONGITUDE,g" $GROUP_JSON		
 
 #configure appstudio installer
 cp $INSTALLER.TEMPLATE $INSTALLER
@@ -48,14 +50,14 @@ sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $INSTALLER
 sed -i -- "s,__VERSION__,$VERSION,g" $INSTALLER
 
 
-if [[ $VERSION == 1.0.0 ]] 
-then
+##if [[ $VERSION == 1.0.0 ]] 
+##then
 	cp Dockerfile CreatorApp
 	cd CreatorApp
 	docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION .
 	docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION 
 	cd ..
-fi
+##fi
 
 if [[ $VERSION == 2.0.0 ]] 
 then
