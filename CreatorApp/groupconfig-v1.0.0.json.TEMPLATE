@@ -438,8 +438,11 @@
 	"args": null,
 	"user": null,
 	"env": {
+		"LATITUDE": "__LATITUDE__" , 
+		"LONGITUDE": "__LONGITUDE__" ,
+		"RADIUS": "__RADIUS__",
 "APPDEF":"REPLACEME",
-"LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:0/data"
+"LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:0/data",
   },
 "instances": 0,
 	"cpus": 0.1,
@@ -453,11 +456,6 @@
 	"backoffSeconds": 1,
 	"backoffFactor": 1.15,
 	"maxLaunchDelaySeconds": 3600,
-	"env" : {
-		"LATITUDE": "__LATITUDE__" , 
-		"LONGITUDE": "__LONGITUDE__" ,
-		"RADIUS": "__RADIUS__"
-	},
 	"container": {
 		"type": "DOCKER",
 		"volumes": [],
