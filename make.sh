@@ -14,8 +14,6 @@ export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
 
 
 #check command-line arguments
-echo "**DEBUG: number of args is "$#
-echo "**DEBUG: first arg is "$1
 if [[ $# < 1 ]]; then
 	echo "Usage: make.sh [Docker Hub password]"
 	exit 1
@@ -38,14 +36,12 @@ ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
 EOF
 
 #configure group JSON for CreatorApp
-echo "**DEBUG: GROUP_JSON IS "$GROUP_JSON
 cp $GROUP_JSON.TEMPLATE $GROUP_JSON
 sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
 sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
 sed -i -- "s,__VERSION__,$VERSION,g" $GROUP_JSON
 
 #configure appstudio installer
-echo "**DEBUG: INSTALLER IS :"$INSTALLER
 cp $INSTALLER.TEMPLATE $INSTALLER
 sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $INSTALLER
 sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $INSTALLER

@@ -119,19 +119,14 @@ function getPseudoRandomGeo(center, radius) {
         'latitude': y + y0,
         'longitude': x + x0
     };
-    console.log("**DEBUG: Result is: "+JSON.stringify(result));     
 
     return result
 };
 
 function getRandomLocation() {
-  //let a= airports[Math.floor(Math.random() * 6977)];
-  //let splits= a.split(",");
-  console.log("**DEBUG: Location is " + location);   
+
   geo = getPseudoRandomGeo(location, radius_meters);
-  console.log("**DEBUG: Geo is " + geo);  
   formattedGeo = geo['latitude']+","+geo['longitude'];
-  console.log("**DEBUG: Formatted Geo is " + formattedGeo);
   return formattedGeo;
 };
 
