@@ -127,6 +127,7 @@ function getPseudoRandomGeo(center, radius) {
 function getRandomLocation() {
   //let a= airports[Math.floor(Math.random() * 6977)];
   //let splits= a.split(",");
+  console.log("**DEBUG: Location is " + location);   
   geo = getPseudoRandomGeo(location, radius_meters);
   console.log("**DEBUG: Geo is " + geo);  
   formattedGeo = geo['latitude']+","+geo['longitude'];
