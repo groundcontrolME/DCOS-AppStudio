@@ -3,7 +3,9 @@ var router = express.Router();
 var app = express();
 var url= require('url');
 var request = require('request');
-var http = require("http");
+var location = process.env.LOCATION;
+// { "latitude": 41.41187, "longitude": -2.22589 }
+var radius_meters = 1000
 
 let listener= process.env.LISTENER;
 
@@ -86,7 +88,7 @@ fs.readFile(process.env.APPDIR+"/warandpeace.txt", 'utf8', function(err, data) {
   length= warandpeace.length;
 });
 
-console.log(process.env.APPDIR+"/airports.txt");
+console.log("Reading: "+process.env.APPDIR+"/airports.txt");
 fs.readFile(process.env.APPDIR+"/airports.txt", 'utf8', function(err, data) {
   if (err) throw err;
   airports= new String(data).split("\n");
@@ -99,10 +101,37 @@ fs.readFile(process.env.APPDIR+"/airports.txt", 'utf8', function(err, data) {
 });
 }
 
+function getPseudoRandomGeo(center, radius) {
+    var y0 = center.latitude;
+    var x0 = center.longitude;
+    var rd = radius / 111300;
+
+    var u = Math.random();
+    var v = Math.random();
+
+    var w = rd * Math.sqrt(u);
+    var t = 2 * Math.PI * v;
+    var x = w * Math.cos(t);
+    var y = w * Math.sin(t);
+
+    // var xp = x / Math.cos(y0);
+    result = {
+        'latitude': y + y0,
+        'longitude': x + x0
+    };
+    console.log("**DEBUG: Result is: "+JSON.stringify(result));     
+
+    return result
+};
+
 function getRandomLocation() {
-  let a= airports[Math.floor(Math.random() * 6977)];
-  let splits= a.split(",");
-  return splits[6].trim()+","+splits[7].trim();
+  //let a= airports[Math.floor(Math.random() * 6977)];
+  //let splits= a.split(",");
+  geo = getPseudoRandomGeo(location, radius_meters);
+  console.log("**DEBUG: Geo is " + geo);  
+  formattedGeo = geo['latitude']+","+geo['longitude'];
+  console.log("**DEBUG: Formatted Geo is " + formattedGeo);
+  return formattedGeo;
 };
 
 function getRandomInt() {

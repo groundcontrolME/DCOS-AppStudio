@@ -6,6 +6,7 @@ export DOCKERHUB_PASSWD=$1
 export VERSION=1.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
+export LOCATION="{ 'latitude': 41.41187, 'longitude': -2.22589 }"
 
 export CREATOR_APP_DIR="./CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
@@ -32,6 +33,7 @@ FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
 COPY . /$APP_DIR
 ENV APPDIR=$APP_DIR
 ENV MESOS_SANDBOX=/$APP_DIR
+ENV LOCATION=$LOCATION
 ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
 EOF
 
