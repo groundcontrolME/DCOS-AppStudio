@@ -31,7 +31,6 @@ FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
 COPY . /$APP_DIR
 ENV APPDIR=$APP_DIR
 ENV MESOS_SANDBOX=/$APP_DIR
-ENV LOCATION=$LOCATION
 ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
 EOF
 
@@ -40,6 +39,7 @@ cp $GROUP_JSON.TEMPLATE $GROUP_JSON
 sed -i -- "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
 sed -i -- "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
 sed -i -- "s,__VERSION__,$VERSION,g" $GROUP_JSON
+sed -i -- "s,__LOCATION__,$LOCATION,g" $GROUP_JSON  #Pass #LOCATION as an environment variable to Creator only if defined
 
 #configure appstudio installer
 cp $INSTALLER.TEMPLATE $INSTALLER
