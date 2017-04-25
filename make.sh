@@ -6,9 +6,9 @@ export DOCKERHUB_PASSWD=$1
 export VERSION=2.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
-export LATITUDE=41.41187	#coords for event generation
-export LONGITUDE=-2.22589	#
-export RADIUS=1000			#radius of events in meters		
+export LATITUDE="41.41187"	#coords for event generation
+export LONGITUDE="-2.22589"	#
+export RADIUS="1000"			#radius of events in meters		
 
 export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
@@ -54,10 +54,10 @@ sed -i -- "s,__VERSION__,$VERSION,g" $INSTALLER
 
 ##if [[ $VERSION == 1.0.0 ]] 
 ##then
-	cp Dockerfile CreatorApp
-	cd CreatorApp
-	docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION .
-	docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION 
+cp Dockerfile CreatorApp
+cd CreatorApp
+docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION .
+docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION 
 	cd ..
 ##fi
 
