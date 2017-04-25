@@ -6,7 +6,7 @@ export DOCKERHUB_PASSWD=$1
 export VERSION=1.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
-export LOCATION="'"'{ "latitude": 41.41187, "longitude": -2.22589 }'"'"
+export LOCATION="'"'{ "latitude":41.41187, "longitude":-2.22589 }'"'"
 
 export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
