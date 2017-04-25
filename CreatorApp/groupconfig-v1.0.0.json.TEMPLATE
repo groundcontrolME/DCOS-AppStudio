@@ -31,7 +31,7 @@
 		"docker": {
 			"image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-kafkaingester-v__VERSION__",
 			"network": "HOST",
-                        "portMappings": [],
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false
@@ -98,9 +98,9 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-cassandraingester-v__VERSION__",
+            "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-cassandraingester-v__VERSION__",
 			"network": "HOST",
-                        "portMappings": [],
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false
@@ -174,7 +174,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagelistener-v__VERSION__",
+            "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagelistener-v__VERSION__",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -242,7 +242,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagevalidator-v__VERSION__",
+            "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagevalidator-v__VERSION__",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -310,7 +310,7 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagetransformer-v__VERSION__",
+            "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-messagetransformer-v__VERSION__",
 			"network": "HOST",
 			"portMappings": null,
 			"privileged": false,
@@ -384,9 +384,9 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-ui-v__VERSION__",
+            "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-ui-v__VERSION__",
 			"network": "HOST",
-                        "portMappings": [],
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false
@@ -460,9 +460,9 @@
 		"type": "DOCKER",
 		"volumes": [],
 		"docker": {
-                        "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-loader-v__VERSION__",
+            "image": "__DOCKERHUB_USER__/__DOCKERHUB_REPO__:dcosappstudio-loader-v__VERSION__",
 			"network": "HOST",
-                        "portMappings": [],
+            "portMappings": [],
 			"privileged": false,
 			"parameters": [],
 			"forcePullImage": false
