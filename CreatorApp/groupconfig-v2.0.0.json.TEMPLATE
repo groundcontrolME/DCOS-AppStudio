@@ -523,9 +523,9 @@
 	"backoffFactor": 1.15,
 	"maxLaunchDelaySeconds": 3600,
 	"env" : {
-		"LATITUDE": __LATITUDE__ , 
-		"LONGITUDE": __LONGITUDE__ ,
-		"RADIUS": __RADIUS__
+		"LATITUDE": "__LATITUDE__" , 
+		"LONGITUDE": "__LONGITUDE__" ,
+		"RADIUS": "__RADIUS__"
 	},
 	"container": {
 		"type": "DOCKER",
