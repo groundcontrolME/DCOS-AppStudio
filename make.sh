@@ -16,8 +16,7 @@ export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
 #check command-line arguments
 if [[ $# < 1 ]]; then
 	echo "Enter your dockerhub password for the account $DOCKERHUB_USER: "
-	read -s $DOCKERHUB_PASSWD
-	exit 1
+	read -s DOCKERHUB_PASSWD
 fi
 
 cp -r versions/$VERSION/* .
@@ -26,7 +25,7 @@ docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWD
 echo login done
 
 #Generate dockerfile with docker hub info 
-sudo cat > Dockerfile  << EOF
+cat > Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
 
 COPY . /$APP_DIR
