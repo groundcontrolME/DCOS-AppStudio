@@ -4,14 +4,13 @@ var app = express();
 var url= require('url');
 var request = require('request');
 
-var src_latitude = process.env.LATITUDE;
-var src_longitude = process.env.LONGITUDE;
-var location = { latitude: src_latitude, longitude: src_longitude };
-  console.log("** DEBUG: Location is: "+JSON.parse(location));
-// { "latitude": 41.41187, "longitude": -2.22589 }
-var radius_meters = process.env.RADIUS;
+var location = {
+  "latitude": Number(process.env.LATITUDE),
+  "longitude": Number(process.env.LONGITUDE)
+};
+var radius_meters = Number(process.env.RADIUS);
 
-let listener= process.env.LISTENER;
+let listener = process.env.LISTENER;
 
 let json= new String(process.env.APPDEF);
 json= json.replace(/\'/g, '\"');
@@ -128,10 +127,19 @@ function getPseudoRandomGeo(center, radius) {
 };
 
 function getRandomLocation() {
-
-  geo = getPseudoRandomGeo(location, radius_meters);
-  formattedGeo = geo['latitude']+","+geo['longitude'];
-  return formattedGeo;
+  console.log("**DEBUG: Location is: "+JSON.stringify(location))
+  if ( isNaN(location.latitude) ){
+    //Location has not been passed as parameter, use airport coordinates
+    let a= airports[Math.floor(Math.random() * 6977)];
+    let splits= a.split(",");
+    return splits[6].trim()+","+splits[7].trim();
+  }  
+  else {
+    //Location and radius should be parameters, use them
+    geo = getPseudoRandomGeo(location, radius_meters);
+    formattedGeo = geo['latitude']+","+geo['longitude'];
+    return formattedGeo;
+  }
 };
 
 function getRandomInt() {
