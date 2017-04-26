@@ -123,19 +123,19 @@ if __name__ == "__main__":
 		#search for "name", if present generate one
 		if field['name'] == "name":
 			actor["name"] = fake.name()
-			print('**DEBUG my name is: {0}'.format( my_name ) )
+			print('**DEBUG my name is: {0}'.format( actor["name"] ) )
 			continue
 
 		#search for "age", if present generate age in range that makes sense
 		if field['name'] == "age":
 			actor["age"] = generate_random_number( min=AGE_MIN, max=AGE_MAX )
-			print('**DEBUG my age is: {0}'.format( my_age ) )
+			print('**DEBUG my age is: {0}'.format( actor["age"] ) )
 			continue
 
 		#search for "country", if present generate a country name
 		if field['name'] == "country":
 			actor["country"] = fake.country()
-			print('**DEBUG my country is: {0}'.format( my_country ) )
+			print('**DEBUG my country is: {0}'.format( actor["country"] ) )
 			continue
 
 		#field is not well-known, fill it with gibberish
