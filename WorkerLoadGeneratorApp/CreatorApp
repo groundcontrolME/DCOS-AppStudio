@@ -3,4 +3,5 @@ FROM fernandosanchez/appstudio:node694
 COPY . /opt/app
 ENV APPDIR=opt/app
 ENV MESOS_SANDBOX=/opt/app
+ENV LOCATION={ "latitude": 41.41187, "longitude": -2.22589 }
 ENTRYPOINT /opt/node/bin/node /opt/app/bin/www
