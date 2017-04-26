@@ -33,7 +33,7 @@ DEFAULT_RADIUS = 300
 MY_ID_LENGTH = 6			#up to 1 million users - integer
 AGE_MAX = 60
 AGE_MIN = 16
-WAIT_SECS_SEED = 10			#every random*(10 seconds) we thing of moving
+WAIT_SECS_SEED = 20			#every random*(10 seconds) we thing of moving
 SUICIDE_CHANCE = 1			#chance of commiting suicide in pct every wait time
 MOVING_CHANCE = 10			#chance of moving in the map
 
@@ -98,6 +98,28 @@ def generate_random_location( latitude, longitude, radius ):
 
 	return new_location
 
+def calculate_distance (src_coords, dst_coords):
+	"""
+	Calculates the distance in meters between two coordinates.
+	These are received as a string with "lat,long".
+	"""
+
+	lat1, lon1 = src_coords.split(',')
+	print("**DEBUG: find src coords: lat is {0} long is {1}".format(lat1, lon1))
+	lat2, lon2 = dst_coords.split(',')
+	print("**DEBUG: find dst coords: lat is {0} long is {1}".format(lat1, lon1))
+
+	# convert decimal degrees to radians 
+    lon1, lat1, lon2, lat2 = map(radians, [lon1, lat1, lon2, lat2])
+    # haversine formula 
+    dlon = lon2 - lon1 
+    dlat = lat2 - lat1 
+    a = sin(dlat/2)**2 + cos(lat1) * cos(lat2) * sin(dlon/2)**2
+    c = 2 * asin(sqrt(a)) 
+    distance_meters = 6367 * c * 1000   
+
+	return distance_meters
+
 if __name__ == "__main__":
 
 	#initialize fake data factory
@@ -111,7 +133,7 @@ if __name__ == "__main__":
 	longitude = os.getenv('LONGITUDE', DEFAULT_LONGITUDE)
 	radius = os.getenv('RADIUS', DEFAULT_RADIUS)
 	#Listener POST endpoint is an environment variable
-	listener = os.getenv('LISTENER')+":0"				#all VIPs are created :0
+	listener = os.getenv('LISTENER')
 	print('**DEBUG Listener is: {0}'.format( listener ) )
 
 	# Read fields from env variable APPDEF
@@ -131,6 +153,9 @@ if __name__ == "__main__":
 	my_id = datetime.datetime.now().isoformat()
 	print('**DEBUG my id is: {0}'.format( my_id ) )
 	actor["uuid"] = my_id
+
+	#I haven't moved so route_length is 0
+	actor["route_length"] = 0
 
 	#loop through the fields, populate
 	for field in fields:
@@ -229,4 +254,8 @@ if __name__ == "__main__":
 		#if moving, generate new random position based on origin and radius
 		if move_on:
 			print("** Let's move somewhere else.")
-			actor['location'] = generate_random_location( latitude, longitude, radius )
+			new_location = generate_random_location( latitude, longitude, radius )
+			distance = calculate_distance( actor['location'], new_location )
+			print("** I'm going to move {0} meters".format( distance ) )
+			actor['route_length'] += distance
+			actor['location'] = new_location
