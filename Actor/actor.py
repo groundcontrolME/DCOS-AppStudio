@@ -27,8 +27,8 @@ MY_ID_LENGTH = 13
 AGE_MAX = 60
 AGE_MIN = 16
 WAIT_SECS_SEED = 10			#every random*(10 seconds) we thing of moving
-SUICIDE_CHANCE = 3			#chance of commiting suicide in pct every wait time
-MOVING_CHANCE = 30			#chance of moving in the map
+SUICIDE_CHANCE = 1			#chance of commiting suicide in pct every wait time
+MOVING_CHANCE = 10			#chance of moving in the map
 
 def generate_random_number( min=0, max=0, length=0 ):
 	"""
