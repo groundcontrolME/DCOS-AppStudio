@@ -606,7 +606,7 @@
 		"LONGITUDE": "__LONGITUDE__" ,
 		"RADIUS": "__RADIUS__"
   },
-  "requirePorts": falseΩ
+  "requirePorts": false
 }
    ]} 
 ]
