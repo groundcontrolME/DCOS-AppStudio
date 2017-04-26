@@ -109,7 +109,7 @@ def calculate_distance (src_coords, dst_coords):
 	lat1, lon1 = src_coords.split(',')
 	print("**DEBUG: find src coords: lat is {0} long is {1}".format(lat1, lon1))
 	lat2, lon2 = dst_coords.split(',')
-	print("**DEBUG: find dst coords: lat is {0} long is {1}".format(lat2, lon2))
+	print("**DEBUG: find dst coords: lat is {0} long is {1}".format(lat1, lon1))
 
 	# convert decimal degrees to radians 
 	#lon1, lat1, lon2, lat2 = map(math.radians, [float(lon1), float(lat1), float(lon2), float(lat2)])
