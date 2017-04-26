@@ -212,7 +212,7 @@
 		"protocol": "tcp",
 		"name": "myp",
 		"labels": {
-			"VIP_0": "/dcosappstudio$PATHworkerlistener:0"
+			"VIP_0": "/dcosappstudio$PATHworkerlistener:80"
 		}
 	}],
 	"requirePorts": false
