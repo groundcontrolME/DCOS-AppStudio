@@ -86,105 +86,105 @@ def generate_random_location( latitude, longitude, radius ):
 
 if __name__ == "__main__":
 
-#initialize fake data factory
-fake = Factory.create()
-#initialize actor information
-actor = {}
+	#initialize fake data factory
+	fake = Factory.create()
+	#initialize actor information
+	actor = {}
 
-# Parse environment variables
-latitude = os.getenv('LATITUDE', DEFAULT_LATITUDE)
-longitude = os.getenv('LONGITUDE', DEFAULT_LONGITUDE)
-radius = os.getenv('RADIUS', DEFAULT_RADIUS)
-#Listener POST endpoint is an environment variable
-listener = os.getenv('LISTENER')
-print('**DEBUG Listener is: {0}'.format( listener ) )
+	# Parse environment variables
+	latitude = os.getenv('LATITUDE', DEFAULT_LATITUDE)
+	longitude = os.getenv('LONGITUDE', DEFAULT_LONGITUDE)
+	radius = os.getenv('RADIUS', DEFAULT_RADIUS)
+	#Listener POST endpoint is an environment variable
+	listener = os.getenv('LISTENER')
+	print('**DEBUG Listener is: {0}'.format( listener ) )
 
-# Read fields from env variable APPDEF
-appdef = json.loads( os.getenv('APPDEF', "{}")  )
-fields = appdef['fields']
+	# Read fields from env variable APPDEF
+	appdef = json.loads( os.getenv('APPDEF', "{}")  )
+	fields = appdef['fields']
 
-#Generate my location from lat long radius
-actor['location'] = generate_random_location( latitude, longitude, radius )
+	#Generate my location from lat long radius
+	actor['location'] = generate_random_location( latitude, longitude, radius )
 
-# Generate my ID - 13 figures number
-my_id = generate_random_number( length=MY_ID_LENGTH )
-print('**DEBUG my id is: {0}'.format( my_id ) )
-actor['uuid'] = my_id
+	# Generate my ID - 13 figures number
+	my_id = generate_random_number( length=MY_ID_LENGTH )
+	print('**DEBUG my id is: {0}'.format( my_id ) )
+	actor['uuid'] = my_id
 
-#loop through the fields, populate
-for field in fields:
-	#search for "name", if present generate one
-	if field['name'] == "name":
-		actor['name'] = fake.name()
-		print('**DEBUG my name is: {0}'.format( my_age ) )
-		continue
+	#loop through the fields, populate
+	for field in fields:
+		#search for "name", if present generate one
+		if field['name'] == "name":
+			actor['name'] = fake.name()
+			print('**DEBUG my name is: {0}'.format( my_age ) )
+			continue
 
-	#search for "age", if present generate age in range that makes sense
-	if field['name'] == "age":
-		actor['age'] = generate_random_number( min=AGE_MIN, max=AGE_MAX )
-		print('**DEBUG my age is: {0}'.format( my_age ) )
-		continue
+		#search for "age", if present generate age in range that makes sense
+		if field['name'] == "age":
+			actor['age'] = generate_random_number( min=AGE_MIN, max=AGE_MAX )
+			print('**DEBUG my age is: {0}'.format( my_age ) )
+			continue
 
-	#search for "country", if present generate a country name
-	if field['name'] == "country":
-		actor['country'] = fake.country()
-		print('**DEBUG my country is: {0}'.format( my_country ) )
-		continue
+		#search for "country", if present generate a country name
+		if field['name'] == "country":
+			actor['country'] = fake.country()
+			print('**DEBUG my country is: {0}'.format( my_country ) )
+			continue
 
-	#field is not well-known, fill it with gibberish
-	actor[field['name']] = get_random_for_type( field['type'] )
+		#field is not well-known, fill it with gibberish
+		actor[field['name']] = get_random_for_type( field['type'] )
 
-# NOT USED:
-# Kafka topic
-# Cassandra keyspace
-# Cassandra table
-# creator API endpoint
+	# NOT USED:
+	# Kafka topic
+	# Cassandra keyspace
+	# Cassandra table
+	# creator API endpoint
 
-#set my creation (birth) time as now
-actor['start_time'] = datetime.datetime.now()
+	#set my creation (birth) time as now
+	actor['start_time'] = datetime.datetime.now()
 
-#### All fields are now ready, start posting
-while true:
+	#### All fields are now ready, start posting
+	while true:
 
-	#fill in the message Id with "now" in javascript format
-	actor['id'] = int(time.time() * 1000)
-	#build the request
-	headers = {
-	'Content-type': 'application/json'
-	}
-	#send the message with "actor"
-	try:
-		request = requests.post(
-			listener,
-			data = json.dumps( actor ),
-			headers = jeaders
-			)
-			request.raise_for_status()
-			print("** INFO: sent update: \n{0}".format(actor))
-	except (
-	    requests.exceptions.ConnectionError ,\
-	    requests.exceptions.Timeout ,\
-	    requests.exceptions.TooManyRedirects ,\
-	    requests.exceptions.RequestException ,\
-	    ConnectionRefusedError
-	    ) as error:
-		print ('** ERROR: update failed {}: {}'.format( actor, error ) ) 
+		#fill in the message Id with "now" in javascript format
+		actor['id'] = int(time.time() * 1000)
+		#build the request
+		headers = {
+		'Content-type': 'application/json'
+		}
+		#send the message with "actor"
+		try:
+			request = requests.post(
+				listener,
+				data = json.dumps( actor ),
+				headers = jeaders
+				)
+				request.raise_for_status()
+				print("** INFO: sent update: \n{0}".format(actor))
+		except (
+		    requests.exceptions.ConnectionError ,\
+		    requests.exceptions.Timeout ,\
+		    requests.exceptions.TooManyRedirects ,\
+		    requests.exceptions.RequestException ,\
+		    ConnectionRefusedError
+		    ) as error:
+			print ('** ERROR: update failed {}: {}'.format( actor, error ) ) 
 
-	#decide whether I die based on creation time and and duration/lifespan
-	#TODO: for now we'll just give him a % chance of being alive
-	commit_suicide = ( random.randrange(100) < SUICIDE_CHANCE )
-	#if so, (die) and exit
-	if commit_suicide:
-		print("** This party sucks. I'm out of here.")
-		sys.exit(0)
+		#decide whether I die based on creation time and and duration/lifespan
+		#TODO: for now we'll just give him a % chance of being alive
+		commit_suicide = ( random.randrange(100) < SUICIDE_CHANCE )
+		#if so, (die) and exit
+		if commit_suicide:
+			print("** This party sucks. I'm out of here.")
+			sys.exit(0)
 
-	#wait approximate interval of change (randomized)
-	#wait somewhere between 0 and 90 seconds
-	wait_interval = WAIT_SECS_SEED*generate_random_number( length=1 ) 
+		#wait approximate interval of change (randomized)
+		#wait somewhere between 0 and 90 seconds
+		wait_interval = WAIT_SECS_SEED*generate_random_number( length=1 ) 
 
-	#decide randomly whether to change or not (decide how)
-	move_on = ( random.randrange(100) < MOVING_CHANCE )
-	#if moving, generate new random position based on origin and radius
-	if move_on:
-		print("** Let's move somewhere else.")
-		actor['location'] = generate_random_location( latitude, longitude, radius )
+		#decide randomly whether to change or not (decide how)
+		move_on = ( random.randrange(100) < MOVING_CHANCE )
+		#if moving, generate new random position based on origin and radius
+		if move_on:
+			print("** Let's move somewhere else.")
+			actor['location'] = generate_random_location( latitude, longitude, radius )
