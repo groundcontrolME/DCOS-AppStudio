@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
 
 # actor.py -- actor for AppStudio geolocation demo. Simulates a moving object with a lifespan.
-# receives as environment variables:
-# - original position 
-# - radius of movement
-# - approximate interval of position change
-# - amount of change in meters (speed-like)
-# - duration/lifespan
-# - listener API endpoint
+# * receives as environment variables:
+# - LATITUDE 		# starting position
+# - LONGITUDE 		# starting position
+# - RADIUS 			# max radius of movement in meters
+# - LISTENER 		# API endpoint to post updates to 
+# - APPDEF 			# List-of-JSONs definition of the AppStudio environment 
+# * Other factors as constants:
+# - WAIT_SECS_SEED	# order of magnitude in seconds of period after which we consider change or die
+# - MOVING_CHANCE 	# % probability of position change each WAIT_SECS_SEED seconds
+# - SUICIDE_CHANCE	# % probability of exiting each WAIT_SECS_SEED seconds
+# * Not currently used:
+# - amount of change in meters (speed-like)	# use "RADIUS"
+# - duration/lifespan						# use "SUICIDE_CHANCE"
+
 
 #load environment variables
 import sys
@@ -15,7 +22,7 @@ import os
 import requests
 import json
 import random
-from faker import Faker	#fake-factory: generates good-looking random data
+from faker import Faker		#fake-factory: generates good-looking random data
 import datetime
 import time 				#required to generate JS-style datetime for msg id
 import math
@@ -98,7 +105,7 @@ if __name__ == "__main__":
 	# Read fields from env variable APPDEF
 	appdef_env = os.getenv('APPDEF', {} )
 	print('**APPDEF is: {0}'.format( appdef_env ) )
-	appdef_clean = appdef_env.replace( "'", '"' )[:-1]
+	appdef_clean = appdef_env.replace( "'", '"' )	#[:-1] has happened that the last char is rubbish
 	print('**APPDEF clean is: {0}'.format( appdef_clean ) )
 	appdef = json.loads(appdef_clean)
 	fields = appdef['fields']
@@ -116,7 +123,7 @@ if __name__ == "__main__":
 		#search for "name", if present generate one
 		if field['name'] == "name":
 			actor["name"] = fake.name()
-			print('**DEBUG my name is: {0}'.format( my_age ) )
+			print('**DEBUG my name is: {0}'.format( my_name ) )
 			continue
 
 		#search for "age", if present generate age in range that makes sense

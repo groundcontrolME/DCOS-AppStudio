@@ -1,0 +1,20 @@
+{
+  "id": "/dcosappstudio-festival/management/actor",
+  "instances": 1,
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+      "image": "fernandosanchez/appstudio:dcosappstudio-actor-v2.0.0",
+      "forcePullImage": true,
+      "network": "BRIDGE"
+    }
+  },
+  "cpus": 0.1,
+  "mem": 128,
+  "env": {
+    "LISTENER": "http://dcosappstudio-festivalworkerlistener.marathon.l4lb.thisdcos.directory:0/data",
+    "LATITUDE": "41.411338",
+    "LONGITUDE": "2.226438",
+    "RADIUS": "100"
+  }
+}
