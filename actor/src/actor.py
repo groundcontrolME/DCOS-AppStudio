@@ -10,9 +10,6 @@
 # - RADIUS 			# max radius of movement in meters
 # - LISTENER 		# API endpoint to post updates to 
 # - APPDEF 			# List-of-JSONs definition of the AppStudio environment
-#
-# * Other factors as constants:
-#
 # - WAIT_SECS_SEED	# order of magnitude in seconds of period after which we consider change or die
 # - MOVING_CHANCE 	# % probability of position change each WAIT_SECS_SEED seconds
 # - SUICIDE_CHANCE	# % probability of exiting each WAIT_SECS_SEED seconds
@@ -29,18 +26,18 @@ import json
 import random
 from faker import Faker		#fake-factory: generates good-looking random data
 import datetime
-import time 				#required to generate JS-style datetime for msg id
+import time 				
 import math
 
 DEFAULT_LATITUDE = 41.411338
 DEFAULT_LONGITUDE = 2.226438
 DEFAULT_RADIUS = 300
-MY_ID_LENGTH = 6			#up to 1 million users - integer
-AGE_MAX = 60
-AGE_MIN = 16
-WAIT_SECS_SEED = 2			#every random*(10 seconds) we thing of moving
-SUICIDE_CHANCE = 10			#chance of commiting suicide in pct every wait time
-MOVING_CHANCE = 33			#chance of moving in the map
+DEFAULT_MY_ID_LENGTH = 6			#up to 1 million users - integer
+DEFAULT_AGE_MAX = 60
+DEFAULT_AGE_MIN = 16
+DEFAULT_WAIT_SECS_SEED = 2			#every random*(THIS seconds) we consider  moving
+DEFAULT_MOVING_CHANCE = 33			#chance of moving in the map
+DEFAULT_SUICIDE_CHANCE = 10			#chance of commiting suicide in pct every wait time
 
 def generate_random_number( min=0, max=0, length=0 ):
 	"""
@@ -143,7 +140,7 @@ def calculate_distance (src_coords, dst_coords):
 	dlat = lat2 - lat1 
 	a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
 	c = 2 * math.asin(math.sqrt(a)) 
-	distance_meters = R * c * 1000   
+	distance_meters = R * c # *1000 ?   
 
 	print("**DEBUG: distance METERS is {0}".format(distance_meters))
 	return distance_meters
@@ -157,9 +154,16 @@ if __name__ == "__main__":
 	actor = {}
 
 	# Parse environment variables
-	latitude = os.getenv('LATITUDE', DEFAULT_LATITUDE)
-	longitude = os.getenv('LONGITUDE', DEFAULT_LONGITUDE)
-	radius = os.getenv('RADIUS', DEFAULT_RADIUS)
+	Latitude = os.getenv('LATITUDE', DEFAULT_LATITUDE)
+	Longitude = os.getenv('LONGITUDE', DEFAULT_LONGITUDE)
+	Radius = os.getenv('RADIUS', DEFAULT_RADIUS)
+	My_id_length = os.getenv('MY_ID_LENGTH', DEFAULT_MY_ID_LENGTH)
+	Age_min = os.getenv('AGE_MIN', DEFAULT_AGE_MIN)
+	Age_max = os.getenv('AGE_MAX', DEFAULT_AGE_MAX)
+	Wait_secs_seed = os.getenv('WAIT_SECS_SEED', DEFAULT_WAIT_SECS_SEED)
+	Moving_chance = os.getenv('MOVING_CHANCE', DEFAULT_MOVING_CHANCE)
+	Suicide_chance = os.getenv('SUICIDE_CHANCE', DEFAULT_SUICIDE_CHANCE)
+
 	#Listener POST endpoint is an environment variable
 	listener = os.getenv('LISTENER')
 	print('**DEBUG: Listener is: {0}'.format( listener ) )
@@ -176,13 +180,13 @@ if __name__ == "__main__":
 		appdef_clean = ""
 		fields = []
 	#Generate my location from lat long radius
-	actor["location"] = generate_random_location( latitude, longitude, radius )
+	actor["location"] = generate_random_location( Latitude, Longitude, Radius )
 
 	##### ADD SPECIFIC FIELDS --- These NEED to be added to the app definition / schema or Validation will fail!
 	##### MANDATORY FOR APP DEFINITION! #############
 	############################################################################################################
 	# Generate my ID - 13 figures number
-	my_id = generate_random_number( length=MY_ID_LENGTH )
+	my_id = generate_random_number( length=My_id_length )
 	# initially use 'uuid' as per fixed schema
 	# my_id = datetime.datetime.now().isoformat()
 	print('**DEBUG: my id is: {0}'.format( my_id ) )
@@ -222,7 +226,7 @@ if __name__ == "__main__":
 
 		#search for "age", if present generate age in range that makes sense
 		if field['name'] == "age":
-			actor["age"] = generate_random_number( min=AGE_MIN, max=AGE_MAX )
+			actor["age"] = generate_random_number( min=Age_min, max=Age_max )
 			print('**DEBUG: my age is: {0}'.format( actor["age"] ) )
 			continue
 
@@ -273,7 +277,7 @@ if __name__ == "__main__":
 
 		#decide whether I die based on creation time and and duration/lifespan
 		#TODO: for now we'll just give him a % chance of being alive
-		commit_suicide = ( random.randrange(100) < SUICIDE_CHANCE )
+		commit_suicide = ( random.randrange(100) < Suicide_chance )
 		#if so, (die) and exit
 		if commit_suicide:
 			print("**INFO: This party sucks. I'm out of here.")
@@ -281,16 +285,16 @@ if __name__ == "__main__":
 
 		#wait approximate interval of change (randomized)
 		#wait somewhere between 0 and 90 seconds
-		wait_interval = WAIT_SECS_SEED*generate_random_number( length=1 )
+		wait_interval = Wait_secs_seed*generate_random_number( length=1 )
 		print("**INFO: I'm going to wait here for {0} seconds.".format(wait_interval))
 		time.sleep(int(wait_interval)) 
 
 		#decide randomly whether to change or not (decide how)
-		move_on = ( random.randrange(100) < MOVING_CHANCE )
+		move_on = ( random.randrange(100) < Moving_chance )
 		#if moving, generate new random position based on origin and radius
 		if move_on:
 			print("**INFO: Let's move somewhere else.")
-			new_location = generate_random_location( latitude, longitude, radius )
+			new_location = generate_random_location( Latitude, Longitude, Radius )
 			print("**INFO:  My new location will be {0}, let's see how far that is from {1}".format( new_location, actor['location'] ) )		
 			distance = calculate_distance( actor['location'], new_location )
 			print("**INFO: I'm going to move {0} meters".format( distance ) )
