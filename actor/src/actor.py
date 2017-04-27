@@ -141,8 +141,8 @@ def calculate_distance (src_coords, dst_coords):
 	a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
 	c = 2 * math.asin(math.sqrt(a)) 
 	distance_meters = R * c * 1000 # *1000 is km to m   
-
 	print("**DEBUG: distance METERS is {0}".format(distance_meters))
+
 	return distance_meters
 
 if __name__ == "__main__":
@@ -150,7 +150,8 @@ if __name__ == "__main__":
 	#initialize fake data factory
 	fake = Faker()
 	#initialize actor information
-	#TODO: check in Cassandra whether I exist? relaunch if I do?
+	#TODO: Actors that re-live?
+	# check in Cassandra whether I exist? relaunch if I do?
 	actor = {}
 
 	# Parse environment variables
@@ -179,46 +180,37 @@ if __name__ == "__main__":
 	else:
 		appdef_clean = ""
 		fields = []
-	#Generate my location from lat long radius
-	print("Initial location is {0},{1}".format( Latitude, Longitude ))
-	actor["location"] = generate_random_location( Latitude, Longitude, Radius )
 
-	##### ADD SPECIFIC FIELDS --- These NEED to be added to the app definition / schema or Validation will fail!
-	##### MANDATORY FOR APP DEFINITION! #############
-	############################################################################################################
-	# Generate my ID - 13 figures number
-	my_id = generate_random_number( length=My_id_length )
-	# initially use 'uuid' as per fixed schema
-	# my_id = datetime.datetime.now().isoformat()
-	print('**DEBUG: my id is: {0}'.format( my_id ) )
-	actor["uuid"] = my_id 								###### ADDED FIELD!!! MUST BE IN THE APP DEFINITION
-	#I haven't moved so route_length is 0
-	actor["route_length"] = 0							###### ADDED FIELD!!! MUST BE IN THE APP DEFINITION
-	#set my creation (birth) time as now
+	#set my creation (birth) time as now -- remove as otherwise we'd have "extra fields"
 	#actor["start_time"] = datetime.datetime.now().isoformat()[:-3]+'Z' #adapted to Zulu for Kibana
 
 	#loop through the fields, populate
 	for field in fields:
 
-		##### SPECIFIC FIELDS --- These are already added, not from APPDEF
-		####################################################################
+		##### CUSTOMIZE VALUES FOR KNOWN FIELDS --- To look realistic / fit to boundaries / etc
+		#######################################################################################
+
 		#search for "uuid", skip as we want a single inmutable UUID per user
 		if field['name'] == "uuid":
+			actor["uuid"] = generate_random_number( length=My_id_length )
+			print('**DEBUG: my uuid is: {0}'.format( actor["uuid"] ) )
 			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
 			continue
 
-		#search for "route_length", if present ignore it as I'll calculate my length
-		if field['name'] == "route_length":
-			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
-			continue	
-
 		#search for "location", if present ignore it as I'll calculate my location
 		if field['name'] == "location":
+			#Generate my location from lat long radius
+			print("Initial location is {0},{1}".format( Latitude, Longitude ))
+			actor["location"] = generate_random_location( Latitude, Longitude, Radius )
 			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
-			continue	
+			continue
 
-		##### CUSTOMIZE VALUES FOR KNOWN FIELDS --- To look realistic / fit to boundaries / etc
-		#######################################################################################
+		#search for "route_length", if present initialize to 0 it as I'll calculate my length as I change location
+		if field['name'] == "route_length":
+			actor["route_length"] = 0							###### ADDED FIELD!!! MUST BE IN THE APP DEFINITION
+			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
+			continue		
+
 		#search for "name", if present generate one
 		if field['name'] == "name":
 			actor["name"] = fake.name()
@@ -247,7 +239,7 @@ if __name__ == "__main__":
 		##### MANDATORY FIELDS 
 		#fill in the message Id with "now" in javascript/unixtime format. TODO: make it *really* unique
 		actor['id'] = int(time.time() * 1000)
-		#fill in the event_timestamp with "now" in javascript format
+		#fill in the event_timestamp with "now" in javascript UTC-Zulu format
 		temp_date = datetime.datetime.utcnow().isoformat()	#Needs to be ISO8601 as in "2017-04-26T07:05:00.91Z"
 		timestamp_8601_Z = temp_date[:-3]+'Z'
 		print('**DEBUG: event_timestamp is: {0}'.format( timestamp_8601_Z ) )
