@@ -29,8 +29,8 @@ import datetime
 import time 				
 import math
 
-DEFAULT_LATITUDE = 41.411338
-DEFAULT_LONGITUDE = 2.226438
+DEFAULT_LATITUDE = 40.773860
+DEFAULT_LONGITUDE = -73.970813
 DEFAULT_RADIUS = 300
 DEFAULT_MY_ID_LENGTH = 6			#up to 1 million users - integer
 DEFAULT_AGE_MAX = 60
@@ -83,7 +83,7 @@ def generate_random_location( latitude, longitude, radius ):
 	Generates a random location from lat, long, radius
 	returns in as string in "latitude", "longitude" format.
 	"""
-	rd = int(radius) / 111300
+	rd = float(radius) / 111300
 
 	print("**DEBUG: generate random location with {0} m radius from {1},{2}".format(radius, latitude, longitude))
 
@@ -140,7 +140,7 @@ def calculate_distance (src_coords, dst_coords):
 	dlat = lat2 - lat1 
 	a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
 	c = 2 * math.asin(math.sqrt(a)) 
-	distance_meters = R * c # *1000 ?   
+	distance_meters = R * c * 1000 # *1000 is km to m   
 
 	print("**DEBUG: distance METERS is {0}".format(distance_meters))
 	return distance_meters
@@ -180,6 +180,7 @@ if __name__ == "__main__":
 		appdef_clean = ""
 		fields = []
 	#Generate my location from lat long radius
+	print("Initial location is {0},{1}".format( Latitude, Longitude ))
 	actor["location"] = generate_random_location( Latitude, Longitude, Radius )
 
 	##### ADD SPECIFIC FIELDS --- These NEED to be added to the app definition / schema or Validation will fail!
@@ -294,7 +295,9 @@ if __name__ == "__main__":
 		#if moving, generate new random position based on origin and radius
 		if move_on:
 			print("**INFO: Let's move somewhere else.")
-			new_location = generate_random_location( Latitude, Longitude, Radius )
+			current_lat, current_lon = actor["location"].split(",")
+			print("**INFO:  My current location is {0},{1}".format( current_lat, current_lon ))					  
+			new_location = generate_random_location( current_lat, current_lon, Radius )
 			print("**INFO:  My new location will be {0}, let's see how far that is from {1}".format( new_location, actor['location'] ) )		
 			distance = calculate_distance( actor['location'], new_location )
 			print("**INFO: I'm going to move {0} meters".format( distance ) )

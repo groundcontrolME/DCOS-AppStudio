@@ -5,8 +5,8 @@ export DOCKERHUB_REPO=appstudio
 export VERSION=2.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
-export LATITUDE="41.411338"	#coords for event generation 
-export LONGITUDE="2.226438"	#
+export LATITUDE="40.773860"		#coords for event generation 
+export LONGITUDE="-73.970813"	#Bethesda fountain in Central Park NY
 export RADIUS="1000"		#radius of events in meters	
 
 export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
