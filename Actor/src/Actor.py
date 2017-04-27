@@ -33,7 +33,7 @@ DEFAULT_RADIUS = 300
 MY_ID_LENGTH = 6			#up to 1 million users - integer
 AGE_MAX = 60
 AGE_MIN = 16
-WAIT_SECS_SEED = 20			#every random*(10 seconds) we thing of moving
+WAIT_SECS_SEED = 2			#every random*(10 seconds) we thing of moving
 SUICIDE_CHANCE = 10			#chance of commiting suicide in pct every wait time
 MOVING_CHANCE = 33			#chance of moving in the map
 
@@ -109,20 +109,24 @@ def calculate_distance (src_coords, dst_coords):
 	lat1, lon1 = src_coords.split(',')
 	print("**DEBUG: find src coords: lat is {0} long is {1}".format(lat1, lon1))
 	lat2, lon2 = dst_coords.split(',')
-	print("**DEBUG: find dst coords: lat is {0} long is {1}".format(lat1, lon1))
+	print("**DEBUG: find dst coords: lat is {0} long is {1}".format(lat2, lon2))
 
 	# convert decimal degrees to radians 
 	#lon1, lat1, lon2, lat2 = map(math.radians, [float(lon1), float(lat1), float(lon2), float(lat2)])
-	lat1 = math.radians(lat1)
-	lon1 = math.radians(lon1)
-	lat2 = math.radians(lat2)
-	lon2 = math.radians(lon2)
+	#lat1 = math.radians(float(lat1))
+	#lon1 = math.radians(float(lon1))
+	#lat2 = math.radians(float(lat2))
+	#lon2 = math.radians(float(lon2))
+
+	#print("**DEBUG: float coords: {0},{1} | {2},{3}".format(lat1,lon1, lat2, lon2))	
 	# haversine formula 
-	dlon = lon2 - lon1 
-	dlat = lat2 - lat1 
-	a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
-	c = 2 * math.asin(math.sqrt(a)) 
-	distance_meters = R * c * 1000   
+	#dlon = lon2 - lon1 
+	#dlat = lat2 - lat1 
+	#a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
+	#c = 2 * math.asin(math.sqrt(a)) 
+	#distance_meters = R * c * 1000   
+	#TODO, fix this and calculate distance.
+	distance_meters = 10
 	print("**DEBUG: distance METERS is {0}".format(distance_meters))
 	return distance_meters
 
@@ -156,32 +160,40 @@ if __name__ == "__main__":
 	#Generate my location from lat long radius
 	actor["location"] = generate_random_location( latitude, longitude, radius )
 
+	##### ADD SPECIFIC FIELDS --- These NEED to be added to the app definition / schema or Validation will fail!
+	#####################################################
 	# Generate my ID - 13 figures number
-	# my_id = generate_random_number( length=MY_ID_LENGTH )
+	my_id = generate_random_number( length=MY_ID_LENGTH )
 	# initially use 'uuid' as per fixed schema
-	my_id = datetime.datetime.now().isoformat()
+	# my_id = datetime.datetime.now().isoformat()
 	print('**DEBUG my id is: {0}'.format( my_id ) )
-	actor["uuid"] = my_id
-
+	actor["uuid"] = my_id 								###### ADDED FIELD!!! MUST BE IN THE APP DEFINITION
 	#I haven't moved so route_length is 0
-	actor["route_length"] = 0
+	actor["route_length"] = 0							###### ADDED FIELD!!! MUST BE IN THE APP DEFINITION
 
 	#loop through the fields, populate
 	for field in fields:
-
 		#search for "id", skip as it's internal from the app/ingesters
-		if field['name'] == "id":
-			continue
+		#if field['name'] == "id":
+		#	continue
 
+		##### SPECIFIC FIELDS --- These are already added, not from APPDEF
+		####################################################################
 		#search for "uuid", skip as we want a single inmutable UUID per user
 		if field['name'] == "uuid":
 			continue
 
-		#search for "event_timestamp", generate manually
-		if field['name'] == "event_timestamp":
-			actor["event_timestamp"] = datetime.datetime.now().isoformat()
-			continue
+		#search for "route_length", if present ignore it as I'll calculate my length
+		if field['name'] == "route_length":
+			continue	
 
+		#search for "event_timestamp", generate manually
+		#if field['name'] == "event_timestamp":
+		#	actor["event_timestamp"] = datetime.datetime.now().isoformat()
+		#	continue
+
+		##### CUSTOMIZE VALUES FOR KNOWN FIELDS --- To look realistic / fit to boundaries / etc
+		#######################################################################################
 		#search for "name", if present generate one
 		if field['name'] == "name":
 			actor["name"] = fake.name()
@@ -200,11 +212,6 @@ if __name__ == "__main__":
 			print('**DEBUG my country is: {0}'.format( actor["country"] ) )
 			continue
 
-		#search for "route_length", if present ignore it as I'll calculate my length
-		if field['name'] == "route_length":
-			continue		
-
-
 		#field is LEARNED from APPDEF, fill it with gibberish
 		actor[field['name']] = get_random_for_type( field )
 		print('**DEBUG LEARNED field: {0} | generated value: {1}'.format( field['name'], actor[field['name']] ) )
@@ -222,11 +229,10 @@ if __name__ == "__main__":
 	#### All fields are now ready, start posting
 	while True:
 
-		#fill in the message Id with "now" in javascript format
-		#
-		#actor['id'] = int(time.time() * 1000)
+		#fill in the message Id with "now" in javascript/unixtime format. TODO: make it *really* unique
+		actor['id'] = int(time.time() * 1000)
 		#fill in the event_timestamp with "now" in javascript format
-		actor['event_timestamp'] = int(time.time() * 1000)
+		actor['event_timestamp'] = datetime.datetimenow().isoformat()	#Needs to be ISO8601 as in "2017-04-26T07:05:00.91Z"
 		print('**DEBUG ACTOR is: {0}'.format( actor ) )
 		#build the request
 		headers = {
@@ -272,5 +278,5 @@ if __name__ == "__main__":
 			new_location = generate_random_location( latitude, longitude, radius )
 			distance = calculate_distance( actor['location'], new_location )
 			print("** I'm going to move {0} meters".format( distance ) )
-			actor['route_length'] += distance
+			actor['route_length'] += int(distance)
 			actor['location'] = new_location

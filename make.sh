@@ -14,9 +14,9 @@ export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
 export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
 
 #python apps
-export APPS_PY="actor"							#this will be a list with other modules/apps
+export APPS_PY="actor"							#this will be a list with other modules/apps, space separated
 export APP_DIR_PY="src"							#where the code lives
-export BASEIMAGE_PY=frolvlad/alpine-python3
+export BASEIMAGE_PY=alpine-python3
 export REQUIREMENTS_PY=requirements.txt
 
 #check command-line arguments
@@ -31,31 +31,34 @@ docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWD
 echo login done
 
 #Python apps: export variables 
-for i in APPS_PY; do
+for i in $APPS_PY; do
 	echo "**DEBUG: export vars for app "$i
-	export $i_DIR=$(PWD)"/$i"
+	export THIS_DIR=$(PWD)"/"$i
+	echo "**DEBUG: app_dir is "$THIS_DIR	
 	echo "**DEBUG: create dockerfile for app "$i	
 
 	#Python apps: create Dockerfile
-	cat > $i/Dockerfile  << EOF
-FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
+	cat > $THIS_DIR/Dockerfile  << EOF
+FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE_PY}
 
-COPY ./$APP_DIR_PY/* /$APP_DIR_PY
-WORKDIR $APP_DIR_PY
-RUN pip install -r ./$APP_DIR_PY/requirements.txt
-ENTRYPOINT python3 -u $$i
+RUN mkdir -p $APP_DIR_PY
+COPY ./$APP_DIR_PY/* ./
+RUN pip install -r requirements.txt
+ENTRYPOINT python3 -u $i.py
 EOF
 
 	#Python app: build and push
-	echo "**DEBUG: build and push app "$i	
-	docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION $i/Dockerfile
-	docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION 
-	
+	echo "**DEBUG: build and push app "$i
+	cd $THIS_DIR	
+	docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION .
+	docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION
+	cd ..
+
+done #Python apps
+
 #JS/node: Generate dockerfile with docker hub info 
 cat > Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
-
-done #Python apps
 
 COPY . /$APP_DIR
 ENV APPDIR=$APP_DIR
