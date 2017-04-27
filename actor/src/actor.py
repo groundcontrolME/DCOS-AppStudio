@@ -92,8 +92,8 @@ def generate_random_location( latitude, longitude, radius ):
 
 	print("**DEBUG: generate random location with {0} m radius from FLOATS {1},{2}".format(radius, y0, x0))
 
-	u = float(generate_random_number( length=5 ))
-	v = float(generate_random_number( length=5 ))
+	u = random.uniform(0,1)
+	v = random.uniform(0,1)
 
 	print("**DEBUG: seeds are {0} and {1}".format( u, v ) )
 
