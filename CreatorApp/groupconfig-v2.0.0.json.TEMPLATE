@@ -572,7 +572,7 @@
 	"requirePorts": false
   },
   {
-  "id": "/dcosappstudio-party/management/actor",
+  "id": "actor",
   "instances": 2,
   "cpus": 0.1,
   "mem": 128,
