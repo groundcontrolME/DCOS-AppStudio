@@ -61,19 +61,17 @@ def get_random_for_type( field ):
 	print('**DEBUG: Random value for {0} of type {1}'.format(my_name, my_type))
 
 	if my_type == "String": return fake.bs() 
+	if my_type == "Boolean": return bool(random.getrandbits(1)) 	
 	if my_type == "Integer": return generate_random_number( length=2 )		
 	if my_type == "Long": return generate_random_number( length=5 )
 	if my_type == "Double": return generate_random_number( min=(-1)*generate_random_number( length=7 ) , \
 							max=generate_random_number( length=7 ) )			
 	if my_type == "Location": return str(fake.latitude())+","+str(fake.longitude()) 
 	if ( my_type == "Date/time" or my_type == "Date/Time" ): 
-		date = fake.iso8601() #fake date -- ANY date
+		date = fake.iso8601()[:-3]+'Z' #fake date -- ANY date || Converted to Zulu for Kibana
 		#date = datetime.datetime.now().isoformat()
 		print("**DEBUG: fake date is: {0}".format(date))
 		return(date)
-		#unixdate = time.mktime(date.timetuple())
-		#print("**DEBUG: fake Unixdate is: {0}".format(unixdate))
-		#return str(unixdate) 
 
 	print('**ERROR: my_type is not detected')
 	return None
@@ -85,15 +83,24 @@ def generate_random_location( latitude, longitude, radius ):
 	"""
 	rd = int(radius) / 111300
 
-	u = float(generate_random_number(length=7))
-	v = float(generate_random_number(length=7))
+	print("**DEBUG: generate random location with {0} m radius from {1},{2}".format(radius, latitude, longitude))
+
+	y0 = float(latitude)
+	x0 = float(longitude)
+
+	print("**DEBUG: generate random location with {0} m radius from FLOATS {1},{2}".format(radius, y0, x0))
+
+	u = float(generate_random_number( length=5 ))
+	v = float(generate_random_number( length=5 ))
+
+	print("**DEBUG: seeds are {0} and {1}".format( u, v ) )
 
 	w = rd*math.sqrt(u)
 	t = 2*math.pi*v
 	x = w*math.cos(t)
 	y = w*math.sin(t)
 
-	new_location = str(y+float(latitude))+","+str(x+float(longitude))
+	new_location = str(y+y0)+","+str(x+x0)
 	print('**DEBUG: new_location is {0}'.format(new_location))
 
 	return new_location
@@ -106,27 +113,33 @@ def calculate_distance (src_coords, dst_coords):
 
 	R = 6373.0	#earth radius in km
 
+	print("**DEBUG: received src {0} and dst {1}".format(src_coords, dst_coords))
 	lat1, lon1 = src_coords.split(',')
-	print("**DEBUG: find src coords: lat is {0} long is {1}".format(lat1, lon1))
+	print("**DEBUG: find src coords : lat is {0} long is {1}".format(lat1, lon1))
 	lat2, lon2 = dst_coords.split(',')
-	print("**DEBUG: find dst coords: lat is {0} long is {1}".format(lat2, lon2))
+	print("**DEBUG: find dst coords : lat is {0} long is {1}".format(lat2, lon2))
+	#this fails lat1, lon1, lat2, lon2 = map(float(), (lat1,lon1,lat2,lon2))
+	lat1 = float(lat1)
+	lon1 = float(lon1)
+	lat2 = float(lat2)
+	lon2 = float(lon2)
+	print("**DEBUG: coords in floats are src: {0},{1} | dst: {2},{3}".format(lat1, lon1, lat2, lon2))
 
 	# convert decimal degrees to radians 
-	#lon1, lat1, lon2, lat2 = map(math.radians, [float(lon1), float(lat1), float(lon2), float(lat2)])
+	lat1, lon1, lat2, lon2 = map(math.radians, [lat1, lon1, lat2, lon2])
 	#lat1 = math.radians(float(lat1))
 	#lon1 = math.radians(float(lon1))
 	#lat2 = math.radians(float(lat2))
 	#lon2 = math.radians(float(lon2))
+	print("**DEBUG: coords in radians are: src is {0},{1} | dst is {2} {3}".format(lat1, lon1, lat2, lon2))
 
-	#print("**DEBUG: float coords: {0},{1} | {2},{3}".format(lat1,lon1, lat2, lon2))	
 	# haversine formula 
-	#dlon = lon2 - lon1 
-	#dlat = lat2 - lat1 
-	#a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
-	#c = 2 * math.asin(math.sqrt(a)) 
-	#distance_meters = R * c * 1000   
-	#TODO, fix this and calculate distance.
-	distance_meters = 10
+	dlon = lon2 - lon1 
+	dlat = lat2 - lat1 
+	a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
+	c = 2 * math.asin(math.sqrt(a)) 
+	distance_meters = R * c * 1000   
+
 	print("**DEBUG: distance METERS is {0}".format(distance_meters))
 	return distance_meters
 
@@ -144,7 +157,7 @@ if __name__ == "__main__":
 	radius = os.getenv('RADIUS', DEFAULT_RADIUS)
 	#Listener POST endpoint is an environment variable
 	listener = os.getenv('LISTENER')
-	print('**DEBUG Listener is: {0}'.format( listener ) )
+	print('**DEBUG: Listener is: {0}'.format( listener ) )
 
 	# Read fields from env variable APPDEF
 	appdef_env = os.getenv('APPDEF', {} )
@@ -161,79 +174,76 @@ if __name__ == "__main__":
 	actor["location"] = generate_random_location( latitude, longitude, radius )
 
 	##### ADD SPECIFIC FIELDS --- These NEED to be added to the app definition / schema or Validation will fail!
-	#####################################################
+	##### MANDATORY FOR APP DEFINITION! #############
+	############################################################################################################
 	# Generate my ID - 13 figures number
 	my_id = generate_random_number( length=MY_ID_LENGTH )
 	# initially use 'uuid' as per fixed schema
 	# my_id = datetime.datetime.now().isoformat()
-	print('**DEBUG my id is: {0}'.format( my_id ) )
+	print('**DEBUG: my id is: {0}'.format( my_id ) )
 	actor["uuid"] = my_id 								###### ADDED FIELD!!! MUST BE IN THE APP DEFINITION
 	#I haven't moved so route_length is 0
 	actor["route_length"] = 0							###### ADDED FIELD!!! MUST BE IN THE APP DEFINITION
+	#set my creation (birth) time as now
+	#actor["start_time"] = datetime.datetime.now().isoformat()[:-3]+'Z' #adapted to Zulu for Kibana
 
 	#loop through the fields, populate
 	for field in fields:
-		#search for "id", skip as it's internal from the app/ingesters
-		#if field['name'] == "id":
-		#	continue
 
 		##### SPECIFIC FIELDS --- These are already added, not from APPDEF
 		####################################################################
 		#search for "uuid", skip as we want a single inmutable UUID per user
 		if field['name'] == "uuid":
+			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
 			continue
 
 		#search for "route_length", if present ignore it as I'll calculate my length
 		if field['name'] == "route_length":
+			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
 			continue	
 
-		#search for "event_timestamp", generate manually
-		#if field['name'] == "event_timestamp":
-		#	actor["event_timestamp"] = datetime.datetime.now().isoformat()
-		#	continue
+		#search for "location", if present ignore it as I'll calculate my location
+		if field['name'] == "location":
+			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
+			continue	
 
 		##### CUSTOMIZE VALUES FOR KNOWN FIELDS --- To look realistic / fit to boundaries / etc
 		#######################################################################################
 		#search for "name", if present generate one
 		if field['name'] == "name":
 			actor["name"] = fake.name()
-			print('**DEBUG my name is: {0}'.format( actor["name"] ) )
+			print('**DEBUG: my name is: {0}'.format( actor["name"] ) )
 			continue
 
 		#search for "age", if present generate age in range that makes sense
 		if field['name'] == "age":
 			actor["age"] = generate_random_number( min=AGE_MIN, max=AGE_MAX )
-			print('**DEBUG my age is: {0}'.format( actor["age"] ) )
+			print('**DEBUG: my age is: {0}'.format( actor["age"] ) )
 			continue
 
 		#search for "country", if present generate a country name
 		if field['name'] == "country":
 			actor["country"] = fake.country()
-			print('**DEBUG my country is: {0}'.format( actor["country"] ) )
+			print('**DEBUG: my country is: {0}'.format( actor["country"] ) )
 			continue
 
 		#field is LEARNED from APPDEF, fill it with gibberish
 		actor[field['name']] = get_random_for_type( field )
-		print('**DEBUG LEARNED field: {0} | generated value: {1}'.format( field['name'], actor[field['name']] ) )
-
-
-	# NOT USED:
-	# Kafka topic
-	# Cassandra keyspace
-	# Cassandra table
-	# creator API endpoint
-
-	#set my creation (birth) time as now
-	#actor["start_time"] = datetime.datetime.now().strftime("%I:%M%p %B %d, %Y") '03:44PM April 26, 2017'
+		print('**DEBUG: LEARNED field: {0} | generated value: {1}'.format( field['name'], actor[field['name']] ) )
 
 	#### All fields are now ready, start posting
 	while True:
 
+		##### MANDATORY FIELDS 
 		#fill in the message Id with "now" in javascript/unixtime format. TODO: make it *really* unique
 		actor['id'] = int(time.time() * 1000)
 		#fill in the event_timestamp with "now" in javascript format
-		actor['event_timestamp'] = datetime.datetimenow().isoformat()	#Needs to be ISO8601 as in "2017-04-26T07:05:00.91Z"
-		print('**DEBUG ACTOR is: {0}'.format( actor ) )
+		temp_date = datetime.datetime.utcnow().isoformat()	#Needs to be ISO8601 as in "2017-04-26T07:05:00.91Z"
+		timestamp_8601_Z = temp_date[:-3]+'Z'
+		print('**DEBUG: event_timestamp is: {0}'.format( timestamp_8601_Z ) )
+		actor['event_timestamp'] = timestamp_8601_Z
+		#Position is updated above and below
+		print('**DEBUG: ACTOR is: {0}'.format( actor ) )
 		#build the request
 		headers = {
 		'Content-type': 'application/json'
@@ -246,7 +256,7 @@ if __name__ == "__main__":
 				headers = headers
 				)
 			request.raise_for_status()
-			print("** INFO: sent update: \n{0}".format(actor))
+			print("**INFO: sent update: \n{0}".format(actor))
 		except (
 		    requests.exceptions.ConnectionError ,\
 		    requests.exceptions.Timeout ,\
@@ -254,29 +264,30 @@ if __name__ == "__main__":
 		    requests.exceptions.RequestException ,\
 		    ConnectionRefusedError
 		    ) as error:
-			print ('** ERROR: update failed {}: {}'.format( actor, error ) ) 
+			print ('**ERROR: update failed {}: {}'.format( actor, error ) ) 
 
 		#decide whether I die based on creation time and and duration/lifespan
 		#TODO: for now we'll just give him a % chance of being alive
 		commit_suicide = ( random.randrange(100) < SUICIDE_CHANCE )
 		#if so, (die) and exit
 		if commit_suicide:
-			print("** This party sucks. I'm out of here.")
+			print("**INFO: This party sucks. I'm out of here.")
 			sys.exit(0)
 
 		#wait approximate interval of change (randomized)
 		#wait somewhere between 0 and 90 seconds
 		wait_interval = WAIT_SECS_SEED*generate_random_number( length=1 )
-		print("** I'm going to wait here for {0} seconds.".format(wait_interval))
+		print("**INFO: I'm going to wait here for {0} seconds.".format(wait_interval))
 		time.sleep(int(wait_interval)) 
 
 		#decide randomly whether to change or not (decide how)
 		move_on = ( random.randrange(100) < MOVING_CHANCE )
 		#if moving, generate new random position based on origin and radius
 		if move_on:
-			print("** Let's move somewhere else.")
+			print("**INFO: Let's move somewhere else.")
 			new_location = generate_random_location( latitude, longitude, radius )
+			print("**INFO:  My new location will be {0}, let's see how far that is from {1}".format( new_location, actor['location'] ) )		
 			distance = calculate_distance( actor['location'], new_location )
-			print("** I'm going to move {0} meters".format( distance ) )
+			print("**INFO: I'm going to move {0} meters".format( distance ) )
 			actor['route_length'] += int(distance)
 			actor['location'] = new_location
