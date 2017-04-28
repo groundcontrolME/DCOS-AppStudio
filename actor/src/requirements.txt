@@ -1,0 +1,3 @@
+requests
+Faker>=0.7.0
+datetime

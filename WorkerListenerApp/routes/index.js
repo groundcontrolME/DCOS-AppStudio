@@ -46,10 +46,7 @@ function validateMsg(msg) {
     if(err== null) {
       if(response.statusCode== 200) {
         console.log("Message validated.");
-        console.log("Sending to Kafka: "+msg);
-        sendToKafka(JSON.parse(msg));
-        console.log("Sending to Cassandra: "+msg);
-        sendToCassandra(JSON.parse(msg));
+        sendToBackends(msg);
       }
       else {
         console.log("Validation Error: "+response.statusCode);
@@ -91,7 +88,28 @@ function sendToCassandra(msg) {
 });
 };
 
-module.exports = router;
+function sendToBackends(msg) {
+    console.log("Sending to Kafka: "+msg);
+    sendToKafka(JSON.parse(msg));
+    console.log("Sending to Cassandra: "+msg);
+    sendToCassandra(JSON.parse(msg));
 
+    // Elastic Integration
+    console.log("Sending to Elastic: "+msg);
+    sendToElastic(JSON.parse(msg));
+}
+
+function sendToElastic(msg) {
+  request.post(process.env.ELASTIC_BACKEND, {form:JSON.stringify(msg)}, function(err, response, body) {
+    if(err) {
+      console.log("Elastic: "+err);
+    }
+    else {
+     console.log("Elastic statusCode: "+response.statusCode);
+    }
+});
+};
+
+module.exports = router;
 
 

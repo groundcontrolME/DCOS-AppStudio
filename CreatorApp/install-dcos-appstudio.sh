@@ -104,4 +104,4 @@ until $(curl --output /dev/null --silent --head --fail http://$PUBLICELBHOST); d
     printf '.'
     sleep 5
 done
-open http://$PUBLICELBHOST
+#open http://$PUBLICELBHOST

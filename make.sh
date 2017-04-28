@@ -5,13 +5,19 @@ export DOCKERHUB_REPO=appstudio
 export VERSION=2.0.0
 export BASEIMAGE=node694
 export APP_DIR=opt/app
-export LATITUDE="41.411338"	#coords for event generation 
-export LONGITUDE="2.226438"	#
-export RADIUS="1000"		#radius of events in meters		
+export LATITUDE="40.773860"		#coords for event generation 
+export LONGITUDE="-73.970813"	#Bethesda fountain in Central Park NY
+export RADIUS="1000"		#radius of events in meters	
 
 export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
 export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
+
+#python apps
+export APPS_PY="actor"							#this will be a list with other modules/apps, space separated
+export APP_DIR_PY="src"							#where the code lives
+export BASEIMAGE_PY=alpine-python3
+export REQUIREMENTS_PY=requirements.txt
 
 #check command-line arguments
 if [[ $# < 1 ]]; then
@@ -24,7 +30,33 @@ echo copy done
 docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWD
 echo login done
 
-#Generate dockerfile with docker hub info 
+#Python apps: export variables 
+for i in $APPS_PY; do
+	echo "**DEBUG: export vars for app "$i
+	export THIS_DIR=$(PWD)"/"$i
+	echo "**DEBUG: app_dir is "$THIS_DIR	
+	echo "**DEBUG: create dockerfile for app "$i	
+
+	#Python apps: create Dockerfile
+	cat > $THIS_DIR/Dockerfile  << EOF
+FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE_PY}
+
+RUN mkdir -p $APP_DIR_PY
+COPY ./$APP_DIR_PY/* ./
+RUN pip install -r requirements.txt
+ENTRYPOINT python3 -u $i.py
+EOF
+
+	#Python app: build and push
+	echo "**DEBUG: build and push app "$i
+	cd $THIS_DIR	
+	docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION .
+	docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION
+	cd ..
+
+done #Python apps
+
+#JS/node: Generate dockerfile with docker hub info 
 cat > Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
 
