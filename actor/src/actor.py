@@ -29,12 +29,12 @@ import datetime
 import time 				
 import math
 
-#DEFAULT_LATITUDE = 40.773860   #NYC central park
-#DEFAULT_LONGITUDE = -73.970813
-DEFAULT_LATITUDE = 40.453062	#Madrid stadium
-DEFAULT_LONGITUDE = -3.688334
-DEFAULT_LATITUDE = 48.858554	#Eiffel tower
-DEFAULT_LONGITUDE = 2.294513
+DEFAULT_LATITUDE = 40.773860   #NYC central park
+DEFAULT_LONGITUDE = -73.970813
+#DEFAULT_LATITUDE = 40.453062	#Madrid stadium
+#DEFAULT_LONGITUDE = -3.688334
+#DEFAULT_LATITUDE = 48.858554	#Eiffel tower
+#DEFAULT_LONGITUDE = 2.294513
 DEFAULT_RADIUS = 300
 DEFAULT_MY_ID_LENGTH = 6			#up to 1 million users - integer
 DEFAULT_AGE_MAX = 60
@@ -252,7 +252,7 @@ if __name__ == "__main__":
 
 		#search for "passengerCount", if present do integer to string (this is to adapt to the GUI naming)
 		if field['name'] == "passengerCount":
-			actor["passengerCount"] = str(generate_random_number( min=0, max=7 ))
+			actor["passengerCount"] = str(random.randint( 1, 6 ))
 			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
 			continue
 
