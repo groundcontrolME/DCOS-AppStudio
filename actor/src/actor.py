@@ -29,8 +29,12 @@ import datetime
 import time 				
 import math
 
-DEFAULT_LATITUDE = 40.773860
-DEFAULT_LONGITUDE = -73.970813
+#DEFAULT_LATITUDE = 40.773860   #NYC central park
+#DEFAULT_LONGITUDE = -73.970813
+DEFAULT_LATITUDE = 40.453062	#Madrid stadium
+DEFAULT_LONGITUDE = -3.688334
+DEFAULT_LATITUDE = 48.858554	#Eiffel tower
+DEFAULT_LONGITUDE = 2.294513
 DEFAULT_RADIUS = 300
 DEFAULT_MY_ID_LENGTH = 6			#up to 1 million users - integer
 DEFAULT_AGE_MAX = 60
@@ -82,7 +86,11 @@ def generate_random_location( latitude, longitude, radius ):
 	"""
 	Generates a random location from lat, long, radius
 	returns in as string in "latitude", "longitude" format.
+	Adapted to trim numbers to exactly [2d].[6d],[2d].[6d].
+	Without trimming, I get 
+	"40.77672360606691,-73.96714029899"
 	"""
+
 	rd = float(radius) / 111300
 
 	print("**DEBUG: generate random location with {0} m radius from {1},{2}".format(radius, latitude, longitude))
@@ -102,7 +110,8 @@ def generate_random_location( latitude, longitude, radius ):
 	x = w*math.cos(t)
 	y = w*math.sin(t)
 
-	new_location = str(y+y0)+","+str(x+x0)
+	#exactly 6 decimals
+	new_location = "{0:.6f}".format(round((y+y0),6))+","+"{0:.6f}".format(round((x+x0),6))
 	print('**DEBUG: new_location is {0}'.format(new_location))
 
 	return new_location
@@ -229,6 +238,24 @@ if __name__ == "__main__":
 			print('**DEBUG: my country is: {0}'.format( actor["country"] ) )
 			continue
 
+		#search for "observationTime", if present generate a "now" time
+		if field['name'] == "observationTime":
+			actor["observationTime"] = int(time.time())
+			print('**DEBUG: my observationTime is: {0}'.format( actor["observationTime"] ) )
+			continue
+
+		#search for "geometry", if present copy location (this is to adapt to the GUI naming)
+		if field['name'] == "geometry":
+			actor["geometry"] = actor["location"]
+			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
+			continue
+
+		#search for "passengerCount", if present do integer to string (this is to adapt to the GUI naming)
+		if field['name'] == "passengerCount":
+			actor["passengerCount"] = str(generate_random_number( min=0, max=7 ))
+			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
+			continue
+
 		#field is LEARNED from APPDEF, fill it with gibberish
 		actor[field['name']] = get_random_for_type( field )
 		print('**DEBUG: LEARNED field: {0} | generated value: {1}'.format( field['name'], actor[field['name']] ) )
@@ -293,5 +320,6 @@ if __name__ == "__main__":
 			print("**INFO:  My new location will be {0}, let's see how far that is from {1}".format( new_location, actor['location'] ) )		
 			distance = calculate_distance( actor['location'], new_location )
 			print("**INFO: I'm going to move {0} meters".format( distance ) )
-			actor['route_length'] += int(distance)
+			if 'route_length' in actor:
+				actor['route_length'] += int(distance)
 			actor['location'] = new_location
