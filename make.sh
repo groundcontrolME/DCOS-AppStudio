@@ -3,21 +3,26 @@
 export DOCKERHUB_USER=fernandosanchez
 export DOCKERHUB_REPO=appstudio
 export VERSION=2.0.0
-export BASEIMAGE=node694
-export APP_DIR=opt/app
-export LATITUDE="40.773860"		#coords for event generation 
-export LONGITUDE="-73.970813"		#Bethesda fountain in Central Park NY
-export RADIUS="1000"			#radius of events in meters	
 
+#Creator location and template files
 export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
 export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
 
-#python apps
-export APPS_PY="actor"			#this will be a list with other modules/apps, space separated
+#Node/JS apps defaults
+export BASEIMAGE=node694
+export APP_DIR=opt/app
+
+#Python apps defaults
+export APPS_PY="actor"			#this will be a LIST with other modules/apps, space separated
 export APP_DIR_PY="src"			#where the code lives
 export BASEIMAGE_PY=alpine-python3
 export REQUIREMENTS_PY=requirements.txt
+
+#defaults
+export LATITUDE="40.773860"		#coords for event generation 
+export LONGITUDE="-73.970813"		#Bethesda fountain in Central Park NY
+export RADIUS="1000"			#radius of events in meters	
 
 #check command-line arguments
 if [[ $# < 1 ]]; then
