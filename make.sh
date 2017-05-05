@@ -76,6 +76,7 @@ sed -i '' "s,__RADIUS__,$RADIUS,g" $GROUP_JSON
 
 # Node/JS apps section
 ############################################
+
 #JS/node: Generate dockerfile with docker hub info 
 cat > Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
