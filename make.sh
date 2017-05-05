@@ -58,6 +58,17 @@ EOF
 
 done #Python apps
 
+#All apps: configure group JSON for CreatorApp
+##############################################
+
+cp $GROUP_JSON.TEMPLATE $GROUP_JSON
+sed -i '' "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
+sed -i '' "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
+sed -i '' "s,__VERSION__,$VERSION,g" $GROUP_JSON
+sed -i '' "s,__LATITUDE__,$LATITUDE,g" $GROUP_JSON
+sed -i '' "s,__LONGITUDE__,$LONGITUDE,g" $GROUP_JSON
+sed -i '' "s,__RADIUS__,$RADIUS,g" $GROUP_JSON	
+
 # Node/JS apps section
 ############################################
 #JS/node: Generate dockerfile with docker hub info 
@@ -69,15 +80,7 @@ ENV APPDIR=$APP_DIR
 ENV MESOS_SANDBOX=/$APP_DIR
 ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
 EOF
-
-#configure group JSON for CreatorApp
-cp $GROUP_JSON.TEMPLATE $GROUP_JSON
-sed -i '' "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
-sed -i '' "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
-sed -i '' "s,__VERSION__,$VERSION,g" $GROUP_JSON
-sed -i '' "s,__LATITUDE__,$LATITUDE,g" $GROUP_JSON
-sed -i '' "s,__LONGITUDE__,$LONGITUDE,g" $GROUP_JSON
-sed -i '' "s,__RADIUS__,$RADIUS,g" $GROUP_JSON		
+	
 
 #configure appstudio installer
 cp $INSTALLER.TEMPLATE $INSTALLER
