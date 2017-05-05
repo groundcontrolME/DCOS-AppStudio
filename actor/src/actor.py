@@ -5,14 +5,14 @@
 # Author: Fernando Sanchez [ fernando at mesosphere.com ]
 #
 # * receives as environment variables:
-# - LATITUDE 		# starting position
-# - LONGITUDE 		# starting position
-# - RADIUS 		# max radius of movement in meters
-# - LISTENER 		# API endpoint to post updates to 
-# - APPDEF 		# List-of-JSONs definition of the AppStudio environment
-# - WAIT_SECS_SEED	# order of magnitude in seconds of period after which we consider change or die
-# - MOVING_CHANCE 	# % probability of position change each WAIT_SECS_SEED seconds
-# - SUICIDE_CHANCE	# % probability of exiting each WAIT_SECS_SEED seconds
+# - LATITUDE 					# starting position
+# - LONGITUDE 					# starting position
+# - RADIUS 					# max radius of movement in meters
+# - LISTENER 					# API endpoint to post updates to 
+# - APPDEF 					# List-of-JSONs definition of the AppStudio environment
+# - WAIT_SECS_SEED				# order of magnitude in seconds of period after which we consider change or die
+# - MOVING_CHANCE 				# % probability of position change each WAIT_SECS_SEED seconds
+# - SUICIDE_CHANCE				# % probability of exiting each WAIT_SECS_SEED seconds
 # * Not currently used:
 # - amount of change in meters (speed-like)	# use "RADIUS"
 # - duration/lifespan				# use "SUICIDE_CHANCE"
