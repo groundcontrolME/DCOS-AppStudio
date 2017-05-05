@@ -15,7 +15,7 @@
 # - SUICIDE_CHANCE	# % probability of exiting each WAIT_SECS_SEED seconds
 # * Not currently used:
 # - amount of change in meters (speed-like)	# use "RADIUS"
-# - duration/lifespan						# use "SUICIDE_CHANCE"
+# - duration/lifespan				# use "SUICIDE_CHANCE"
 
 
 #load environment variables
