@@ -37,6 +37,7 @@ echo login done
 
 # Python apps section
 ############################################
+
 for i in $APPS_PY; do
 	#Python apps: export variables
 	echo "**DEBUG: export vars for app "$i
