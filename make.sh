@@ -30,8 +30,10 @@ echo copy done
 docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWD
 echo login done
 
-#Python apps: export variables 
+# Python apps section
+############################################
 for i in $APPS_PY; do
+	#Python apps: export variables
 	echo "**DEBUG: export vars for app "$i
 	export THIS_DIR=$(PWD)"/"$i
 	echo "**DEBUG: app_dir is "$THIS_DIR	
@@ -56,6 +58,8 @@ EOF
 
 done #Python apps
 
+# Node/JS apps section
+############################################
 #JS/node: Generate dockerfile with docker hub info 
 cat > Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
