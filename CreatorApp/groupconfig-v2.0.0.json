@@ -509,8 +509,8 @@
 	"env": {
 "APPDEF":"REPLACEME",
 "LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:80/data",
-		"LATITUDE": "41.411338" , 
-		"LONGITUDE": "2.226438" ,
+		"LATITUDE": "40.773860" , 
+		"LONGITUDE": "-73.970813" ,
 		"RADIUS": "1000"
   },
 "instances": 0,
@@ -598,12 +598,25 @@
       "forcePullImage": true
     }
   },
+  "healthChecks": [
+    {
+      "gracePeriodSeconds": 10,
+      "intervalSeconds": 0,
+      "timeoutSeconds": 3,
+      "maxConsecutiveFailures": 3,
+      "delaySeconds": 9,
+      "command": {
+        "value": "ps aux|grep python3"
+      },
+      "protocol": "COMMAND"
+    }
+  ],
   "killSelection": "YOUNGEST_FIRST",
  	"env": {
 "APPDEF":"REPLACEME",
 "LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:80/data",
-		"LATITUDE": "41.411338" , 
-		"LONGITUDE": "2.226438" ,
+		"LATITUDE": "40.773860" , 
+		"LONGITUDE": "-73.970813" ,
 		"RADIUS": "1000"
   },
   "requirePorts": false

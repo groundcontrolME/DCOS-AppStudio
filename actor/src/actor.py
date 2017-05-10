@@ -74,8 +74,6 @@ def get_random_for_type( field ):
 	my_type = field['type']
 	my_name = field['name']
 
-	print('**DEBUG: Random value for {0} of type {1}'.format(my_name, my_type))
-
 	if my_type == "String": return fake.bs() 
 	if my_type == "Boolean": return bool(random.getrandbits(1)) 	
 	if my_type == "Integer": return generate_random_number( length=2 )		
@@ -86,10 +84,9 @@ def get_random_for_type( field ):
 	if ( my_type == "Date/time" or my_type == "Date/Time" ): 
 		date = fake.iso8601()[:-3]+'Z' #fake date -- ANY date || Converted to Zulu for Kibana
 		#date = datetime.datetime.now().isoformat()
-		print("**DEBUG: fake date is: {0}".format(date))
 		return(date)
 
-	print('**ERROR: my_type is not detected')
+	print('**ERROR: get_random_for_type: my_type is not detected')
 	return None
 
 def generate_random_location( latitude, longitude, radius ):
@@ -103,15 +100,11 @@ def generate_random_location( latitude, longitude, radius ):
 
 	rd = float(radius) / 111300
 
-	print("**DEBUG: generate random location with {0} m radius from {1},{2}".format(radius, latitude, longitude))
-
 	y0 = float(latitude)
 	x0 = float(longitude)
 
 	u = random.uniform(0,1)
 	v = random.uniform(0,1)
-
-	print("**DEBUG: seeds are {0} and {1}".format( u, v ) )
 
 	w = rd*math.sqrt(u)
 	t = 2*math.pi*v
@@ -120,7 +113,6 @@ def generate_random_location( latitude, longitude, radius ):
 
 	#exactly 6 decimals
 	new_location = "{0:.6f}".format(round((y+y0),6))+","+"{0:.6f}".format(round((x+x0),6))
-	print('**DEBUG: new_location is {0}'.format(new_location))
 
 	return new_location
 
@@ -132,7 +124,6 @@ def calculate_distance (src_coords, dst_coords):
 
 	R = 6373.0	#earth radius in km
 
-	print("**DEBUG: received src {0} and dst {1}".format(src_coords, dst_coords))
 	lat1, lon1 = src_coords.split(',')
 	lat2, lon2 = dst_coords.split(',')
 
@@ -144,16 +135,12 @@ def calculate_distance (src_coords, dst_coords):
 	# convert decimal degrees to radians 
 	lat1, lon1, lat2, lon2 = map(math.radians, [lat1, lon1, lat2, lon2])
 
-	print("**DEBUG: coords in radians are: src is {0},{1} | dst is {2} {3}".format(lat1, lon1, lat2, lon2))
-
 	# haversine formula 
 	dlon = lon2 - lon1 
 	dlat = lat2 - lat1 
 	a = math.sin(dlat/2)**2 + math.cos(lat1) * math.cos(lat2) * math.sin(dlon/2)**2
 	c = 2 * math.asin(math.sqrt(a)) 
 	distance_meters = R * c * 1000 # *1000 is km to m   
-
-	print("**DEBUG: distance METERS is {0}".format(distance_meters))
 
 	return distance_meters
 
@@ -180,9 +167,9 @@ if __name__ == "__main__":
 	Wait_secs_seed = os.getenv('WAIT_SECS_SEED', DEFAULT_WAIT_SECS_SEED)
 	Moving_chance = os.getenv('MOVING_CHANCE', DEFAULT_MOVING_CHANCE)
 	Suicide_chance = os.getenv('SUICIDE_CHANCE', DEFAULT_SUICIDE_CHANCE)
+	# AppStudio: connect with listener and get appdef
 	listener = os.getenv('LISTENER')
 	print('**DEBUG: Listener is: {0}'.format( listener ) )
-
 	#APPDEF: read "fields"
 	appdef_env = os.getenv('APPDEF', {} )
 	if appdef_env:
@@ -196,10 +183,9 @@ if __name__ == "__main__":
 
 	#loop through the fields, populate
 	for field in fields:
-
 		##### CUSTOMIZE VALUES FOR KNOWN FIELDS --- To look realistic / fit to boundaries / etc
 		#######################################################################################
-
+		
 		#search for "uuid", if present ignore and create unique ID.
 		if field['name'] == "uuid":
 			actor["uuid"] = generate_random_number( length=My_id_length )

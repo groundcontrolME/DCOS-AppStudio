@@ -45,7 +45,7 @@ for i in $APPS_PY; do
 	echo "**DEBUG: app_dir is "$THIS_DIR	
 	echo "**DEBUG: create dockerfile for app "$i	
 
-	#Python apps: create Dockerfile
+	#create Dockerfile
 	cat > $THIS_DIR/Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE_PY}
 
@@ -55,11 +55,13 @@ RUN pip install -r requirements.txt
 ENTRYPOINT python3 -u $i.py
 EOF
 
-	#Python app: build and push
+	#build and push
 	echo "**DEBUG: build and push app "$i
 	cd $THIS_DIR	
+	echo "**INFO: building and pushing "$DOCKERHUB_USER/$DOCKERHUB_REPO":dcosappstudio-"$i"-v"$VERSION
 	docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION .
 	docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION
+        echo "**INFO: finished building and pushing "$DOCKERHUB_USER/$DOCKERHUB_REPO":dcosappstudio-"$i"-v"$VERSION
 	cd ..
 
 done #Python apps
