@@ -3,21 +3,26 @@
 export DOCKERHUB_USER=fernandosanchez
 export DOCKERHUB_REPO=appstudio
 export VERSION=2.0.0
-export BASEIMAGE=node694
-export APP_DIR=opt/app
-export LATITUDE="40.773860"		#coords for event generation 
-export LONGITUDE="-73.970813"	#Bethesda fountain in Central Park NY
-export RADIUS="1000"		#radius of events in meters	
 
+#Creator location and template files
 export CREATOR_APP_DIR=$(PWD)"/CreatorApp"
 export GROUP_JSON=$CREATOR_APP_DIR"/groupconfig-v"$VERSION".json"
 export INSTALLER=$CREATOR_APP_DIR"/install-dcos-appstudio.sh"
 
-#python apps
-export APPS_PY="actor"							#this will be a list with other modules/apps, space separated
-export APP_DIR_PY="src"							#where the code lives
+#Node/JS apps defaults
+export BASEIMAGE=node694
+export APP_DIR=opt/app
+
+#Python apps defaults
+export APPS_PY="actor"			#this will be a LIST with other modules/apps, space separated
+export APP_DIR_PY="src"			#where the code lives
 export BASEIMAGE_PY=alpine-python3
 export REQUIREMENTS_PY=requirements.txt
+
+#defaults
+export LATITUDE="40.773860"		#coords for event generation 
+export LONGITUDE="-73.970813"		#Bethesda fountain in Central Park NY
+export RADIUS="1000"			#radius of events in meters	
 
 #check command-line arguments
 if [[ $# < 1 ]]; then
@@ -30,10 +35,11 @@ echo copy done
 docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWD
 echo login done
 
-#Python apps
+# Python apps section
+############################################
+
 for i in $APPS_PY; do
-	
-	#export vars
+	#Python apps: export variables
 	echo "**DEBUG: export vars for app "$i
 	export THIS_DIR=$(PWD)"/"$i
 	echo "**DEBUG: app_dir is "$THIS_DIR	
@@ -60,6 +66,9 @@ EOF
 
 done #Python apps
 
+#Common to Python and Node/JS apps: 
+##############################################
+
 #configure group JSON for CreatorApp
 cp $GROUP_JSON.TEMPLATE $GROUP_JSON
 sed -i '' "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $GROUP_JSON
@@ -67,7 +76,7 @@ sed -i '' "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $GROUP_JSON
 sed -i '' "s,__VERSION__,$VERSION,g" $GROUP_JSON
 sed -i '' "s,__LATITUDE__,$LATITUDE,g" $GROUP_JSON
 sed -i '' "s,__LONGITUDE__,$LONGITUDE,g" $GROUP_JSON
-sed -i '' "s,__RADIUS__,$RADIUS,g" $GROUP_JSON		
+sed -i '' "s,__RADIUS__,$RADIUS,g" $GROUP_JSON
 
 #configure appstudio installer
 cp $INSTALLER.TEMPLATE $INSTALLER
@@ -75,8 +84,10 @@ sed -i '' "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $INSTALLER
 sed -i '' "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $INSTALLER
 sed -i '' "s,__VERSION__,$VERSION,g" $INSTALLER
 
-#JS/node 
-#Generate dockerfile with docker hub info 
+# Node/JS apps section
+############################################
+
+#JS/node: Generate dockerfile with docker hub info 
 cat > Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
 
@@ -85,8 +96,7 @@ ENV APPDIR=$APP_DIR
 ENV MESOS_SANDBOX=/$APP_DIR
 ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
 EOF
-
-#build and push
+	
 cp Dockerfile CreatorApp
 cd CreatorApp
 docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION .
