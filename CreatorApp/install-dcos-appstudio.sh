@@ -6,12 +6,9 @@ if [ "$c" = "y" ]; then
 	dcos package install --yes marathon-lb
 	dcos package install --yes cassandra
 	dcos package install --yes kafka
-	read -p "Install Elastic (requires DC/OS >= 1.9)? (y/n) " -n1 -s c1
-	if [ "$c1" = "y" ]; then
-		dcos package install --yes elastic
-	fi
+	dcos package install --yes beta-elastic --options ./elastic-beta-option.json
 	read -p "Install Jenkins? (y/n) " -n1 -s c1	
-	if [ "$c2" = "y" ]; then
+	if [ "$c1" = "y" ]; then
 		dcos package install --yes jenkins 
 	fi
 	echo
