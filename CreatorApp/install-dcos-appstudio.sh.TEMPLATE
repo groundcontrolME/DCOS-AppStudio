@@ -6,7 +6,7 @@ if [ "$c" = "y" ]; then
 	dcos package install --yes marathon-lb
 	dcos package install --yes cassandra
 	dcos package install --yes kafka
-	dcos package install --yes elastic-beta
+	dcos package install --yes beta-elastic --options ./elastic-beta-option.json
 	read -p "Install Jenkins? (y/n) " -n1 -s c1	
 	if [ "$c1" = "y" ]; then
 		dcos package install --yes jenkins 

@@ -30,14 +30,16 @@ echo copy done
 docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWD
 echo login done
 
-#Python apps: export variables 
+#Python apps
 for i in $APPS_PY; do
+	
+	#export vars
 	echo "**DEBUG: export vars for app "$i
 	export THIS_DIR=$(PWD)"/"$i
 	echo "**DEBUG: app_dir is "$THIS_DIR	
 	echo "**DEBUG: create dockerfile for app "$i	
 
-	#Python apps: create Dockerfile
+	#create Dockerfile
 	cat > $THIS_DIR/Dockerfile  << EOF
 FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE_PY}
 
@@ -47,24 +49,16 @@ RUN pip install -r requirements.txt
 ENTRYPOINT python3 -u $i.py
 EOF
 
-	#Python app: build and push
+	#build and push
 	echo "**DEBUG: build and push app "$i
 	cd $THIS_DIR	
+	echo "**INFO: building and pushing "$DOCKERHUB_USER/$DOCKERHUB_REPO":dcosappstudio-"$i"-v"$VERSION
 	docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION .
 	docker push $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-$i-v$VERSION
+        echo "**INFO: finished building and pushing "$DOCKERHUB_USER/$DOCKERHUB_REPO":dcosappstudio-"$i"-v"$VERSION
 	cd ..
 
 done #Python apps
-
-#JS/node: Generate dockerfile with docker hub info 
-cat > Dockerfile  << EOF
-FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
-
-COPY . /$APP_DIR
-ENV APPDIR=$APP_DIR
-ENV MESOS_SANDBOX=/$APP_DIR
-ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
-EOF
 
 #configure group JSON for CreatorApp
 cp $GROUP_JSON.TEMPLATE $GROUP_JSON
@@ -81,7 +75,18 @@ sed -i '' "s,__DOCKERHUB_USER__,$DOCKERHUB_USER,g" $INSTALLER
 sed -i '' "s,__DOCKERHUB_REPO__,$DOCKERHUB_REPO,g" $INSTALLER
 sed -i '' "s,__VERSION__,$VERSION,g" $INSTALLER
 
+#JS/node 
+#Generate dockerfile with docker hub info 
+cat > Dockerfile  << EOF
+FROM ${DOCKERHUB_USER}/${DOCKERHUB_REPO}:${BASEIMAGE}
 
+COPY . /$APP_DIR
+ENV APPDIR=$APP_DIR
+ENV MESOS_SANDBOX=/$APP_DIR
+ENTRYPOINT /opt/node/bin/node /$APP_DIR/bin/www
+EOF
+
+#build and push
 cp Dockerfile CreatorApp
 cd CreatorApp
 docker build -t $DOCKERHUB_USER/$DOCKERHUB_REPO:dcosappstudio-creator-v$VERSION .
