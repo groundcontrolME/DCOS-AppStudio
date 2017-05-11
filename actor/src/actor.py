@@ -51,7 +51,7 @@ DEFAULT_WAIT_SECS_SEED = 20			#wait cycle seed for random (seconds)
 DEFAULT_MOVING_CHANCE = 33			#chance of moving in the map every wait cycle
 DEFAULT_SUICIDE_CHANCE = 2			#chance of commiting suicide in pct every wait time
 
-RESERVED_FIELDS = ("location", "id", "timestamp") #fields that should remain unchanged
+RESERVED_FIELDS = ("location", "id", "event_timestamp") #fields that should remain unchanged
 STATUS_TYPES = ['HEALTHY','NEEDS SERVICE','DATA ERRORS','HEALTHY','HEALTHY','HEALTHY']
 
 #helper functions
