@@ -20,8 +20,8 @@ export BASEIMAGE_PY=alpine-python3
 export REQUIREMENTS_PY=requirements.txt
 
 #defaults
-export LATITUDE="40.773860"		#coords for event generation 
-export LONGITUDE="-73.970813"		#Bethesda fountain in Central Park NY
+export LATITUDE="41.411338"		#coords for event generation 
+export LONGITUDE="2.226438"		#SF bay
 export RADIUS="1000"			#radius of events in meters	
 
 #check command-line arguments

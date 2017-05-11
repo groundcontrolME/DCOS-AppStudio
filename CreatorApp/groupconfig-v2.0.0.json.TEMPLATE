@@ -574,13 +574,16 @@
   {
   "id": "actor",
   "instances": 2,
-  "cpus": 0.1,
-  "mem": 128,
+  "cpus": 0.01,
+  "mem": 64,
   "disk": 0,
   "gpus": 0,
   "backoffSeconds": 1,
   "backoffFactor": 1.15,
   "maxLaunchDelaySeconds": 3600,
+  "fetch": [
+    { "uri": "https://raw.githubusercontent.com/groundcontrolME/appstudio/master/actor/routes/routes.csv" }
+  ]
   "container": {
     "type": "DOCKER",
     "docker": {
