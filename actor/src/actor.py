@@ -47,8 +47,8 @@ DEFAULT_TEMP_MIN = 100
 DEFAULT_SPEED_MIN = 10
 DEFAULT_SPEED_MAX = 120
 DEFAULT_TEMP_MIN = 40
-DEFAULT_WAIT_SECS_SEED = 20			#wait cycle seed for random (seconds)
-DEFAULT_MOVING_CHANCE = 33			#chance of moving in the map every wait cycle
+DEFAULT_WAIT_SECS_SEED = 5			#wait cycle seed for random (seconds)
+DEFAULT_MOVING_CHANCE = 66			#chance of moving in the map every wait cycle
 DEFAULT_SUICIDE_CHANCE = 2			#chance of commiting suicide in pct every wait time
 
 RESERVED_FIELDS = ("location", "id", "event_timestamp") #fields that should remain unchanged
@@ -257,12 +257,17 @@ if __name__ == "__main__":
 
 	#Initialize actor
 	actor = {}
-	#RESERVED fields that remain unchanged: 
+	#RESERVED fields 
 	actor['location'] = random_location( Latitude, Longitude, Radius )
 	actor['id'] = int(time.time() * 1000)
+	#event_timestamp for "now" in ISO8601-Z format
+	temp_date = datetime.datetime.utcnow().isoformat() 	#now in ISO8601 
+	timestamp_8601_Z = temp_date[:-3]+'Z'				#Reformat UTC-Zuly "2017-04-26T07:05:00.91Z"
+	actor['event_timestamp'] = timestamp_8601_Z
 
 	#Initialize location if Trajectory is not RANDOM and is passed as file.
-	if Trajectory is not "RANDOM":
+	if Trajectory != "RANDOM":
+		print("**INFO: Trajectory is set from {0}".format(Routes_filename))
 		numlines = bufcount(Routes_filename)		#TRAJECTORY should be the filename
 		numlines = numlines - 1
 		start_pos = random.randint( 0, numlines )
@@ -271,9 +276,11 @@ if __name__ == "__main__":
 			end_pos = numlines
 	
 		route_range = set(range(start_pos,end_pos))
-		f=open('routes.csv')
+		f=open(Routes_filename)
 		route=list(yieldlines(f,route_range))
 		route_index=0
+	else:
+		print("**INFO: Trajectory is random")
 
 	# AppStudio: connect with listener
 	listener = os.getenv('LISTENER')
@@ -362,7 +369,7 @@ if __name__ == "__main__":
 			print("**INFO: Let's move somewhere else.")
 			current_lat, current_lon = actor["location"].split(",")
 			print("**INFO:  My current location is {0},{1}".format( current_lat, current_lon ))
-			if Trajectory = "RANDOM":
+			if Trajectory == "RANDOM":
 				new_location = random_location( current_lat, current_lon, Radius )
 			else:		#trajectory comes from a filename
 				new_location = format_location(route[route_index].rstrip(), loc_list)
