@@ -581,6 +581,9 @@
   "backoffSeconds": 1,
   "backoffFactor": 1.15,
   "maxLaunchDelaySeconds": 3600,
+  "uris": [
+    "https://raw.githubusercontent.com/groundcontrolME/appstudio/master/actor/routes/sfbay.csv"
+  ],
   "container": {
     "type": "DOCKER",
     "docker": {
