@@ -32,35 +32,43 @@ import math
 #default values
 ################
 
-DEFAULT_LATITUDE = 40.773860   #NYC central park
+DEFAULT_LATITUDE = 40.773860		#NYC central park
 DEFAULT_LONGITUDE = -73.970813
-#DEFAULT_LATITUDE = 40.453062	#Madrid stadium
+#DEFAULT_LATITUDE = 40.453062		#Madrid stadium
 #DEFAULT_LONGITUDE = -3.688334
-#DEFAULT_LATITUDE = 48.858554	#Eiffel tower
+#DEFAULT_LATITUDE = 48.858554		#Eiffel tower
 #DEFAULT_LONGITUDE = 2.294513
 DEFAULT_RADIUS = 300
 DEFAULT_MY_ID_LENGTH = 6			#up to 1 million users - integer
 DEFAULT_AGE_MAX = 60
 DEFAULT_AGE_MIN = 16
-DEFAULT_WAIT_SECS_SEED = 20			#every random*(THIS seconds) we consider  moving
-DEFAULT_MOVING_CHANCE = 33			#chance of moving in the map
+DEFAULT_TEMP_MAX = 50
+DEFAULT_TEMP_MIN = 100
+DEFAULT_SPEED_MIN = 10
+DEFAULT_SPEED_MAX = 120
+DEFAULT_TEMP_MIN = 40
+DEFAULT_WAIT_SECS_SEED = 20			#wait cycle seed for random (seconds)
+DEFAULT_MOVING_CHANCE = 33			#chance of moving in the map every wait cycle
 DEFAULT_SUICIDE_CHANCE = 2			#chance of commiting suicide in pct every wait time
+
+RESERVED_FIELDS = ("location", "id", "timestamp") #fields that should remain unchanged
+STATUS_TYPES = ['HEALTHY','NEEDS SERVICE','DATA ERRORS','HEALTHY','HEALTHY','HEALTHY']
 
 #helper functions
 #################
 
-def generate_random_number( min=0, max=0, length=0 ):
+def random_number( min=0, max=0, length=0 ):
 	"""
-	Generates a random number inside a range or with a specific length
+	Generates a random number inside a range or with a specific length and returns as a string
 	"""
 	if length > 0:
 		range_start = 10**( length - 1 )
 		range_end = ( 10**length ) - 1
-		return random.randint( range_start, range_end )
+		return str(random.randint( range_start, range_end ))
 	if (min and max):
-		return random.randint( min, max )
+		return str(random.randint( min, max ))
 
-def get_random_for_type( field ):
+def random_for_type( field ):
 	"""
 	Generates a random value for the field received.
 	field: {
@@ -76,20 +84,55 @@ def get_random_for_type( field ):
 
 	if my_type == "String": return fake.bs() 
 	if my_type == "Boolean": return bool(random.getrandbits(1)) 	
-	if my_type == "Integer": return generate_random_number( length=2 )		
-	if my_type == "Long": return generate_random_number( length=5 )
-	if my_type == "Double": return generate_random_number( min=(-1)*generate_random_number( length=7 ) , \
-							max=generate_random_number( length=7 ) )			
+	if my_type == "Integer": return random_number( length=2 )		
+	if my_type == "Long": return random_number( length=5 )
+	if my_type == "Double": return random_number( min=(-1)*random_number( length=7 ) , \
+							max=random_number( length=7 ) )			
 	if my_type == "Location": return str(fake.latitude())+","+str(fake.longitude()) 
 	if ( my_type == "Date/time" or my_type == "Date/Time" ): 
 		date = fake.iso8601()[:-3]+'Z' #fake date -- ANY date || Converted to Zulu for Kibana
 		#date = datetime.datetime.now().isoformat()
 		return(date)
 
-	print('**ERROR: get_random_for_type: my_type is not detected')
+	print('**ERROR: random_for_type: my_type is not detected')
 	return None
 
-def generate_random_location( latitude, longitude, radius ):
+def realistic_for_type( field ):
+	"""
+	Generates a realistic value for the field received.
+	field: {
+		"name": name, 
+		"type": JStype, 
+		"pivot": boolean
+		}
+	Type is a JS type defined by the app, not a python type.
+	"""
+
+	my_type = field['type']
+	my_name = field['name']
+
+	#generate realistic values for well-known fields
+	#generic
+	if my_name == "uuid": return random_number( length=DEFAULT_MY_ID_LENGTH )
+	#taxi
+	if my_name == "observationTime": return int(time.time())									# "now" standard	
+	if my_name == "geometry": return random_location( Latitude, Longitude, Radius ) 	#taxi app with Esri term
+	if my_name == "passengerCount": return random_number( min=1, max=6 )		#or str(random.randint( 1, 6 ))
+	#taxi, event
+	if my_name == "route_length": return 1
+	if my_name == "name": return fake.name()
+	if my_name == "age": return random_number( min=Age_min, max=Age_max )
+	if my_name == "country": return fake.country()
+	#connected car
+	if my_name == "driver": return fake.name()
+	if my_name == "motortemp": return random_number( min=Temp_min, max=Temp_max )	#or str(random.randint( 50, 100 ))
+	if my_name == "speed": return random_number( min=Speed_min, max=Speed_max )		
+	if my_name == "carid": return random_number( length=DEFAULT_MY_ID_LENGTH )		
+	if my_name == "status": return random.choice( STATUS_TYPES ) 	#STATUS_TYPES[random.randint(0,len(STATUS_TYPES)-1)]		
+
+	return None
+
+def random_location( latitude, longitude, radius ):
 	"""
 	Generates a random location from lat, long, radius
 	returns in as string in "latitude", "longitude" format.
@@ -151,105 +194,68 @@ if __name__ == "__main__":
 
 	fake = Faker()		#fake data factory
 
-	#TODO: Actors that re-live?
-	# check in Cassandra whether I exist? relaunch if I do?
-	actor = {}
-	#set creation time
-	#actor["start_time"] = datetime.datetime.now().isoformat()[:-3]+'Z' #adapted to Zulu for Kibana
-
 	# Parse environment variables
 	Latitude = os.getenv('LATITUDE', DEFAULT_LATITUDE)
 	Longitude = os.getenv('LONGITUDE', DEFAULT_LONGITUDE)
 	Radius = os.getenv('RADIUS', DEFAULT_RADIUS)
-	My_id_length = os.getenv('MY_ID_LENGTH', DEFAULT_MY_ID_LENGTH)
 	Age_min = os.getenv('AGE_MIN', DEFAULT_AGE_MIN)
 	Age_max = os.getenv('AGE_MAX', DEFAULT_AGE_MAX)
+	Temp_min = os.getenv('TEMP_MIN', DEFAULT_TEMP_MIN)
+	Temp_max = os.getenv('TEMP_MAX', DEFAULT_TEMP_MAX)
+	Speed_min = os.getenv('SPEED_MIN', DEFAULT_SPEED_MIN)
+	Speed_max = os.getenv('SPEED_MAX', DEFAULT_SPEED_MAX)
 	Wait_secs_seed = os.getenv('WAIT_SECS_SEED', DEFAULT_WAIT_SECS_SEED)
 	Moving_chance = os.getenv('MOVING_CHANCE', DEFAULT_MOVING_CHANCE)
 	Suicide_chance = os.getenv('SUICIDE_CHANCE', DEFAULT_SUICIDE_CHANCE)
-	# AppStudio: connect with listener and get appdef
+
+	#Initialize actor
+	#TODO: Actors that re-live?
+	# check in Cassandra whether I exist? relaunch if I do?
+	actor = {}
+	#RESERVED fields that remain unchanged: 
+	#set creation time
+	#actor["start_time"] = datetime.datetime.now().isoformat()[:-3]+'Z' #adapted to Zulu for Kibana
+	#set initial location
+	actor['location'] = random_location( Latitude, Longitude, Radius )
+	actor['id'] = int(time.time() * 1000)
+
+	# AppStudio: connect with listener
 	listener = os.getenv('LISTENER')
-	print('**DEBUG: Listener is: {0}'.format( listener ) )
-	#APPDEF: read "fields"
+	print('**INFO: Will connect to Listener at: {0}'.format( listener ) )
+
+	# AppStudio: read AppDef "fields"
 	appdef_env = os.getenv('APPDEF', {} )
 	if appdef_env:
 		appdef_clean = appdef_env.replace( "'", '"' )	#need double quotes
-		print('**APPDEF clean is: {0}'.format( appdef_clean ) )
+		print('**INFO: Application Definition is: {0}'.format( appdef_clean ) )
 		appdef = json.loads(appdef_clean)
 		fields = appdef['fields']
-	else:
+	else:	
 		appdef_clean = ""
 		fields = []
 
 	#loop through the fields, populate
 	for field in fields:
-		##### CUSTOMIZE VALUES FOR KNOWN FIELDS --- To look realistic / fit to boundaries / etc
-		#######################################################################################
-		
-		#search for "uuid", if present ignore and create unique ID.
-		if field['name'] == "uuid":
-			actor["uuid"] = generate_random_number( length=My_id_length )
-			print('**DEBUG: my uuid is: {0}'.format( actor["uuid"] ) )
-			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
+
+		#skip well-known fields
+		if field['name'] in RESERVED_FIELDS: 
+			print('**DEBUG: RESERVED field: {0} | value: {1}'.format( field['name'], actor[field['name']] ) )
 			continue
 
-		#TAXI: earch for "location", if present ignore it as location is passed as a parameter
-		if field['name'] == "location":
-			#Generate my location from lat long radius
-			print("Initial location is {0},{1}".format( Latitude, Longitude ))
-			actor["location"] = generate_random_location( Latitude, Longitude, Radius )
-			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
+		#Customize values that makes sense for well-known fields
+		actor[field['name']] = realistic_for_type( field )
+		if actor[field['name']]:					#it's a known field so it was populated as realistic
+			print('**DEBUG: KNOWN field: {0} | realistic: {1}'.format( field['name'], actor[field['name']] ) )
 			continue
 
-		#TAXI: search for "observationTime", if present generate a "now" time
-		if field['name'] == "observationTime":
-			actor["observationTime"] = int(time.time())
-			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
-			continue
-
-		#TAXI: search for "geometry", if present copy location (this is to adapt to the GUI naming)
-		if field['name'] == "geometry":
-			actor["geometry"] = actor["location"]
-			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
-			continue
-
-		#TAXI: search for "passengerCount", if present do integer to string (this is to adapt to the GUI naming)
-		if field['name'] == "passengerCount":
-			actor["passengerCount"] = str(random.randint( 1, 6 ))
-			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
-			continue
-
-		#EVENT: search for "route_length", if present initialize to 0 and use for distance covered
-		if field['name'] == "route_length":
-			actor["route_length"] = 0		
-			print('**DEBUG: APPDEF gives me {0} but my {1} will remain at {2} as generated'.format( field['name'],field['name'],actor[field['name']] ) )
-			continue		
-
-		#EVENT: search for "name", if present generate one
-		if field['name'] == "name":
-			actor["name"] = fake.name()
-			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
-			continue
-
-		#EVENT: search for "age", if present generate age in range that makes sense
-		if field['name'] == "age":
-			actor["age"] = generate_random_number( min=Age_min, max=Age_max )
-			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
-			continue
-
-		#EVENT: search for "country", if present generate a country name
-		if field['name'] == "country":
-			actor["country"] = fake.country()
-			print('**DEBUG: my {0} is: {1}'.format( field['name'], actor[field['name']] ) )
-			continue
-
-		#DEMO: Anything else is LEARNED from APPDEF, fill it with random stuff
-		actor[field['name']] = get_random_for_type( field )
-		print('**DEBUG: LEARNED field: {0} | randomized is: {1}'.format( field['name'], actor[field['name']] ) )
+		#Any field that is not well-known and LEARNED from APPDEF, fill it with random stuff
+		actor[field['name']] = random_for_type( field )
+		print('**DEBUG: LEARNED field: {0} | randomized: {1}'.format( field['name'], actor[field['name']] ) )
 
 	# Main loop
 	while True:
 
+		#RESERVED fields:
 		#my ID is "now"
 		actor['id'] = int(time.time() * 1000)
 
@@ -288,9 +294,9 @@ if __name__ == "__main__":
 			sys.exit(0)
 
 		#wait a random amount of time
-		wait_interval = Wait_secs_seed*generate_random_number( length=1 )
+		wait_interval = Wait_secs_seed*int(random_number( length=1 ))
 		print("**INFO: I'm going to wait here for {0} seconds.".format(wait_interval))
-		time.sleep(int(wait_interval)) 
+		time.sleep(wait_interval)
 
 		#randomly decide if moving
 		move_on = ( random.randrange(100) < Moving_chance )
@@ -300,7 +306,7 @@ if __name__ == "__main__":
 			print("**INFO: Let's move somewhere else.")
 			current_lat, current_lon = actor["location"].split(",")
 			print("**INFO:  My current location is {0},{1}".format( current_lat, current_lon ))					  
-			new_location = generate_random_location( current_lat, current_lon, Radius )
+			new_location = random_location( current_lat, current_lon, Radius )
 			print("**INFO:  My new location will be {0}".format( new_location ) )		
 			distance = calculate_distance( actor['location'], new_location )
 			print("**INFO: I'm going to move {0} meters".format( distance ) )
