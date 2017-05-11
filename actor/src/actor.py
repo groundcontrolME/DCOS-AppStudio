@@ -161,17 +161,16 @@ def random_location( latitude, longitude, radius ):
 
 def bufcount(filename):
 	"""
-	Open up a file and read a certain chunk determined by a buffer, return the lines in there.
+	Open up a file and read a certain chunk determined by a buffer, return the lines in the chunk.
 	"""
 
-	#file_location = os.getenv("MESOS_SANDBOX","/mnt/mesos/sandbox")+"/"+filename
-	file_location = filename	
+	#file_location = "/"+filename	
 	buf_size = 1024 * 1024	#1 MB
 	
 	try:
-		f = open( file_location )	#the routes/trajectory file is a URI so should be downloaded to /
+		f = open( filename )	#the routes/trajectory file is a URI so should be downloaded to /
 	except IOError:
-		print("**ERROR: Trajectory set but file {0} is not found.".format(file_location))
+		print("**ERROR: Trajectory set but file {0} not found.".format(filename))
 		exit(1)
 
 	lines = 0
@@ -242,7 +241,8 @@ if __name__ == "__main__":
 
 	# Parse environment variables
 	Trajectory = os.getenv('TRAJECTORY', DEFAULT_TRAJECTORY)
-	Routes_filename = os.getenv('ROUTES_FILENAME', DEFAULT_ROUTES_FILENAME)	 
+	Routes_filename = os.getenv('ROUTES_FILENAME', DEFAULT_ROUTES_FILENAME)
+	File_location = os.getenv("MESOS_SANDBOX","/mnt/mesos/sandbox")+"/"+Routes_filename
 	Latitude = os.getenv('LATITUDE', DEFAULT_LATITUDE)
 	Longitude = os.getenv('LONGITUDE', DEFAULT_LONGITUDE)
 	Radius = os.getenv('RADIUS', DEFAULT_RADIUS)
@@ -268,8 +268,8 @@ if __name__ == "__main__":
 
 	#Initialize location if Trajectory is not RANDOM and is passed as file.
 	if Trajectory != "RANDOM":
-		print("**INFO: Trajectory is set from {0}".format(Routes_filename))
-		numlines = bufcount(Routes_filename)		#TRAJECTORY should be the filename
+		print("**INFO: Trajectory is set from {0}".format(File_location))
+		numlines = bufcount(File_location)		#TRAJECTORY should be the filename
 		numlines = numlines - 1
 		start_pos = random.randint( 0, numlines )
 		end_pos = start_pos + 1000
@@ -277,7 +277,7 @@ if __name__ == "__main__":
 			end_pos = numlines
 	
 		route_range = set(range(start_pos,end_pos))
-		f=open(Routes_filename)
+		f=open(File_location)
 		route=list(yieldlines(f,route_range))
 		route_index=0
 	else:
