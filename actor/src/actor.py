@@ -5,6 +5,9 @@
 # Author: Fernando Sanchez [ fernando at mesosphere.com ]
 #
 # * receives as environment variables:
+# - DEFAULT_TRAJECTORY 			# whether it's RANDOM or FILE
+# - ROUTES_FILENAME 			# in case the file is not routes.csv
+# - AGE/TEMP/SPEED MAX/MIN		# ranges
 # - LATITUDE 					# starting position
 # - LONGITUDE 					# starting position
 # - RADIUS 					# max radius of movement in meters
@@ -13,12 +16,7 @@
 # - WAIT_SECS_SEED				# order of magnitude in seconds of period after which we consider change or die
 # - MOVING_CHANCE 				# % probability of position change each WAIT_SECS_SEED seconds
 # - SUICIDE_CHANCE				# % probability of exiting each WAIT_SECS_SEED seconds
-# * Not currently used:
-# - amount of change in meters (speed-like)	# use "RADIUS"
-# - duration/lifespan				# use "SUICIDE_CHANCE"
 
-
-#load environment variables
 import sys
 import os
 import requests
@@ -42,11 +40,10 @@ DEFAULT_RADIUS = 300
 DEFAULT_MY_ID_LENGTH = 6			#up to 1 million users - integer
 DEFAULT_AGE_MAX = 60
 DEFAULT_AGE_MIN = 16
-DEFAULT_TEMP_MAX = 50
-DEFAULT_TEMP_MIN = 100
+DEFAULT_TEMP_MAX = 100
+DEFAULT_TEMP_MIN = 50
 DEFAULT_SPEED_MIN = 10
 DEFAULT_SPEED_MAX = 120
-DEFAULT_TEMP_MIN = 40
 DEFAULT_WAIT_SECS_SEED = 5			#wait cycle seed for random (seconds)
 DEFAULT_MOVING_CHANCE = 66			#chance of moving in the map every wait cycle
 DEFAULT_SUICIDE_CHANCE = 2			#chance of commiting suicide in pct every wait time
@@ -366,14 +363,14 @@ if __name__ == "__main__":
 		move_on = ( random.randrange(100) < Moving_chance )
 		if move_on:
 			
-			#randomly decide where to move to, in a radius.
+			#randomly decide where to move to, in a radius or from a set of locations in a trajectory.
 			print("**INFO: Let's move somewhere else.")
 			current_lat, current_lon = actor["location"].split(",")
 			print("**INFO:  My current location is {0},{1}".format( current_lat, current_lon ))
 			if Trajectory == "RANDOM":
 				new_location = random_location( current_lat, current_lon, Radius )
 			else:		#trajectory comes from a filename
-				new_location = format_location(route[route_index].rstrip(), loc_list)
+				new_location = format_location(route[route_index].rstrip())
 				route_index +=1
 			print("**INFO:  My new location will be {0}".format( new_location ) )		
 			distance = calculate_distance( actor['location'], new_location )
