@@ -620,7 +620,8 @@
 "LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:80/data",
 		"LATITUDE": "__LATITUDE__" , 
 		"LONGITUDE": "__LONGITUDE__" ,
-		"RADIUS": "__RADIUS__"
+		"RADIUS": "__RADIUS__",
+		"TRAJECTORY": "FILE"
   },
   "requirePorts": false
 }
