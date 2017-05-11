@@ -32,12 +32,12 @@ import math
 #default values
 ################
 
-DEFAULT_LATITUDE = 40.773860		#NYC central park
-DEFAULT_LONGITUDE = -73.970813
-#DEFAULT_LATITUDE = 40.453062		#Madrid stadium
-#DEFAULT_LONGITUDE = -3.688334
-#DEFAULT_LATITUDE = 48.858554		#Eiffel tower
-#DEFAULT_LONGITUDE = 2.294513
+DEFAULT_TRAJECTORY = "RANDOM"		#RANDOM, or URI with routes/locations file $LOCATION_FILENAME
+DEFAULT_ROUTES_FILENAME = "routes.csv"
+DEFAULT_LATITUDE = 41.411338		#SF bay
+DEFAULT_LONGITUDE = 2.226438
+#DEFAULT_LATITUDE = 40.773860		#NYC central park
+#DEFAULT_LONGITUDE = -73.970813
 DEFAULT_RADIUS = 300
 DEFAULT_MY_ID_LENGTH = 6			#up to 1 million users - integer
 DEFAULT_AGE_MAX = 60
@@ -159,6 +159,51 @@ def random_location( latitude, longitude, radius ):
 
 	return new_location
 
+def bufcount(filename):
+	"""
+	Open up a file and read a certain chunk determined by a buffer, return the lines in there.
+	"""
+
+	file_location = os.getenv("MESOS_SANDBOX","/mnt/mesos/sandbox")+"/"+filename
+	buf_size = 1024 * 1024	#1 MB
+	
+	try:
+		f = open( file_location )	#the routes/trajectory file is a URI so should be downloaded to /
+	except IOError:
+		print("**ERROR: Trajectory set but file {0} is not found.".format(filename))
+		exit(1)
+
+	lines = 0
+	read_f = f.read # loop optimization
+	buf = read_f(buf_size)
+
+	while buf:
+		lines += buf.count('\n')
+		buf = read_f(buf_size)
+	f.close()
+
+	return lines
+
+def yieldlines(thefile, whatlines):
+	"""
+	Return a specific number of lines from a file
+	"""
+	
+	return (x for i, x in enumerate(thefile) if i in whatlines)
+
+def format_location( lat_long ):
+	"""
+	Returns a location from a given list of locations
+	"""
+
+	loc_list = lat_long.split(",") 
+	lat = float(loc_list[1])
+	lon = float(loc_list[0])
+	new_location = "{0:.6f}".format(round((lat),6))+","+"{0:.6f}".format(round((lon),6))
+	print('**DEBUG: new_location is {0}'.format(new_location))
+
+	return new_location
+
 def calculate_distance (src_coords, dst_coords):
 	"""
 	Calculates the distance in meters between two coordinates.
@@ -195,6 +240,8 @@ if __name__ == "__main__":
 	fake = Faker()		#fake data factory
 
 	# Parse environment variables
+	Trajectory = os.getenv('TRAJECTORY', DEFAULT_TRAJECTORY)
+	Routes_filename = os.getenv('ROUTES_FILENAME', DEFAULT_ROUTES_FILENAME)	 
 	Latitude = os.getenv('LATITUDE', DEFAULT_LATITUDE)
 	Longitude = os.getenv('LONGITUDE', DEFAULT_LONGITUDE)
 	Radius = os.getenv('RADIUS', DEFAULT_RADIUS)
@@ -209,15 +256,24 @@ if __name__ == "__main__":
 	Suicide_chance = os.getenv('SUICIDE_CHANCE', DEFAULT_SUICIDE_CHANCE)
 
 	#Initialize actor
-	#TODO: Actors that re-live?
-	# check in Cassandra whether I exist? relaunch if I do?
 	actor = {}
 	#RESERVED fields that remain unchanged: 
-	#set creation time
-	#actor["start_time"] = datetime.datetime.now().isoformat()[:-3]+'Z' #adapted to Zulu for Kibana
-	#set initial location
 	actor['location'] = random_location( Latitude, Longitude, Radius )
 	actor['id'] = int(time.time() * 1000)
+
+	#Initialize location if Trajectory is not RANDOM and is passed as file.
+	if Trajectory is not "RANDOM":
+		numlines = bufcount(Routes_filename)		#TRAJECTORY should be the filename
+		numlines = numlines - 1
+		start_pos = random.randint( 0, numlines )
+		end_pos = start_pos + 1000
+		if end_pos > numlines:
+			end_pos = numlines
+	
+		route_range = set(range(start_pos,end_pos))
+		f=open('routes.csv')
+		route=list(yieldlines(f,route_range))
+		route_index=0
 
 	# AppStudio: connect with listener
 	listener = os.getenv('LISTENER')
@@ -305,8 +361,12 @@ if __name__ == "__main__":
 			#randomly decide where to move to, in a radius.
 			print("**INFO: Let's move somewhere else.")
 			current_lat, current_lon = actor["location"].split(",")
-			print("**INFO:  My current location is {0},{1}".format( current_lat, current_lon ))					  
-			new_location = random_location( current_lat, current_lon, Radius )
+			print("**INFO:  My current location is {0},{1}".format( current_lat, current_lon ))
+			if Trajectory = "RANDOM":
+				new_location = random_location( current_lat, current_lon, Radius )
+			else:		#trajectory comes from a filename
+				new_location = format_location(route[route_index].rstrip(), loc_list)
+				route_index +=1
 			print("**INFO:  My new location will be {0}".format( new_location ) )		
 			distance = calculate_distance( actor['location'], new_location )
 			print("**INFO: I'm going to move {0} meters".format( distance ) )
