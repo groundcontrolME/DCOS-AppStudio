@@ -164,13 +164,14 @@ def bufcount(filename):
 	Open up a file and read a certain chunk determined by a buffer, return the lines in there.
 	"""
 
-	file_location = os.getenv("MESOS_SANDBOX","/mnt/mesos/sandbox")+"/"+filename
+	#file_location = os.getenv("MESOS_SANDBOX","/mnt/mesos/sandbox")+"/"+filename
+	file_location = filename	
 	buf_size = 1024 * 1024	#1 MB
 	
 	try:
 		f = open( file_location )	#the routes/trajectory file is a URI so should be downloaded to /
 	except IOError:
-		print("**ERROR: Trajectory set but file {0} is not found.".format(filename))
+		print("**ERROR: Trajectory set but file {0} is not found.".format(file_location))
 		exit(1)
 
 	lines = 0
