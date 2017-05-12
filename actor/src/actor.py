@@ -317,10 +317,9 @@ if __name__ == "__main__":
 	while True:
 
 		#RESERVED fields:
-		#my ID is "now"
-		actor['id'] = int(time.time() * 1000)
+		actor['id'] = int(time.time() * 1000)				#my ID is "now"
 
-		#event_timestamp for "now" in ISO8601-Z format
+		#event_timestamp: "now" in ISO8601-Z format
 		temp_date = datetime.datetime.utcnow().isoformat() 	#now in ISO8601 
 		timestamp_8601_Z = temp_date[:-3]+'Z'				#Reformat UTC-Zuly "2017-04-26T07:05:00.91Z"
 		actor['event_timestamp'] = timestamp_8601_Z
