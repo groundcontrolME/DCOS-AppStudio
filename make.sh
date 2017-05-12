@@ -23,6 +23,7 @@ export REQUIREMENTS_PY=requirements.txt
 export LATITUDE="41.411338"		#coords for event generation 
 export LONGITUDE="2.226438"		#SF bay
 export RADIUS="1000"			#radius of events in meters	
+export ROUTES_URI="https://raw.githubusercontent.com/fernandosanchezmunoz/DCOS-AppStudio/master/actor/routes/routes.csv"
 
 #check command-line arguments
 if [[ $# < 1 ]]; then
@@ -77,6 +78,8 @@ sed -i '' "s,__VERSION__,$VERSION,g" $GROUP_JSON
 sed -i '' "s,__LATITUDE__,$LATITUDE,g" $GROUP_JSON
 sed -i '' "s,__LONGITUDE__,$LONGITUDE,g" $GROUP_JSON
 sed -i '' "s,__RADIUS__,$RADIUS,g" $GROUP_JSON
+sed -i '' "s,__ROUTES_URI__,$ROUTES_URI,g" $GROUP_JSON
+
 
 #configure appstudio installer
 cp $INSTALLER.TEMPLATE $INSTALLER
