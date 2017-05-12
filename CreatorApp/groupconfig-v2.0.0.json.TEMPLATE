@@ -609,7 +609,7 @@
       "maxConsecutiveFailures": 3,
       "delaySeconds": 9,
       "command": {
-        "value": "ps aux|grep python3"
+        "value": "ps aux|grep python3 > /dev/null 2>&1"
       },
       "protocol": "COMMAND"
     }
