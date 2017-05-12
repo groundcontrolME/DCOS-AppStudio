@@ -20,8 +20,8 @@ export BASEIMAGE_PY=alpine-python3
 export REQUIREMENTS_PY=requirements.txt
 
 #defaults
-export LATITUDE="41.411338"		#coords for event generation 
-export LONGITUDE="2.226438"		#SF bay
+export LATITUDE="38.220107"		#coords for event generation 
+export LONGITUDE="-122.279448"		#SF bay
 export RADIUS="1000"			#radius of events in meters	
 export ROUTES_URI="https://raw.githubusercontent.com/fernandosanchezmunoz/DCOS-AppStudio/master/actor/routes/routes.csv"
 
