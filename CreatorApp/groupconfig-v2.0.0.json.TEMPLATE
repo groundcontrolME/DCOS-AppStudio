@@ -582,7 +582,7 @@
   "backoffFactor": 1.15,
   "maxLaunchDelaySeconds": 3600,
   "fetch": [
-    { "uri": "https://raw.githubusercontent.com/fernandosanchezmunoz/DCOS-AppStudio/master/actor/routes/routes.csv" }
+    { "uri": "__ROUTES_URI__" }
   ],
   "container": {
     "type": "DOCKER",
