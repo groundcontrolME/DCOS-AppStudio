@@ -50,6 +50,7 @@ DEFAULT_SUICIDE_CHANCE = 2			#chance of commiting suicide in pct every wait time
 
 RESERVED_FIELDS = ("location", "id", "event_timestamp") #fields that should remain unchanged
 STATUS_TYPES = ['HEALTHY','NEEDS SERVICE','DATA ERRORS','HEALTHY','HEALTHY','HEALTHY']
+DEFAULT_BUFSIZE = 1024 * 1024		#1 MB - size of buffer for lines read from the "routes"
 
 #helper functions
 #################
@@ -161,8 +162,7 @@ def bufcount(filename):
 	Open up a file and read a certain chunk determined by a buffer, return the lines in the chunk.
 	"""
 
-	#file_location = "/"+filename	
-	buf_size = 1024 * 1024	#1 MB
+	buf_size = DEFAULT_BUFSIZE 
 	
 	try:
 		f = open( filename )	#the routes/trajectory file is a URI so should be downloaded to /
@@ -190,14 +190,13 @@ def yieldlines(thefile, whatlines):
 
 def format_location( lat_long ):
 	"""
-	Returns a location from a given list of locations
+	Formats a received location to six decimals.
 	"""
 
 	loc_list = lat_long.split(",") 
 	lat = float(loc_list[1])
 	lon = float(loc_list[0])
 	new_location = "{0:.6f}".format(round((lat),6))+","+"{0:.6f}".format(round((lon),6))
-	print('**DEBUG: new_location is {0}'.format(new_location))
 
 	return new_location
 
@@ -249,9 +248,9 @@ if __name__ == "__main__":
 	Temp_max = os.getenv('TEMP_MAX', DEFAULT_TEMP_MAX)
 	Speed_min = os.getenv('SPEED_MIN', DEFAULT_SPEED_MIN)
 	Speed_max = os.getenv('SPEED_MAX', DEFAULT_SPEED_MAX)
-	Wait_secs_seed = os.getenv('WAIT_SECS_SEED', DEFAULT_WAIT_SECS_SEED)
-	Moving_chance = os.getenv('MOVING_CHANCE', DEFAULT_MOVING_CHANCE)
-	Suicide_chance = os.getenv('SUICIDE_CHANCE', DEFAULT_SUICIDE_CHANCE)
+	Wait_secs_seed = float(os.getenv('WAIT_SECS_SEED', DEFAULT_WAIT_SECS_SEED))
+	Moving_chance = int(os.getenv('MOVING_CHANCE', DEFAULT_MOVING_CHANCE))
+	Suicide_chance = int(os.getenv('SUICIDE_CHANCE', DEFAULT_SUICIDE_CHANCE))
 
 	#Initialize actor
 	actor = {}
@@ -266,12 +265,12 @@ if __name__ == "__main__":
 	#Initialize location if Trajectory is not RANDOM and is passed as file.
 	if Trajectory != "RANDOM":
 		print("**INFO: Trajectory is set from {0}".format(File_location))
-		numlines = bufcount(File_location)		#TRAJECTORY should be the filename
+		numlines = bufcount(File_location)			#count number of lines that fit in buffer from the route file
 		numlines = numlines - 1
-		start_pos = random.randint( 0, numlines )
-		end_pos = start_pos + 1000
+		start_pos = random.randint( 0, numlines )	#randomly choose the position in the file
+		end_pos = start_pos + 1000					#my route has 1000 points. TODO: randomize
 		if end_pos > numlines:
-			end_pos = numlines
+			end_pos = numlines						#cap end_pos at end of file
 	
 		route_range = set(range(start_pos,end_pos))
 		f=open(File_location)
@@ -368,9 +367,9 @@ if __name__ == "__main__":
 			print("**INFO:  My current location is {0},{1}".format( current_lat, current_lon ))
 			if Trajectory == "RANDOM":
 				new_location = random_location( current_lat, current_lon, Radius )
-			else:		#trajectory comes from a filename
+			else:	#trajectory comes from a file and has been put on the "route" list
 				new_location = format_location(route[route_index].rstrip())
-				route_index +=1
+				route_index +=1					#continue along the route of set points
 			print("**INFO:  My new location will be {0}".format( new_location ) )		
 			distance = calculate_distance( actor['location'], new_location )
 			print("**INFO: I'm going to move {0} meters".format( distance ) )

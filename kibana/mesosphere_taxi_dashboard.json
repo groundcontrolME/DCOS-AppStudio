@@ -1,0 +1,19 @@
+[
+  {
+    "_id": "14616640-3723-11e7-a4ed-39df475114b1",
+    "_type": "dashboard",
+    "_source": {
+      "title": "Mesosphere Taxi",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"size_x\":10,\"size_y\":6,\"panelIndex\":1,\"type\":\"visualization\",\"id\":\"b4b0f7e0-371f-11e7-a4ed-39df475114b1\",\"col\":1,\"row\":1},{\"size_x\":7,\"size_y\":2,\"panelIndex\":2,\"type\":\"visualization\",\"id\":\"86f18380-3722-11e7-a4ed-39df475114b1\",\"col\":6,\"row\":7},{\"size_x\":5,\"size_y\":3,\"panelIndex\":3,\"type\":\"visualization\",\"id\":\"df420850-371f-11e7-a4ed-39df475114b1\",\"col\":1,\"row\":7},{\"size_x\":12,\"size_y\":3,\"panelIndex\":4,\"type\":\"visualization\",\"id\":\"51251550-3722-11e7-a4ed-39df475114b1\",\"col\":1,\"row\":10}]",
+      "optionsJSON": "{\"darkTheme\":false}",
+      "uiStateJSON": "{\"P-1\":{\"mapCenter\":[37.68599392939966,-122.19680786132812]}}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"filter\":[{\"query\":{\"query_string\":{\"query\":\"*\",\"analyze_wildcard\":true}}}]}"
+      }
+    }
+  }
+]
