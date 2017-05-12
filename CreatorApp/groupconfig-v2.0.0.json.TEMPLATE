@@ -582,8 +582,13 @@
   "backoffFactor": 1.15,
   "maxLaunchDelaySeconds": 3600,
   "fetch": [
-    { "uri": "https://raw.githubusercontent.com/groundcontrolME/appstudio/master/actor/routes/routes.csv" }
-  ]
+    {
+      "uri": "https://raw.githubusercontent.com/groundcontrolME/appstudio/master/actor/routes/routes.csv",
+      "extract": true,
+      "executable": false,
+      "cache": false
+    }
+  ],
   "container": {
     "type": "DOCKER",
     "docker": {
