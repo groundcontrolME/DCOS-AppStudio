@@ -32,8 +32,8 @@ import math
 
 DEFAULT_TRAJECTORY = "RANDOM"		#RANDOM, or URI with routes/locations file $LOCATION_FILENAME
 DEFAULT_ROUTES_FILENAME = "routes.csv"
-DEFAULT_LATITUDE = 41.411338		#SF bay
-DEFAULT_LONGITUDE = 2.226438
+DEFAULT_LATITUDE = 38.220107		#SF bay
+DEFAULT_LONGITUDE = -122.279448
 #DEFAULT_LATITUDE = 40.773860		#NYC central park
 #DEFAULT_LONGITUDE = -73.970813
 DEFAULT_RADIUS = 300
@@ -271,11 +271,12 @@ if __name__ == "__main__":
 		end_pos = start_pos + 1000					#my route has 1000 points. TODO: randomize
 		if end_pos > numlines:
 			end_pos = numlines						#cap end_pos at end of file
-	
 		route_range = set(range(start_pos,end_pos))
 		f=open(File_location)
 		route=list(yieldlines(f,route_range))
 		route_index=0
+		actor['location'] = format_location(route[route_index].rstrip())
+		print("**INFO: My initial location from file {0} is {1}".format( File_location, actor['location'] ))
 	else:
 		print("**INFO: Trajectory is random")
 
@@ -364,13 +365,13 @@ if __name__ == "__main__":
 			#randomly decide where to move to, in a radius or from a set of locations in a trajectory.
 			print("**INFO: Let's move somewhere else.")
 			current_lat, current_lon = actor["location"].split(",")
-			print("**INFO:  My current location is {0},{1}".format( current_lat, current_lon ))
+			print("**INFO: My current location is {0},{1}".format( current_lat, current_lon ))
 			if Trajectory == "RANDOM":
 				new_location = random_location( current_lat, current_lon, Radius )
 			else:	#trajectory comes from a file and has been put on the "route" list
 				new_location = format_location(route[route_index].rstrip())
 				route_index +=1					#continue along the route of set points
-			print("**INFO:  My new location will be {0}".format( new_location ) )		
+			print("**INFO: My new location will be {0}".format( new_location ) )		
 			distance = calculate_distance( actor['location'], new_location )
 			print("**INFO: I'm going to move {0} meters".format( distance ) )
 			
