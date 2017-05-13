@@ -509,8 +509,8 @@
 	"env": {
 "APPDEF":"REPLACEME",
 "LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:80/data",
-		"LATITUDE": "41.411338" , 
-		"LONGITUDE": "2.226438" ,
+		"LATITUDE": "38.220107" , 
+		"LONGITUDE": "-122.279448" ,
 		"RADIUS": "1000"
   },
 "instances": 0,
@@ -582,12 +582,7 @@
   "backoffFactor": 1.15,
   "maxLaunchDelaySeconds": 3600,
   "fetch": [
-    {
-      "uri": "https://raw.githubusercontent.com/groundcontrolME/appstudio/master/actor/routes/routes.csv",
-      "extract": true,
-      "executable": false,
-      "cache": false
-    }
+    { "uri": "https://raw.githubusercontent.com/fernandosanchezmunoz/DCOS-AppStudio/master/actor/routes/routes.csv" }
   ],
   "container": {
     "type": "DOCKER",
@@ -614,7 +609,7 @@
       "maxConsecutiveFailures": 3,
       "delaySeconds": 9,
       "command": {
-        "value": "ps aux|grep python3"
+        "value": "ps aux|grep python3 > /dev/null 2>&1"
       },
       "protocol": "COMMAND"
     }
@@ -623,9 +618,10 @@
  	"env": {
 "APPDEF":"REPLACEME",
 "LISTENER":"http://dcosappstudio$PATHworkerlistener.marathon.l4lb.thisdcos.directory:80/data",
-		"LATITUDE": "41.411338" , 
-		"LONGITUDE": "2.226438" ,
-		"RADIUS": "1000"
+		"LATITUDE": "38.220107" , 
+		"LONGITUDE": "-122.279448" ,
+		"RADIUS": "1000",
+		"TRAJECTORY": "FILE"
   },
   "requirePorts": false
 }
