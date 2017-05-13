@@ -603,7 +603,7 @@
   },
   "healthChecks": [
     {
-      "gracePeriodSeconds": 10,
+      "gracePeriodSeconds": 30,
       "intervalSeconds": 0,
       "timeoutSeconds": 3,
       "maxConsecutiveFailures": 3,
