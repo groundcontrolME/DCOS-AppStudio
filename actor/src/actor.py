@@ -300,18 +300,18 @@ if __name__ == "__main__":
 
 		#skip well-known fields
 		if field['name'] in RESERVED_FIELDS: 
-			print('**DEBUG: RESERVED field: {0} | value: {1}'.format( field['name'], actor[field['name']] ) )
+			print('**DEBUG: RESERVED field: {0} : {1}'.format( field['name'], actor[field['name']] ) )
 			continue
 
 		#Customize values that makes sense for well-known fields
 		actor[field['name']] = realistic_for_type( field )
 		if actor[field['name']]:					#it's a known field so it was populated as realistic
-			print('**DEBUG: KNOWN field: {0} | realistic: {1}'.format( field['name'], actor[field['name']] ) )
+			print('**DEBUG: REALISTIC field: {0} : {1}'.format( field['name'], actor[field['name']] ) )
 			continue
 
 		#Any field that is not well-known and LEARNED from APPDEF, fill it with random stuff
 		actor[field['name']] = random_for_type( field )
-		print('**DEBUG: LEARNED field: {0} | randomized: {1}'.format( field['name'], actor[field['name']] ) )
+		print('**DEBUG: RANDOM field: {0} : {1}'.format( field['name'], actor[field['name']] ) )
 
 	# Main loop
 	while True:
@@ -350,12 +350,12 @@ if __name__ == "__main__":
 		#randomly decide if dying 
 		commit_suicide = ( random.randrange(100) < Suicide_chance )
 		if commit_suicide:
-			print("**INFO: This party sucks. I'm out of here.")
+			print("**ACTOR: This party sucks. I'm out of here.")
 			sys.exit(0)
 
 		#wait a random amount of time
 		wait_interval = Wait_secs_seed*int(random_number( length=1 ))
-		print("**INFO: I'm going to wait here for {0} seconds.".format(wait_interval))
+		print("**ACTOR: I'm going to wait here for {0} seconds.".format(wait_interval))
 		time.sleep(wait_interval)
 
 		#randomly decide if moving
@@ -363,17 +363,17 @@ if __name__ == "__main__":
 		if move_on:
 			
 			#randomly decide where to move to, in a radius or from a set of locations in a trajectory.
-			print("**INFO: Let's move somewhere else.")
+			print("**ACTOR: Let's move somewhere else.")
 			current_lat, current_lon = actor["location"].split(",")
-			print("**INFO: My current location is {0},{1}".format( current_lat, current_lon ))
+			print("**ACTOR: My current location is {0},{1}".format( current_lat, current_lon ))
 			if Trajectory == "RANDOM":
 				new_location = random_location( current_lat, current_lon, Radius )
 			else:	#trajectory comes from a file and has been put on the "route" list
 				new_location = format_location(route[route_index].rstrip())
 				route_index +=1					#continue along the route of set points
-			print("**INFO: My new location will be {0}".format( new_location ) )		
+			print("**ACTOR: My new location will be {0}".format( new_location ) )		
 			distance = calculate_distance( actor['location'], new_location )
-			print("**INFO: I'm going to move {0} meters".format( distance ) )
+			print("**ACTOR: I'm going to move {0} meters".format( distance ) )
 			
 			#keep track of how much I move.
 			if 'route_length' in actor:
